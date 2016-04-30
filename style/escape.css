@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#F6F1DE;
+}
+
+#header{
+	height:150px;
+	width:100%;
+	background-color:#006699;
+	border: 8px solid #000;
+	text-align:center;
+}
+
+#gameSpace{
+	width:100%;
+	height: 500px;
+	
+	margin-top:10px;
+	background-color:yellow;
+}
+
+
+#aside1 {
+	float:left;
+	
+	width:20%;
+	height:490px;
+	border: 2px solid #000;
+	background-color:#fff;
+}
+
+#aside2 {
+	float:right;
+	width:20%;
+	height:490px;
+	border: 2px solid #000;
+	background-color:#fff;
+	
+}
+
