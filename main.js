@@ -1,3 +1,3 @@
 function start(){
-				document.getElementById("map").style.display = "none";
+				document.getElementById("startPage").style.display = "none";
 			}
