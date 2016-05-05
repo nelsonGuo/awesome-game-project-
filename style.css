@@ -25,7 +25,7 @@ body {
 
 
 #instruction{
-    position: absolute;
+    position: fixed;
     display: none;
     background-color: green;
     color: #fff;
