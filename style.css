@@ -24,6 +24,19 @@ body {
 }
 
 
+#instruction{
+    position: absolute;
+    display: none;
+    background-color: green;
+    color: #fff;
+    margin:auto;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    
+}
+
 #map{
 
 	margin-top: 10px;
