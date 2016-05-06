@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+    background-color:#fc0;
 
 }
 
@@ -11,7 +12,6 @@ body {
 }
 
 #startPage{
-	position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -23,60 +23,71 @@ body {
     color: #fff;
 }
 
+#startPage h1 {
+    padding-top:30px;
+    font-size: 4em;
+    margin: .67em 0;
+    margin-bottom: 2.5em;
+
+}
+
 
 #instruction{
+
     position: fixed;
     display: none;
     background-color: green;
     color: #fff;
     margin:auto;
-    top: 0;
+    top:0;
     left:0;
-    bottom:0;
+    bottom: 0;
     right:0;
-    max-width: 800px;
-    max-height: 600px;
+    
     
 }
 
-#map{
-
+#screen{
+    display: none;
 	margin-top: 10px;
     padding: 1px;
 	background-color:green;
+    
 	
 }
 
 #startPage .btn {
-    margin-top: 4em;
+    margin-top: 2em;
     width: 50%;
-    max-width: 300px;
+    max-width: 260px;
+    border-color: #357ebd;
+
 }
 .btn-primary {
     color: #fff;
     background-color: #428bca;
-    border-color: #357ebd;
 }
 
 .btn-lg {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.33;
     border-radius: 6px;
 }
 
 .btn {
-    display: inline-block;
+    display: block;
+    margin: auto;
     margin-bottom: 0;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
     cursor: auto;
     background-image: none;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 5px 12px;
+    font-size: 30px;
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -85,6 +96,8 @@ body {
 a {
     text-decoration: none;
 }
+
+
 /*button的css*/
 /*.start1{
 				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 
