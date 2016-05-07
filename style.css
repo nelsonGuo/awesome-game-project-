@@ -1,5 +1,6 @@
 body {
-	margin: 0;
+
+	margin-top: 30px;
 	padding: 0;
     background-color:#fc0;
 
@@ -12,13 +13,8 @@ body {
 }
 
 #startPage{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 50px;
+    padding: 50px;
     font-size: 20px;
-
     background-image: url("background.jpg");
     text-align: center;
     color: #fff;
@@ -79,7 +75,6 @@ body {
 .btn {
     display: block;
     margin: auto;
-    margin-bottom: 0;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
