@@ -46,9 +46,9 @@ body {
 
 #screen{
     display: none;
-	margin-top: 10px;
-    padding: 1px;
 	background-color:green;
+    width: 600px;
+    height: 700px;;
     
 	
 }
