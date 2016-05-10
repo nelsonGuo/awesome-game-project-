@@ -100,6 +100,24 @@ a {
     text-decoration: none;
 }
 
+#grid-container{
+    max-height: 460px;
+    max-width: 460px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.map{
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 6px;
+    background-color: gray;
+    position: absolute;
+}
+
 
 /*button的css*/
 /*.start1{
