@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Escape game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<html>
+	<head lang="en">
+    	<meta charset="UTF-8">
+    	<title>Escape game</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
 	
-    <script type="text/javascript" src="jquery-1.11.0.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="game.js"></script>
+    	<script type="text/javascript" src="jquery-1.11.0.js"></script>
+    	<script type="text/javascript" src="main.js"></script>
+    	<script type="text/javascript" src="game.js"></script>
 	
-</head>
+	</head>
 
-<body>
+	<body>
 
-<div id="gameSpace">
+		<div id="gameSpace">
 
-<div id="startPage">
-<h1>Escape Sequence</h1>
-<div id="instruction">
-	<h2>Instruction</h2>
-	<p>For computer player: </p>
-	<p>Use the arrow key to move</p>
-	<p>For mobile player:</p>
-	<p>Tap the grid to move</p>
-	<p> *You cannot go down</p>
-	<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
-</div>
-<a class="btn btn-primary btn-lg" id="ins" onclick="ins()" /> Instruction </a>
-<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
-</div>
+			<div id="startPage">
+				<h1>Escape Sequence</h1>
+				<div id="instruction">
+					<h2>Instruction</h2>
+					<p>For computer player: </p>
+					<p>Use the arrow key to move</p>
+					<p>For mobile player:</p>
+					<p>Tap the grid to move</p>
+					<p> *You cannot go down</p>
+					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+				</div>
+				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()" /> Instruction </a>
+				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
+			</div>
 
-<canvas id="screen">
 
-</canvas>
-
-<div id="grid-contaner">
-		<div class="map" id="map-0-0">111</div>
-		<div class="map" id="map-0-1">222</div>
-		<div class="map" id="map-0-2"></div>
-		<div class="map" id="map-1-0"></div>
-		<div class="map" id="map-1-1"></div>
-		<div class="map" id="map-1-2"></div>
-		<div class="map" id="map-2-0"></div>
-		<div class="map" id="map-2-1"></div>
-		<div class="map" id="map-2-2"></div>
-	</div>
-</div>
-</body>
+			<div id="grid-container">
+				<canvas class = "map" id="grid-0-0"></canvas>
+				<canvas class = "map" id="grid-0-1"></canvas>
+				<canvas class = "map" id="grid-0-2"></canvas>
+				<canvas class = "map" id="grid-1-0"></canvas>
+				<canvas class = "map" id="grid-1-1"></canvas>
+				<canvas class = "map" id="grid-1-2"></canvas>
+				<canvas class = "map" id="grid-2-0"></canvas>
+				<canvas class = "map" id="grid-2-1"></canvas>
+				<canvas class = "map" id="grid-2-2"></canvas>
+			</div>
+		</div>
+	</body>
 </html>

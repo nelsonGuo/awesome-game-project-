@@ -101,26 +101,26 @@ a {
 }
 
 #grid-container{
-    max-height: 460px;
-    max-width: 460px;
+    height: 460px;
+    width: 460px;
     padding: 20px;
     margin: 50px auto;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
-    position: relative;
+    
+    border: 2px solid transparent;
+    border-color: white;
+    display: none;
 }
 
 .map{
-    max-height: 100px;
-    max-width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 6px;
-    background-color: gray;
-    position: absolute;
+    background-image: url('background.jpg');
+    
 }
 
-#screen{
-    background-color: black;
-}
 
 
 /*button的css*/
