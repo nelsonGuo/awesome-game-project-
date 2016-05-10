@@ -1,17 +1,13 @@
 body {
-
 	margin-top: 30px;
 	padding: 0;
     background-color:#fc0;
-
 }
-
 #gameSpace{
 	margin:auto;
 	max-width:600px;
 	max-height:600px;
 }
-
 #startPage{
     padding: 50px;
     font-size: 20px;
@@ -19,18 +15,13 @@ body {
     text-align: center;
     color: #fff;
 }
-
 #startPage h1 {
     padding-top:30px;
     font-size: 4em;
     margin: .67em 0;
     margin-bottom: 2.5em;
-
 }
-
-
 #instruction{
-
     position: fixed;
     display: none;
     background-color: green;
@@ -40,25 +31,18 @@ body {
     left:0;
     bottom: 0;
     right:0;
-    
-    
 }
-
 #screen{
     display: none;
 	background-color:green;
     width: 600px;
     height: 700px;;
-    
-	
 }
-
 #startPage .btn {
     margin-top: 2em;
     width: 50%;
     max-width: 260px;
     border-color: #357ebd;
-
 }
 .btn-primary {
     color: #fff;
@@ -71,7 +55,6 @@ body {
     line-height: 1.33;
     border-radius: 6px;
 }
-
 .btn {
     display: block;
     margin: auto;
@@ -107,22 +90,24 @@ a {
     margin: 50px auto;
     background-color: white;
     border-radius: 10px;
-    
     border: 2px solid transparent;
     border-color: white;
     display: none;
 }
-
 .map{
     height: 150px;
     width: 150px;
     border-radius: 6px;
     background-image: url('background.jpg');
-    
 }
+#sequence1{
 
-
-
+}
+.seqgrid{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
 /*button的css*/
 /*.start1{
 				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 

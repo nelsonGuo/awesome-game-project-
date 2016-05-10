@@ -4,17 +4,12 @@
     	<meta charset="UTF-8">
     	<title>Escape game</title>
     	<link rel="stylesheet" type="text/css" href="style.css">
-	
     	<script type="text/javascript" src="jquery-1.11.0.js"></script>
     	<script type="text/javascript" src="main.js"></script>
     	<script type="text/javascript" src="game.js"></script>
-	
 	</head>
-
 	<body>
-
 		<div id="gameSpace">
-
 			<div id="startPage">
 				<h1>Escape Sequence</h1>
 				<div id="instruction">
@@ -29,8 +24,12 @@
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()" /> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
 			</div>
-
-
+			<div id="sequence1">
+				<canvas id="position0" class="seqgrid"></canvas>
+				<canvas id="position1" class="seqgrid"></canvas>
+				<canvas id="position2" class="seqgrid"></canvas>
+				<canvas id="position3" class="seqgrid"></canvas>
+			</div>
 			<div id="grid-container">
 				<canvas class = "map" id="grid-0-0"></canvas>
 				<canvas class = "map" id="grid-0-1"></canvas>
