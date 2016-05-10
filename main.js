@@ -20,10 +20,9 @@ function HomePage() {
 
 //设置canvas 并插图
 var S0=document.getElementById("position0");
-var ctx0=S0.getContext("2d");
-var img=new Image();
-img.src="...";
-
-ctx0.drawImage(img,10,10);
+var ctx0 = S0.getContext("2d");
+var img = new Image();
+img.src="http://images.cnblogs.com/cnblogs_com/html5test/359114/r_test.jpg";
+ctx0.drawImage(img,0,0);
 
 
