@@ -118,6 +118,10 @@ a {
     position: absolute;
 }
 
+#screen{
+    background-color: black;
+}
+
 
 /*button的css*/
 /*.start1{
