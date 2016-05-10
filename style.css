@@ -89,6 +89,13 @@ body {
     -webkit-user-select: none;
     
 }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
 a {
     text-decoration: none;
 }
