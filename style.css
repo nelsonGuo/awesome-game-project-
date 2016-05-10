@@ -101,13 +101,15 @@ a {
     background-image: url('background.jpg');
 }
 #sequence1{
-
+    display: none;
 }
 .seqgrid{
     width: 100px;
     height: 100px;
     background-color: black;
 }
+
+
 /*button的css*/
 /*.start1{
 				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 
