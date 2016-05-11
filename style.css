@@ -48,7 +48,6 @@ body {
     color: #fff;
     background-color: #428bca;
 }
-
 .btn-lg {
     padding: 10px 16px;
     font-size: 20px;
@@ -70,19 +69,15 @@ body {
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
-    
 }
-
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
     background-color: #3276b1;
     border-color: #285e8e;
 }
-
 a {
     text-decoration: none;
 }
-
 #grid-container{
     height: 460px;
     width: 460px;
@@ -102,14 +97,16 @@ a {
 }
 #sequence1{
     display: none;
+    width:300px;
+    margin:auto;
+    background-color: black;
 }
-
-
 .symbol {
     display : none;
+    width:300px;
+    height:300px;
+    margin:auto;
 }
-
-
 /*button的css*/
 /*.start1{
 				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 

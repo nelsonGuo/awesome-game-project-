@@ -23,6 +23,7 @@ function start() {
 	img0 = document.getElementById("symbol1");
 	ctx0.drawImage(img0,5,5);
 
+	S1 = document.getElementById("position1");
 	ctx1 = S1.getContext("2d");
 	img1 = document.getElementById("symbol2");
 	ctx1.drawImage(img1, 5, 5);
@@ -37,10 +38,6 @@ function start() {
 	img3 = document.getElementById("symbol1");
 	ctx3.drawImage(img3, 5, 5);
 
-	S4 = document.getElementById("position4");
-	ctx4 = S4.getContext("2d");
-	img4 = document.getElementById("symbol3");
-	ctx4.drawImage(img4, 5, 5);
 
 
 
