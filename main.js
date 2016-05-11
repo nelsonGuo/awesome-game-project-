@@ -72,6 +72,17 @@ function HomePage() {
 
 }
 
+window.onload=function sequenceTimer(){
+	var i = 10;
+	var timer = setInterval(function(){
+		if(i== -1){
+			clearInterval(timer);
+		}else{
+			document.getElementById("timer").innerHTML = "Time"+i;
+			--i;
+		}
+	},1000);
+}
 
 
 
