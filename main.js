@@ -20,18 +20,16 @@ function start() {
 
 	}, 3000);
 
-	for(var i = 0; i<4;i++) {
+	for(var i = 3; i>=0;i--) {
 		addImage(i);
 
 	}
 
-	for(var i = 0; i<3;i++) {
-		for(var j = 0; j<3;j++){
+	for(var i = 2; i>=0;i--) {
+		for(var j = 2; j>=0;j--){
 			addImageToMap(i,j);
 		}
 	}
-
-
 
 
 }
@@ -55,11 +53,13 @@ function addImageToMap(i,j) {
 }
 
 function stepMatching(id) {
-	if(sequence[numClick] == map[id])
+	if(sequence[numClick] == map[id]) {
 		alert("Correct");
+		numClick++;
+	}
 	else
 		alert("Wrong");
-	numClick++;
+
 }
 
 
