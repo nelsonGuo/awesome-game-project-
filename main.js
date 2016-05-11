@@ -15,6 +15,7 @@ var columnRight;
 
 
 var map = new Array();
+
 var sequence = new Array();
 var numClick = 0;
 
@@ -48,6 +49,7 @@ function addImage(i) {
 	var ctx = S.getContext("2d");
 	var img = document.getElementById("symbol" + i);
 	ctx.drawImage(img,5,5);
+
 	sequence[i] = i;
 
 }
@@ -56,10 +58,12 @@ function addImageToMap(i,j) {
 	var S = document.getElementById("grid-"+i+"-"+j);
 	var ctx = S.getContext("2d");
 	var img = document.getElementById("symbol" + i);
-	map["grid-"+i+"-"+j] = i;
 	ctx.drawImage(img,5,5);
 
+	map["grid-"+i+"-"+j] = i;
 }
+
+
 //StepMatching
 function stepMatching(id) {
 	if(numClick == 0) {
@@ -130,5 +134,23 @@ window.onload=function sequenceTimer(){
 }
 
 
+/*
+function giveValue(id){
+	var temp == Math.random();
 
+	if(temp <= 0.2)
+		map[i] =1;
+	else if(0.2<temp<=0.4)
+		map[i] =2;
+	else if(0.4<temp<=0.6)
+		map[i] =3;
+	else if(0.6<temp<=0.8)
+		map[i] =4;
+	else if(0.8<temp<1)
+		map[i] =5;
 
+	var block = $(id);
+	block.innerHTML(temp);
+
+}
+*/
