@@ -10,10 +10,6 @@
 	</head>
 	<body>
 		<div id="gameSpace">
-			<div id="topBar">
-				<span id="level">Level 1</span>
-				<span id="timer"></span>
-			</div>
 			<div id="startPage">
 				<h1>Escape Sequence</h1>
 				<div id="instruction">
@@ -35,18 +31,17 @@
 				<img id="symbol2" class = "symbol" src="2.JPG"  />
 				<img id="symbol3" class = "symbol" src="3.JPG"  />
 		</div>
-			<!--sequence-->
-			<div id="sequence1">
-				<canvas id="position0" class="seqgrid" width="200" height="200"></canvas>
-				<canvas id="position1" class="seqgrid" width="200" height="200">></canvas>
-				<canvas id="position2" class="seqgrid" width="200" height="200">></canvas>
-				<canvas id="position3" class="seqgrid" width="200" height="200">></canvas>
-			</div>
+
 
 			<div id="game-header">
-				<h2 id="level">Level: </h2>
-				<h2 id="time">Time: </h2>
-			
+				<h2 id="level"></h2>
+				<h2 id="timer"></h2>
+				<div id="sequence1">
+					<canvas id="position0" class="seqgrid" width="200" height="200"></canvas>
+					<canvas id="position1" class="seqgrid" width="200" height="200">></canvas>
+					<canvas id="position2" class="seqgrid" width="200" height="200">></canvas>
+					<canvas id="position3" class="seqgrid" width="200" height="200">></canvas>
+				</div>
 				<div id="grid-container">
 					<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')"></canvas>
 					<canvas class = "map" id="grid-2-1" onclick="stepMatching('grid-2-1')"></canvas>

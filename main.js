@@ -1,10 +1,4 @@
 //设置canvas 并插图
-var S0, ctx0, img0;
-var S1, ctx1, img1;
-var S2, ctx2, img2;
-var S3, ctx3, img3;
-
-
 var idRecord = "grid-0-0";
 var row;
 var column;
@@ -12,23 +6,22 @@ var rowUp;
 var columnLeft;
 var columnRight;
 
-
-
 var map = new Array();
 
 var sequence = new Array();
 var numClick = 0;
-
+//initialization
 function start() {
 	document.getElementById("startPage").style.display = "none";
 	document.getElementById("sequence1").style.display = "block";
+	document.getElementById("game-header").style.display = "block";
 
 	setTimeout(function () {
 		document.getElementById("sequence1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("game-header").style.display = "block";
 
-	}, 1000);
+	}, 10000);
 
 	for(var i = 3; i>=0;i--) {
 		addImage(i);
@@ -40,10 +33,8 @@ function start() {
 			addImageToMap(i,j);
 		}
 	}
-
-
 }
-
+//add image
 function addImage(i) {
 	var S = document.getElementById("position" + i);
 	var ctx = S.getContext("2d");
@@ -53,7 +44,7 @@ function addImage(i) {
 	sequence[i] = i;
 
 }
-
+//add image to map
 function addImageToMap(i,j) {
 	var S = document.getElementById("grid-"+i+"-"+j);
 	var ctx = S.getContext("2d");
@@ -112,7 +103,7 @@ function stepMatching(id) {
 }
 
 
-
+//instruction
 function ins(){
 	document.getElementById("instruction").style.display = "block";
 }
@@ -120,7 +111,7 @@ function HomePage() {
     document.getElementById("instruction").style.display = "none";
 
 }
-
+//sequence timer
 window.onload=function sequenceTimer(){
 	var i = 10;
 	var timer = setInterval(function(){
