@@ -79,20 +79,20 @@ a {
     text-decoration: none;
 }
 #grid-container{
-    height: 460px;
-    width: 460px;
-    padding: 20px;
-    margin: 50px auto;
+    height: 920px;
+    width: 920px;
+    padding: 40px;
+    margin: 100px auto;
     background-color: white;
-    border-radius: 10px;
-    border: 2px solid transparent;
+    border-radius: 20px;
+    border:4px solid transparent;
     border-color: white;
     display: none;
 }
 .map{
-    height: 150px;
-    width: 150px;
-    border-radius: 6px;
+    height: 300px;
+    width: 300px;
+    border-radius: 12px;
     background-image: url('background.jpg');
 }
 #sequence1{
