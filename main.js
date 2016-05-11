@@ -5,6 +5,14 @@ var S2, ctx2, img2;
 var S3, ctx3, img3;
 
 
+var idRecord = "grid-0-0";
+var row;
+var column;
+var rowUp;
+var columnLeft;
+var columnRight;
+
+
 
 var map = new Array();
 var sequence = new Array();
@@ -53,12 +61,48 @@ function addImageToMap(i,j) {
 }
 
 function stepMatching(id) {
-	if(sequence[numClick] == map[id]) {
-		alert("Correct");
-		numClick++;
+	if(numClick == 0) {
+		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2") {
+			if (sequence[numClick] == map[id]) {
+				alert("Correct");
+				idRecord = id;
+				numClick++;
+				row = idRecord.substring(5,6);
+				column = idRecord.substring(7,8);
+				row = parseInt(row);
+				column = parseInt(column);
+				rowUp = row + 1;
+				columnLeft = column - 1;
+				columnRight = column + 1;
+			}
+			else
+				alert("Wrong");
+		}
+		else
+			alert("Wrong");
 	}
-	else
-		alert("Wrong");
+	else {
+		if(id == "grid-"+row+"-"+columnLeft || id == "grid-"+row+"-"+columnRight || id == "grid-"+rowUp+"-"+column) {
+			if (sequence[numClick] == map[id]) {
+				alert("Correct");
+				idRecord = id;
+				numClick++;
+				row = idRecord.substring(5,6);
+				column = idRecord.substring(7,8);
+				row = parseInt(row);
+				column = parseInt(column);
+				rowUp = row + 1;
+				columnLeft = column - 1;
+				columnRight = column + 1;
+			}
+			else
+				alert("Wrong");
+		}
+		else {
+			alert("Wrong");
+		}
+
+	}
 
 }
 
