@@ -17,8 +17,9 @@ function start() {
 	setTimeout(function () {
 		document.getElementById("sequence1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
+		document.getElementById("game-header").style.display = "block";
 
-	}, 3000);
+	}, 1000);
 
 	for(var i = 3; i>=0;i--) {
 		addImage(i);
