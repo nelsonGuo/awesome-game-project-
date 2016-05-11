@@ -60,7 +60,7 @@ function addImageToMap(i,j) {
 	ctx.drawImage(img,5,5);
 
 }
-
+//StepMatching
 function stepMatching(id) {
 	if(numClick == 0) {
 		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2") {
