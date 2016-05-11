@@ -25,8 +25,9 @@ function start() {
 	setTimeout(function () {
 		document.getElementById("sequence1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
+		document.getElementById("game-header").style.display = "block";
 
-	}, 3000);
+	}, 1000);
 
 	for(var i = 3; i>=0;i--) {
 		addImage(i);
@@ -116,6 +117,17 @@ function HomePage() {
 
 }
 
+window.onload=function sequenceTimer(){
+	var i = 10;
+	var timer = setInterval(function(){
+		if(i== -1){
+			clearInterval(timer);
+		}else{
+			document.getElementById("timer").innerHTML = "Time"+i;
+			--i;
+		}
+	},1000);
+}
 
 
 

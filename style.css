@@ -2,11 +2,13 @@ body {
 	margin-top: 30px;
 	padding: 0;
     background-color:#fc0;
+
 }
 #gameSpace{
 	margin:auto;
 	max-width:600px;
 	max-height:600px;
+
 }
 #startPage{
     padding: 50px;
@@ -14,6 +16,9 @@ body {
     background-image: url("background.jpg");
     text-align: center;
     color: #fff;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
 }
 #startPage h1 {
     padding-top:30px;
@@ -84,8 +89,7 @@ a {
     padding: 20px;
     margin-top:50px;
     margin: auto;
-    background-color: white;
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
     border:4px solid transparent;
     border-color: white;
     display: none;
@@ -94,7 +98,6 @@ a {
     height: 200px;
     width: 200px;
     border-radius: 12px;
-    background-image: url('background.jpg');
 }
 #sequence1{
     display: none;
@@ -107,6 +110,25 @@ a {
     width:300px;
     height:300px;
     margin:auto;
+}
+
+#game-header{
+    width: 679px;
+    display: none;
+    background-image: url('background.jpg');
+    border-radius: 20px;
+}
+
+#time{
+    padding-left: 10px;
+    color:white;
+}
+
+#level{
+        padding-left: 10px;
+        padding-top: 5px;
+
+    color:white;
 }
 /*button的css*/
 /*.start1{
