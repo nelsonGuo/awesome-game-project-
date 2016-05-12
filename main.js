@@ -10,6 +10,7 @@ var map = new Array();
 
 var sequence = new Array();
 var numClick = 0;
+
 //initialization
 function start() {
 	document.getElementById("startPage").style.display = "none";
@@ -23,35 +24,54 @@ function start() {
 
 	}, 10000);
 
-	for(var i = 3; i>=0;i--) {
-		addImage(i);
+  //hardcore the sequence     
+      addImage(0,0);
+	  addImage(1,1);
+	  addImage(2,2);
+	  addImage(3,3);
+	  
+ 
 
-	}
-
+//generate random symbols for the map
 	for(var i = 2; i>=0;i--) {
 		for(var j = 2; j>=0;j--){
-			addImageToMap(i,j);
+		addImageToMap(i,j,getValue());
 		}
+		
+ //overide some necessary symbols to have at leat one solution
+ addImageToMap(0,1,0);
+ addImageToMap(1,1,1);
+ addImageToMap(1,0,2);
+ addImageToMap(2,0,3);
+
 	}
 }
+ // get a random symbol for the map  
+function getValue(){
+	var temp = Math.floor((Math.random() * 10) / 2);
+	return temp;
+   }
+
+
+
 //add image
-function addImage(i) {
+function addImage(i,j) {
 	var S = document.getElementById("position" + i);
 	var ctx = S.getContext("2d");
-	var img = document.getElementById("symbol" + i);
+	var img = document.getElementById("symbol" + j);
 	ctx.drawImage(img,5,5);
 
-	sequence[i] = i;
+	sequence[i] = j;
 
 }
 //add image to map
-function addImageToMap(i,j) {
+function addImageToMap(i,j,k) {
 	var S = document.getElementById("grid-"+i+"-"+j);
 	var ctx = S.getContext("2d");
-	var img = document.getElementById("symbol" + i);
+	var img = document.getElementById("symbol" + k);
 	ctx.drawImage(img,5,5);
 
-	map["grid-"+i+"-"+j] = i;
+	map["grid-"+i+"-"+j] = k;
 }
 
 
@@ -125,23 +145,4 @@ window.onload=function sequenceTimer(){
 }
 
 
-/*
-function giveValue(id){
-	var temp == Math.random();
 
-	if(temp <= 0.2)
-		map[i] =1;
-	else if(0.2<temp<=0.4)
-		map[i] =2;
-	else if(0.4<temp<=0.6)
-		map[i] =3;
-	else if(0.6<temp<=0.8)
-		map[i] =4;
-	else if(0.8<temp<1)
-		map[i] =5;
-
-	var block = $(id);
-	block.innerHTML(temp);
-
-}
-*/
