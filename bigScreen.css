@@ -99,8 +99,9 @@ a {
 }
 #sequence1{
     display: none;
-    width:300px;
-    margin:auto;
+    width:205px;
+    margin:0 auto;
+    padding: 20px;
     background-color: black;
 }
 

@@ -6,7 +6,6 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1" />
     	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="smallScreen.css" />
     	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 600px)" href="bigScreen.css" />
-    	<link rel="stylesheet" type="text/css" href="style.css">
     	<script type="text/javascript" src="jquery-1.11.0.js"></script>
     	<script type="text/javascript" src="main.js"></script>
     	<script type="text/javascript" src="game.js"></script>
@@ -26,11 +25,11 @@
 			</div>
 			<!--image-->
 			<div>
-				<img id="symbol0" class = "symbol" src="0.JPG"  />
-				<img id="symbol1" class = "symbol" src="1.JPG"  />
-				<img id="symbol2" class = "symbol" src="2.JPG"  />
-				<img id="symbol3" class = "symbol" src="3.JPG"  />
-				<img id="symbol4" class = "symbol" src="4.JPG"  />
+				<img id="symbol0" class = "symbol" src="0.jpg"  />
+				<img id="symbol1" class = "symbol" src="1.jpg"  />
+				<img id="symbol2" class = "symbol" src="2.jpg"  />
+				<img id="symbol3" class = "symbol" src="3.jpg"  />
+				<img id="symbol4" class = "symbol" src="4.jpg"  />
 
 		</div>
 
@@ -42,21 +41,21 @@
 					<h1>Level 1</h1>
 				</div>
 				<div id="sequence1">
-					<canvas id="position0" class="seqgrid" ></canvas>
-					<canvas id="position1" class="seqgrid" ></canvas>
-					<canvas id="position2" class="seqgrid" ></canvas>
-					<canvas id="position3" class="seqgrid" ></canvas>
+					<canvas id="position0" class="seqgrid" width="200" height="200"></canvas>
+					<canvas id="position1" class="seqgrid" width="200" height="200"></canvas>
+					<canvas id="position2" class="seqgrid" width="200" height="200"></canvas>
+					<canvas id="position3" class="seqgrid" width="200" height="200"></canvas>
 				</div>
 				<div id="grid-container">
-					<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')"></canvas>
-					<canvas class = "map" id="grid-2-1" onclick="stepMatching('grid-2-1')"></canvas>
-					<canvas class = "map" id="grid-2-0" onclick="stepMatching('grid-2-0')"></canvas>
-					<canvas class = "map" id="grid-1-2" onclick="stepMatching('grid-1-2')"></canvas>
-					<canvas class = "map" id="grid-1-1" onclick="stepMatching('grid-1-1')"></canvas>
-					<canvas class = "map" id="grid-1-0" onclick="stepMatching('grid-1-0')"></canvas>
-					<canvas class = "map" id="grid-0-2" onclick="stepMatching('grid-0-2')"></canvas>
-					<canvas class = "map" id="grid-0-1" onclick="stepMatching('grid-0-1')"></canvas>
-					<canvas class = "map" id="grid-0-0" onclick="stepMatching('grid-0-0')"></canvas>
+					<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-2-1" onclick="stepMatching('grid-2-1')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-2-0" onclick="stepMatching('grid-2-0')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-1-2" onclick="stepMatching('grid-1-2')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-1-1" onclick="stepMatching('grid-1-1')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-1-0" onclick="stepMatching('grid-1-0')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-0-2" onclick="stepMatching('grid-0-2')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-0-1" onclick="stepMatching('grid-0-1')" width="200" height="200"></canvas>
+					<canvas class = "map" id="grid-0-0" onclick="stepMatching('grid-0-0')" width="200" height="200"></canvas>
 				</div>
 			</div>
 		</div>
