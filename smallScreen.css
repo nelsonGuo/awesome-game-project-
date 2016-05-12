@@ -121,7 +121,6 @@ a {
 }
 
 #game-header{
-    padding:5px;
     width: 97%;
     display: none;
     background-image: url('background.jpg');
