@@ -97,11 +97,15 @@ a {
     width: 200px;
     border-radius: 12px;
 }
-#sequenceLe1{
+#sequence1{
     display: none;
     width:300px;
     margin:auto;
     background-color: black;
+}
+
+.seqgrid{
+
 }
 .symbol {
     display : none;
@@ -123,10 +127,15 @@ a {
 }
 
 #level{
-        padding-left: 10px;
-        padding-top: 5px;
-
+    padding-left: 10px;
+    padding-top: 5px;
+    float:right;
     color:white;
+}
+
+#level1 h1{
+    text-align:center;
+    color: white;
 }
 /*button的css*/
 /*.start1{

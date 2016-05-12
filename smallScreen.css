@@ -1,0 +1,157 @@
+body {
+	margin-top: 30px;
+	padding: 0;
+    background-color:#fc0;
+
+}
+#gameSpace{
+	margin:auto;
+	max-width:600px;
+	max-height:600px;
+
+}
+#startPage{
+    padding: 30px;
+    font-size: 70%;
+    background-image: url("background.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    width:80%;
+
+}
+#startPage h1 {
+    padding-top:30px;
+    font-size: 4em;
+    margin: .67em 0;
+    margin-bottom: 2.5em;
+}
+#instruction{
+    position: fixed;
+    display: none;
+    background-color: green;
+    color: #fff;
+    margin:auto;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+}
+/*
+#screen{
+    display: none;
+	background-color:green;
+    width: 600px;
+    height: 700px;;
+}
+*/
+#startPage .btn {
+    margin-top: 2em;
+    width: 50%;
+    max-width: 260px;
+    border-color: #357ebd;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+}
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 120%;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+.btn {
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: auto;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 5px 12px;
+    font-size: 120%;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+a {
+    text-decoration: none;
+}
+#grid-container{
+    width: 86%;
+    height: 70%;
+    padding: 20px;
+    margin-top:50px;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    border:4px solid transparent;
+    border-color: white;
+    display: none;
+}
+.map{
+    width: 30%;
+    border-radius: 12px;
+    background-color:#fc0;
+    height: 30%;
+}
+#sequence1{
+    display: none;
+    width:30%;
+    margin:auto;
+    background-color: black;
+}
+
+.seqgrid{
+    height:120%;
+    width:120%;
+}
+.symbol {
+    display : none;
+    width:300px;
+    height:300px;
+    margin:auto;
+}
+
+#game-header{
+    padding:5px;
+    width: 97%;
+    display: none;
+    background-image: url('background.jpg');
+    background-size: 100% 100%;
+    border-radius: 20px;
+    height: 394.02px;
+}
+
+#time{
+    padding-left: 10px;
+    color:white;
+}
+
+#level{
+    padding-left: 10px;
+    padding-top: 5px;
+
+    color:white;
+}
+
+/*button的css*/
+/*.start1{
+				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 
+				width:600px;
+				height:600px;
+				border:0;
+				padding:0;
+				margin-top: 50px;
+				margin-left: 10px;
+				cursor:pointer;
+			}
+*/

@@ -19,6 +19,7 @@ function start() {
 
 	setTimeout(function () {
 		document.getElementById("sequence1").style.display = "none";
+		document.getElementById("level1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("game-header").style.display = "block";
 
