@@ -80,7 +80,13 @@ function stepMatching(id) {
 	if(numClick == 0) {
 		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2") {
 			if (sequence[numClick] == map[id]) {
-				alert("Correct");
+				var c = document.getElementById(id);
+				var ctx = c.getContext("2d");
+				ctx.shadowBlur= 20;
+				ctx.shadowColor="black";
+				ctx.fillStyle ="rgba(0, 0, 0, 0.5)";
+				ctx.fillRect(0,0,300,300);
+
 				idRecord = id;
 				numClick++;
 				row = idRecord.substring(5,6);
@@ -92,15 +98,23 @@ function stepMatching(id) {
 				columnRight = column + 1;
 			}
 			else
-				alert("Wrong");
+		
+				alert("you lost");
 		}
 		else
-			alert("Wrong");
+			alert("you lost");
 	}
 	else {
 		if(id == "grid-"+row+"-"+columnLeft || id == "grid-"+row+"-"+columnRight || id == "grid-"+rowUp+"-"+column) {
 			if (sequence[numClick] == map[id]) {
-				alert("Correct");
+
+				var c = document.getElementById(id);
+				var ctx = c.getContext("2d");
+				ctx.shadowBlur= 20;
+				ctx.shadowColor="black";
+				ctx.fillStyle ="rgba(0, 0, 0, 0.5)";
+				ctx.fillRect(0,0,300,300);
+
 				idRecord = id;
 				numClick++;
 				row = idRecord.substring(5,6);
@@ -112,10 +126,10 @@ function stepMatching(id) {
 				columnRight = column + 1;
 			}
 			else
-				alert("Wrong");
+				alert("you lost");
 		}
 		else {
-			alert("Wrong");
+			alert("you lost");
 		}
 
 	}
