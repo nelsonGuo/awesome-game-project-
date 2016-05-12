@@ -37,7 +37,6 @@ function start() {
 		for(var j = 2; j>=0;j--){
 		addImageToMap(i,j,getValue());
 		}
-		
  //overide some necessary symbols to have at leat one solution
  addImageToMap(0,1,0);
  addImageToMap(1,1,1);
