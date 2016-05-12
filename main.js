@@ -137,7 +137,7 @@ window.onload=function sequenceTimer(){
 		if(i== -1){
 			clearInterval(timer);
 		}else{
-			document.getElementById("timer").innerHTML = "Time"+i;
+			document.getElementById("timer").innerHTML = "Time: "+i;
 			--i;
 		}
 	},1000);
