@@ -84,7 +84,7 @@ function stepMatching(id) {
 				var ctx = c.getContext("2d");
 				ctx.shadowBlur= 20;
 				ctx.shadowColor="black";
-				ctx.fillStyle ="rgba(0, 0, 0, 0.5)";
+				ctx.fillStyle ="rgba(0, 0, 0, 0.3)";
 				ctx.fillRect(0,0,300,300);
 
 				idRecord = id;
@@ -112,7 +112,7 @@ function stepMatching(id) {
 				var ctx = c.getContext("2d");
 				ctx.shadowBlur= 20;
 				ctx.shadowColor="black";
-				ctx.fillStyle ="rgba(0, 0, 0, 0.5)";
+				ctx.fillStyle ="rgba(0, 0, 0, 0.3)";
 				ctx.fillRect(0,0,300,300);
 
 				idRecord = id;
