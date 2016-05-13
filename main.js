@@ -292,7 +292,7 @@ window.onload=function sequenceTimer(){
             window.setTimeout(callback, 1000 / 60);
         };
     })();
-    var gravity = 0.9,
+    var gravity = 0.3,
         canvas = null,
         ctx = null,
         balls =  [],
