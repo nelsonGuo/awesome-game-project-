@@ -6,11 +6,16 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1" />
     	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="smallScreen.css" />
     	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 600px)" href="bigScreen.css" />
-    	<script type="text/javascript" src="jquery-1.11.0.js"></script>
     	<script type="text/javascript" src="main.js"></script>
-    	<script type="text/javascript" src="game.js"></script>
+    	
+
+    	
 	</head>
-	<body>
+	<body >
+	     <div id="showEggs" onclick="showEggs()">
+	     	<canvas id="canvas" width="1000" height="200"></canvas>
+	     </div>
+	       
 		<div id="gameSpace">
 			<div id="startPage">
 				<h1>Escape Sequence</h1>
@@ -30,7 +35,6 @@
 				<img id="symbol2" class = "symbol" src="2.jpg"  />
 				<img id="symbol3" class = "symbol" src="3.jpg"  />
 				<img id="symbol4" class = "symbol" src="4.jpg"  />
-
 		</div>
 			<div id="game-header">
 				<h2 id="level"></h2>
@@ -57,5 +61,6 @@
 				</div>
 			</div>
 		</div>
+
 	</body>
 </html>
