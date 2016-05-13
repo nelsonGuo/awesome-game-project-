@@ -23,32 +23,118 @@ function start() {
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("game-header").style.display = "block";
 
-	}, 10000);
+	}, 5000);
 
-  //hardcore the sequence     
-      addImage(0,0);
-	  addImage(1,1);
-	  addImage(2,2);
-	  addImage(3,3);
+
+	  for(var i = 0;i <4;i++){
+	  	addImage(i,getValue(5));
+	  }
 	  
  
 
 //generate random symbols for the map
 	for(var i = 2; i>=0;i--) {
 		for(var j = 2; j>=0;j--){
-		addImageToMap(i,j,getValue());
+		addImageToMap(i,j,getValue(5));
 		}
- //overide some necessary symbols to have at leat one solution
- addImageToMap(0,1,0);
- addImageToMap(1,1,1);
- addImageToMap(1,0,2);
- addImageToMap(2,0,3);
+	}
+
+
+
+for(var i = 0; i<3;i++) {
+		for(var j = 0; j<3;j++){
+		if (map["grid-"+i+"-"+j] == sequence[i]){
+
+		}
+		}
+	}
+
+
+
+	checkSymbol();
+
+
+}
+
+function checkSymbol() {
+	//step 1
+
+if(map["grid-0-0"] != sequence[0] && map["grid-0-1"] != sequence[0] && map["grid-0-2"] != sequence[0]){
+    
+
+   addImageToMap(0,getValue(3),sequence[0]);
+}
+
+
+
+if(map["grid-0-2"] == sequence[0]){
+
+	if(map["grid-0-1"] != sequence[1] && map["grid-1-2"] != sequence[1]){
+		var temp = Math.floor((Math.random() * 2));
+
+		if(temp = 0) {
+			addImageToMap(1,2,sequence[1]);
+		}else if(temp = 1) {
+			addImageToMap(0,1,sequence[1]);
+		}
 
 	}
+
+	addImageToMap(1,1,sequence[2]);
+	addImageToMap(2,1,sequence[3]);
+
+}else if (map["grid-0-0"] == sequence[0]){
+	if (map["grid-0-1"] != sequence[1] && map["grid-1-0"] != sequence[1]) {
+		var temp1 = Math.floor((Math.random() * 2));
+		if(temp1 = 0) {
+			addImageToMap(1,0,sequence[1]);
+		}else if(temp1 = 1) {
+			addImageToMap(0,1,sequence[1]);
+		}
+
+	}
+	addImageToMap(1,1,sequence[2]);
+	addImageToMap(2,1,sequence[3]);
+
+
+}else if (map["grid-0-1"] == sequence[0]) {
+	if (map["grid-0-2"] != sequence[1] && map["grid-0-0"] != sequence[1] && map["grid-1-1"] != sequence[1]) {
+		var temp2 = Math.floor((Math.random() * 3));
+			if(temp2 = 0) {
+				addImageToMap(0,2,sequence[1]);
+			}else if(temp2 = 1) {
+				addImageToMap(0,0,sequence[1]);
+			}else if(temp2 = 2) {
+				addImageToMap(1,1,sequence[1]);
+			}
+
+		}
+
+	if(map["grid-0-2"] == sequence[1]) {
+		addImageToMap(1,2,sequence[2]);
+		addImageToMap(2,2,sequence[3]);
+	}else if(map["grid-0-0"] == sequence[1]) {
+		addImageToMap(1,0,sequence[2]);
+		addImageToMap(2,0,sequence[3]);
+	}else if(map["grid-1-1"]) {
+		var temp3 = Math.floor((Math.random() * 2));
+
+		if(temp3 == 0){
+			addImageToMap(1,0,sequence[2]);
+			addImageToMap(2,0,sequence[3]);
+		}else if(temp3 == 1) {
+			addImageToMap(1,2,sequence[2]);
+			addImageToMap(2,2,sequence[3]);
+		}
+	}
+
+} 
+
+
 }
  // get a random symbol for the map  
-function getValue(){
-	var temp = Math.floor((Math.random() * 10) / 2);
+function getValue(num){
+	var temp = Math.floor((Math.random() * num));
 	return temp;
    }
 
