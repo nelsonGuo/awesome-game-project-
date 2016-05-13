@@ -23,7 +23,7 @@ function start() {
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("game-header").style.display = "block";
 		 gameTimer();
-	}, 5000);
+	}, 10000);
 
 
 	  for(var i = 0;i <4;i++){
@@ -233,7 +233,7 @@ function HomePage() {
 }
 //sequence timer
 window.onload=function sequenceTimer(){
-	var i = 5;
+	var i = 10;
 	var timer = setInterval(function(){
 		if(i== -1){
 			clearInterval(timer);
