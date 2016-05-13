@@ -22,7 +22,7 @@ function start() {
 		document.getElementById("level1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("game-header").style.display = "block";
-
+		 gameTimer();
 	}, 5000);
 
 
@@ -233,7 +233,7 @@ function HomePage() {
 }
 //sequence timer
 window.onload=function sequenceTimer(){
-	var i = 10;
+	var i = 5;
 	var timer = setInterval(function(){
 		if(i== -1){
 			clearInterval(timer);
@@ -243,6 +243,16 @@ window.onload=function sequenceTimer(){
 		}
 	},1000);
 }
-
-
+//game timer
+function gameTimer() {
+	var i = 30;
+	var timer = setInterval(function(){
+		if(i== -1){
+			clearInterval(timer);
+		}else{
+			document.getElementById("timer").innerHTML = "Time: "+i;
+			--i;
+		}
+	},1000);
+}
 
