@@ -3,22 +3,34 @@ body {
 	padding: 0;
     background-color:#fc0;
 }
+#showEggs{
+     float:left;
+     width:5%;
+     height:100%;
+     background-color: #fc0;
+     padding-top: 250px;
+}
+#canvas{
+        z-index: 999;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+        display: none;
+}
 #gameSpace{
 	margin:auto;
 	max-width:600px;
 	max-height:600px;
-
 }
 #startPage{
     padding: 30px;
     font-size: 70%;
-    background-image: url("background.jpg");
+    background-image: url("../../Desktop/awesome-game-project-/background.jpg");
     background-size: 100% 100%;
     text-align: center;
     color: #fff;
     border-radius: 20px;
     width:80%;
-
 }
 #startPage h1 {
     padding-top:30px;
@@ -123,7 +135,7 @@ a {
 #game-header{
     width: 97%;
     display: none;
-    background-image: url('background.jpg');
+    background-image: url('../../Desktop/awesome-game-project-/background.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
     height: 394.02px;
@@ -140,7 +152,6 @@ a {
 
     color:white;
 }
-
 /*button的css*/
 /*.start1{
 				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 

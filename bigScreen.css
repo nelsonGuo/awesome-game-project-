@@ -6,17 +6,16 @@ body {
 
 #showEggs{
      float:left;
-     width:20%;
-     height:700px;
+     width:5%;
+     height:100%;
      background-color: #fc0;
      padding-top: 250px;
 }
 #canvas{
-        z-index: 2;
+        z-index: 999;
         padding-left: 0;
         padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         display: none;
 }
 #gameSpace{
@@ -113,6 +112,7 @@ a {
     height: 200px;
     width: 200px;
     border-radius: 12px;
+    box-shadow: 5px 5px 30px black;
 }
 #sequence1{
     display: none;
@@ -120,10 +120,6 @@ a {
     margin:0 auto;
     padding: 20px;
     background-color: black;
-}
-
-.seqgrid{
-
 }
 .symbol {
     display : none;
@@ -138,36 +134,22 @@ a {
     background-image: url('background.jpg');
     border-radius: 20px;
 }
-
+#top-bar{
+  height: 100px;
+}
 #timer{
     padding-left: 10px;
     color:white;
     text-shadow: 2px 3px 2px #000;
 }
-
 #level{
     padding-left: 10px;
     padding-top: 5px;
     float:right;
     color:white;
 }
-
 #level1 h1{
     text-align:center;
     color: white;
     text-shadow: 2px 3px 2px #000;
 }
-
-
-/*button的css*/
-/*.start1{
-                background: url("Start_btn.png") repeat scroll 0% 0% transparent; 
-                width:600px;
-                height:600px;
-                border:0;
-                padding:0;
-                margin-top: 50px;
-                margin-left: 10px;
-                cursor:pointer;
-            }
-*/
