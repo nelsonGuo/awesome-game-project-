@@ -142,6 +142,11 @@ a {
     color:white;
     text-shadow: 2px 3px 2px #000;
 }
+#life{
+    padding-left: 10px;
+    color:white;
+    text-shadow: 2px 3px 2px #000;
+}
 #level{
     padding-left: 10px;
     padding-top: 5px;

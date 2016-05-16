@@ -8,6 +8,7 @@ var columnRight;
 var map = new Array();
 var sequence = new Array();
 var numClick = 0;
+var life = 3;
 
 var gridCount = 0;
 //initialization
@@ -25,7 +26,8 @@ function start() {
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("game-header").style.display = "block";
 		document.getElementById("top-bar").style.display = "block";
-		gameTimer();
+			lifeBar();
+			gameTimer();
 	}, 11000);
 	generateSymbol();
 	checkSymbol();
@@ -146,11 +148,15 @@ function stepMatching(id) {
 				columnLeft = column - 1;
 				columnRight = column + 1;
 			}
-			else
+			else {
 				alert("you lost");
+				wrongClick++;
+			}
 		}
-		else
+		else {
 			alert("you lost");
+			wrongClick++;
+		}
 	}
 	else {
 		if(id == "grid-"+row+"-"+columnLeft || id == "grid-"+row+"-"+columnRight || id == "grid-"+rowUp+"-"+column) {
@@ -194,17 +200,22 @@ function stepMatching(id) {
 						alert("you won!!!");
 					} else {
 						alert("you lost");
+						lifeDown();
 					}
 
 				} else {
 					alert("you lost");
+					lifeDown();
 				}
 			}
-			else
+			else {
 				alert("you lost");
+				lifeDown();
+			}
 		}
 		else {
 			alert("you lost");
+			lifeDown();
 		}
 	}
 }
@@ -228,6 +239,14 @@ function sequenceTimer(){
 			--i;
 		}
 	},1000);
+}
+//life bar
+function lifeBar() {
+		document.getElementById("life").innerHTML = "Life:"+life;
+}
+function lifeDown(){
+	life--;
+	document.getElementById("life").innerHTML="Life:"+life;
 }
 //stone audio
 function pushRock(){
