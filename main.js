@@ -8,6 +8,8 @@ var columnRight;
 var map = new Array();
 var sequence = new Array();
 var numClick = 0;
+
+var gridCount = 0;
 //initialization
 function start() {
 	setTimeout(function () {
@@ -37,14 +39,10 @@ function generateSymbol(){
 		for(var i = 2; i>=0;i--) {
 			for(var j = 2; j>=0;j--){
 			addImageToMap(i,j,getValue(5));
+				gridCount++;
 			}
 		}
-		for(var i = 0; i<3;i++) {
-			for(var j = 0; j<3;j++){
-			if (map["grid-"+i+"-"+j] == sequence[i]){
-			}
-		}
-	}
+		
 }
 //check symbols function
 function checkSymbol() {
@@ -103,7 +101,9 @@ function checkSymbol() {
 	}
 }
 }
- // get a random symbol for the map
+
+
+// get a random symbol for the map
 function getValue(num){
 	var temp = Math.floor((Math.random() * num));
 	return temp;
@@ -127,7 +127,7 @@ function addImageToMap(i,j,k) {
 //StepMatching
 function stepMatching(id) {
 	if(numClick == 0) {
-		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2") {
+		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2"|| id == "grid-0-3" ) {
 			if (sequence[numClick] == map[id]) {
 				var c = document.getElementById(id);
 				var ctx = c.getContext("2d");
@@ -155,22 +155,50 @@ function stepMatching(id) {
 	else {
 		if(id == "grid-"+row+"-"+columnLeft || id == "grid-"+row+"-"+columnRight || id == "grid-"+rowUp+"-"+column) {
 			if (sequence[numClick] == map[id]) {
-				var c = document.getElementById(id);
-				var ctx = c.getContext("2d");
-				ctx.shadowBlur= 20;
-				ctx.shadowColor="black";
-				ctx.fillStyle ="rgba(0, 0, 0, 0.3)";
-				pushRock();
-				ctx.fillRect(0,0,300,300);
-				idRecord = id;
-				numClick++;
-				row = idRecord.substring(5,6);
-				column = idRecord.substring(7,8);
-				row = parseInt(row);
-				column = parseInt(column);
-				rowUp = row + 1;
-				columnLeft = column - 1;
-				columnRight = column + 1;
+				if(numClick + 1 < sequence.length) {
+					var c = document.getElementById(id);
+					var ctx = c.getContext("2d");
+					ctx.shadowBlur = 20;
+					ctx.shadowColor = "black";
+					ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+					pushRock();
+					ctx.fillRect(0, 0, 300, 300);
+					idRecord = id;
+					numClick++;
+					row = idRecord.substring(5, 6);
+					column = idRecord.substring(7, 8);
+					row = parseInt(row);
+					column = parseInt(column);
+					rowUp = row + 1;
+					columnLeft = column - 1;
+					columnRight = column + 1;
+				}
+				else if (numClick + 1 == sequence.length) {
+					if (row+1 == Math.sqrt(gridCount)-1){
+						var c = document.getElementById(id);
+						var ctx = c.getContext("2d");
+						ctx.shadowBlur = 20;
+						ctx.shadowColor = "black";
+						ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+						pushRock();
+						ctx.fillRect(0, 0, 300, 300);
+						idRecord = id;
+						numClick++;
+						row = idRecord.substring(5, 6);
+						column = idRecord.substring(7, 8);
+						row = parseInt(row);
+						column = parseInt(column);
+						rowUp = row + 1;
+						columnLeft = column - 1;
+						columnRight = column + 1;
+						alert("you won!!!");
+					} else {
+						alert("you lost");
+					}
+
+				} else {
+					alert("you lost");
+				}
 			}
 			else
 				alert("you lost");
@@ -231,6 +259,8 @@ function sequenceTimer(){
 		}
 	},1000);
 }
+
+
 //easter egg part
 (function () {
     "use strict";
@@ -306,7 +336,7 @@ function sequenceTimer(){
         var iImageRnd = Math.floor((Math.random() * 4) + 1),
             eggs = {
                 1: {
-                    /* egg1 */
+
                     bgimagex: 0,
                     bgimagey: 1205,
                     factor: 0.8,
@@ -315,7 +345,7 @@ function sequenceTimer(){
                     width: 50
                 },
                 2: {
-                    /* egg2 */
+
                     bgimagex: 256,
                     bgimagey: 1205,
                     factor: 0.7,
@@ -324,7 +354,7 @@ function sequenceTimer(){
                     width: 50
                 },
                 3: {
-                    /* egg3 */
+
                     bgimagex: 384,
                     bgimagey: 1205,
                     factor: 0.8,
@@ -333,7 +363,7 @@ function sequenceTimer(){
                     height: 60
                 },
                 4: {
-                    /* egg4 */
+
                     bgimagex: 128,
                     bgimagey: 1205,
                     factor: 0.8,
