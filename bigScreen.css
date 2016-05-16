@@ -153,3 +153,29 @@ a {
     color: white;
     text-shadow: 2px 3px 2px #000;
 }
+#leaderboard{
+    position: fixed;
+    display: none;
+    background-image: url('background.jpg');
+    color: #fff;
+    margin:auto;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    height: 900px;
+    width: 800px;
+}
+#leaderboard table{
+    text-align: center;
+    width: 100%;
+}
+#lboard{
+    width: 70px;
+    height: 70px;
+    float: left;
+    position: absolute;
+    left:500px;
+    bottom:30px;
+}
+

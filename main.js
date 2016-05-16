@@ -43,6 +43,11 @@ function generateSymbol(){
 			}
 		}
 		
+<<<<<<< Updated upstream
+=======
+		
+	
+>>>>>>> Stashed changes
 }
 //check symbols function
 function checkSymbol() {
@@ -216,6 +221,8 @@ function ins(){
 }
 function HomePage() {
     document.getElementById("instruction").style.display = "none";
+    document.getElementById("leaderboard").style.display = "none";
+    document.getElementById("lboard").style.display = "block";
 }
 //sequence timer
 function sequenceTimer(){
@@ -407,4 +414,15 @@ function sequenceTimer(){
 }());
 function showEggs(){
     document.getElementById("canvas").style.display = "block";
+<<<<<<< Updated upstream
 }
+=======
+}
+
+function leaderboard(){
+	document.getElementById("leaderboard").style.display = "block";	
+	document.getElementById("lboard").style.display = "none";
+
+
+}
+>>>>>>> Stashed changes
