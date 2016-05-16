@@ -43,11 +43,6 @@ function generateSymbol(){
 			}
 		}
 		
-<<<<<<< Updated upstream
-=======
-		
-	
->>>>>>> Stashed changes
 }
 //check symbols function
 function checkSymbol() {
@@ -414,9 +409,7 @@ function sequenceTimer(){
 }());
 function showEggs(){
     document.getElementById("canvas").style.display = "block";
-<<<<<<< Updated upstream
-}
-=======
+
 }
 
 function leaderboard(){
@@ -425,4 +418,3 @@ function leaderboard(){
 
 
 }
->>>>>>> Stashed changes
