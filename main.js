@@ -133,12 +133,8 @@ function stepMatching(id) {
 		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2"|| id == "grid-0-3" ) {
 			if (sequence[numClick] == map[id]) {
 				var c = document.getElementById(id);
-				var ctx = c.getContext("2d");
-				ctx.shadowBlur= 20;
-				ctx.shadowColor="black";
-				ctx.fillStyle ="rgba(0, 0, 0, 0.3)";
+				c.style.filter = "brightness(50%)";//darken the color of square when stepping on 
 				pushRock();
-				ctx.fillRect(0,0,300,300);
 				idRecord = id;
 				numClick++;
 				row = idRecord.substring(5,6);
