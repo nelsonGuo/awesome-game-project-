@@ -123,7 +123,7 @@ a {
     padding: 20px;
     opacity: 0.8;
     background-color: black;
-    filter: brightness(100%);
+    filter: brightness(10%);
 }
 .symbol {
     display : none;
