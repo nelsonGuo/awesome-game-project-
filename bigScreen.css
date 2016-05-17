@@ -158,7 +158,7 @@ a {
     color: white;
     text-shadow: 2px 3px 2px #000;
 }
-#leaderboard{
+#leaderBoard{
     position: fixed;
     display: none;
     background-image: url('background.jpg');
@@ -171,11 +171,11 @@ a {
     height: 900px;
     width: 800px;
 }
-#leaderboard table{
+#leaderBoard table{
     text-align: center;
     width: 100%;
 }
-#lboard{
+#iconLeader{
     width: 70px;
     height: 70px;
     float: left;

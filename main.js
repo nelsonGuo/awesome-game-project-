@@ -227,8 +227,8 @@ function ins(){
 }
 function HomePage() {
     document.getElementById("instruction").style.display = "none";
-    document.getElementById("leaderboard").style.display = "none";
-    document.getElementById("lboard").style.display = "block";
+    document.getElementById("leaderBoard").style.display = "none";
+    document.getElementById("iconLeader").style.display = "block";
 }
 //sequence timer
 function sequenceTimer(){
@@ -430,10 +430,10 @@ function showEggs(){
     document.getElementById("canvas").style.display = "block";
 
 }
-
-function leaderboard(){
-	document.getElementById("leaderboard").style.display = "block";	
-	document.getElementById("lboard").style.display = "none";
+//leader board page
+function leaderBoard(){
+	document.getElementById("leaderBoard").style.display = "block";
+	document.getElementById("iconLeader").style.display = "none";
 
 
 }
