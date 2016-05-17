@@ -41,15 +41,15 @@ body {
     text-shadow: 2px 3px 2px #000;
 }
 #instruction{
-    position: fixed;
-    display: none;
-    background-color: green;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("pictures/background.jpg");
+    text-align: center;
     color: #fff;
-    margin:auto;
-    top:0;
-    left:0;
-    bottom: 0;
-    right:0;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
+    display: none;
 }
 #screen{
     display: none;

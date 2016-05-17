@@ -211,6 +211,7 @@ function stepMatching(id) {
 //instruction
 function ins(){
 	document.getElementById("instruction").style.display = "block";
+	document.getElementById("startPage").style.display = "none";
 }
 function HomePage() {
     document.getElementById("instruction").style.display = "none";
