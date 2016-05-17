@@ -113,13 +113,17 @@ a {
     width: 200px;
     border-radius: 12px;
     box-shadow: 5px 5px 30px black;
+    opacity: 0.8;
+    background-color: black;
 }
 #sequence1{
     display: none;
     width:205px;
     margin:0 auto;
     padding: 20px;
+    opacity: 0.8;
     background-color: black;
+    filter: brightness(100%);
 }
 .symbol {
     display : none;

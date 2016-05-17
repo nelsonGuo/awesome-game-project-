@@ -11,6 +11,7 @@ var numClick = 0;
 var life = 3;
 
 var gridCount = 0;
+
 //initialization
 function start() {
 	setTimeout(function () {
@@ -161,14 +162,10 @@ function stepMatching(id) {
 	else {
 		if(id == "grid-"+row+"-"+columnLeft || id == "grid-"+row+"-"+columnRight || id == "grid-"+rowUp+"-"+column) {
 			if (sequence[numClick] == map[id]) {
-				if(numClick + 1 < sequence.length) {
+				if(numClick + 1 < sequence.length) {		
 					var c = document.getElementById(id);
-					var ctx = c.getContext("2d");
-					ctx.shadowBlur = 20;
-					ctx.shadowColor = "black";
-					ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+					c.style.filter = "brightness(50%)";//darken the color of square when stepping on 	
 					pushRock();
-					ctx.fillRect(0, 0, 300, 300);
 					idRecord = id;
 					numClick++;
 					row = idRecord.substring(5, 6);
@@ -182,12 +179,8 @@ function stepMatching(id) {
 				else if (numClick + 1 == sequence.length) {
 					if (row+1 == Math.sqrt(gridCount)-1){
 						var c = document.getElementById(id);
-						var ctx = c.getContext("2d");
-						ctx.shadowBlur = 20;
-						ctx.shadowColor = "black";
-						ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+						c.style.filter = "brightness(50%)";//darken the color of square when stepping on 	
 						pushRock();
-						ctx.fillRect(0, 0, 300, 300);
 						idRecord = id;
 						numClick++;
 						row = idRecord.substring(5, 6);
