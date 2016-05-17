@@ -159,7 +159,7 @@ a {
     text-shadow: 2px 3px 2px #000;
 }
 #leaderBoard{
-    position: fixed;
+    position: absolute;
     display: none;
     background-image: url('background.jpg');
     color: #fff;
@@ -168,7 +168,7 @@ a {
     left:0;
     bottom: 0;
     right:0;
-    height: 900px;
+    height: 100%;
     width: 800px;
 }
 #leaderBoard table{
