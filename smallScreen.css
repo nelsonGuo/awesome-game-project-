@@ -1,6 +1,6 @@
 body {
-	margin-top: 30px;
-	padding: 0;
+    margin-top: 30px;
+    padding: 0;
     background-color:#fc0;
 }
 #showEggs{
@@ -18,14 +18,14 @@ body {
         display: none;
 }
 #gameSpace{
-	margin:auto;
-	max-width:600px;
-	max-height:600px;
+    margin:auto;
+    max-width:600px;
+    max-height:600px;
 }
 #startPage{
     padding: 30px;
     font-size: 70%;
-    background-image: url("../../Desktop/awesome-game-project-/background.jpg");
+    background-image: url("background.jpg");
     background-size: 100% 100%;
     text-align: center;
     color: #fff;
@@ -52,7 +52,7 @@ body {
 /*
 #screen{
     display: none;
-	background-color:green;
+    background-color:green;
     width: 600px;
     height: 700px;;
 }
@@ -135,15 +135,24 @@ a {
 #game-header{
     width: 97%;
     display: none;
-    background-image: url('../../Desktop/awesome-game-project-/background.jpg');
+    background-image: url('background.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
     height: 394.02px;
 }
 
-#time{
+#top-bar{
+  height: 100px;
+}
+#timer{
     padding-left: 10px;
     color:white;
+    text-shadow: 2px 3px 2px #000;
+}
+#life{
+    padding-left: 10px;
+    color:white;
+    text-shadow: 2px 3px 2px #000;
 }
 
 #level{
@@ -152,15 +161,33 @@ a {
 
     color:white;
 }
-/*button的css*/
-/*.start1{
-				background: url("Start_btn.png") repeat scroll 0% 0% transparent; 
-				width:600px;
-				height:600px;
-				border:0;
-				padding:0;
-				margin-top: 50px;
-				margin-left: 10px;
-				cursor:pointer;
-			}
-*/
+#level1 h1{
+    text-align:center;
+    color: white;
+    text-shadow: 2px 3px 2px #000;
+}
+#leaderboard{
+    position: fixed;
+    display: none;
+    background-image: url('background.jpg');
+    color: #fff;
+    margin:auto;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    height: 500px;
+    width: 350px;
+}
+#leaderboard table{
+    text-align: center;
+    width: 100%;
+}
+#iconLeader{
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    left:20px;
+    bottom:80px;
+}
