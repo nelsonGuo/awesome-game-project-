@@ -283,11 +283,11 @@ function newObject(url,height,width){
 
 
 var numObjs=20, waft=0, fallSpeed=15, wind=0;
-newObject("egg1.png",38,50);
-newObject("egg2.png",38,50);
-newObject("egg3.png",38,50);
-newObject("egg4.png",38,50);
-newObject("egg5.png",28,50);
+newObject("pictures/egg1.png",38,50);
+newObject("pictures/egg2.png",38,50);
+newObject("pictures/egg3.png",38,50);
+newObject("pictures/egg4.png",38,50);
+newObject("pictures/egg5.png",28,50);
 
 function winSize(){
 
