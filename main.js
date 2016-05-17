@@ -282,154 +282,105 @@ function sequenceTimer(){
 }
 
 
-//easter egg part
-(function () {
-    "use strict";
-    // this function is strict...
-    // RequestAnimFrame: a browser API for getting smooth animations
-    window.requestAnimFrame = (function () {
-        return window.requestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.mozRequestAnimationFrame ||
-                window.oRequestAnimationFrame ||
-                window.msRequestAnimationFrame ||
-        function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-        };
-    })();
-    var gravity = 0.3,
-        canvas = null,
-        ctx = null,
-        eggs =  [],
-        bg = null,
-        Egg = function (x, bg, eggSettings) {
-        this.vy = 0;
-        this.vx = 0;
-        this.vyAdjust = -13;
-        this.width = eggSettings.width;
-        this.height = eggSettings.height;
-        this.x = x;
-        this.y = eggSettings.top;
-        this.imagex = eggSettings.bgimagex;
-        this.imagey = eggSettings.bgimagey;
-        this.bg = bg;
-        this.bounceFactor = eggSettings.factor;
-        //Function to draw it
-        this.draw = function () {
-            ctx.drawImage(this.bg,
-                this.imagex, this.imagey,
-                128, 128,
-                this.x, this.y,
-                this.width, this.height
-            );
-        };
-        this.impact = function () {
-            this.vy = this.vyAdjust;
-        };
-        this.move = function () {
-            this.y += this.vy;
-            this.vy += gravity;
-            // Bounce the egg when it hits the bottom
-            if ((this.y + this.height) > canvas.height - 10) {
-                this.impact();
-                this.vyAdjust = (this.vyAdjust * this.bounceFactor);
-            }
-        };
-    };
-    function clearCanvas() {
-        // clear canvas
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
-    function drawBackground() {
-        // Draw the car onto the canvas
-        ctx.drawImage(bg, 0, 0, 1000, 800);
-    }
-    function update() {
-        var i  = eggs.length;
-        clearCanvas();
-        drawBackground();
-        while (i--) {
-            eggs[i].move();
-            eggs[i].draw();
-        }
-    }
-    function getRandomEggSettings(iEggTop) {
-        var iImageRnd = Math.floor((Math.random() * 4) + 1),
-            eggs = {
-                1: {
+//easter eggs
 
-                    bgimagex: 0,
-                    bgimagey: 1205,
-                    factor: 0.8,
-                    height: 50,
-                    top: iEggTop,
-                    width: 50
-                },
-                2: {
+var fallObjects=new Array();
 
-                    bgimagex: 256,
-                    bgimagey: 1205,
-                    factor: 0.7,
-                    top: iEggTop,
-                    height: 50,
-                    width: 50
-                },
-                3: {
+function newObject(url,height,width){
+	fallObjects[fallObjects.length]=new Array(url,height,width);
+}
 
-                    bgimagex: 384,
-                    bgimagey: 1205,
-                    factor: 0.8,
-                    top: -460,
-                    width: 60,
-                    height: 60
-                },
-                4: {
 
-                    bgimagex: 128,
-                    bgimagey: 1205,
-                    factor: 0.8,
-                    top: -460,
-                    width: 60,
-                    height: 60
-                }
-            };
-        return eggs[iImageRnd];
-    }
-    function loop() {
-        update();
-        window.requestAnimFrame(loop);
-    }
-    function setUpEggs() {
-        var iEggTop,
-            egg = null,
-            x = 0;
-        while (x < 950) {
-            iEggTop = (0 - Math.floor((Math.random() * 400) + 1));
-            egg = getRandomEggSettings(iEggTop);
-            eggs.push(new Egg(x, bg, egg));
-            x += egg.width + 10;
-        }
-        loop();
-    }
-    function loadBackground() {
-        // Load the background
-        bg = new Image();
-        bg.src = 'background.png';
-        bg.onload = setUpEggs;
-    }
-    function init() {
-        canvas = document.getElementById('canvas');
-        ctx = canvas.getContext('2d');
-        loadBackground();
-    }
-    document.addEventListener('click', function () {
-          init();
-    }, false);
-}());
+var numObjs=20, waft=0, fallSpeed=15, wind=0;
+newObject("egg1.png",38,50);
+newObject("egg2.png",38,50);
+newObject("egg3.png",38,50);
+newObject("egg4.png",38,50);
+newObject("egg5.png",28,50);
+
+function winSize(){
+
+	winWidth=(moz)?window.innerWidth:document.body.clientWidth;winHeight=(moz)?window.innerHeight:document.body.clientHeight;
+}
+function winOfy(){
+
+	winOffset=(moz)?window.pageYOffset:document.body.scrollTop;
+}
+
+function fallObject(num,vari,nu){
+
+	objects[num]=new Array(parseInt(Math.random()*(winWidth-waft)),-30,(parseInt(Math.random()*waft))*((Math.random()>0.5)?1:-1),0.02+Math.random()/20,0,1+parseInt(Math.random()*fallSpeed),vari,fallObjects[vari][1],fallObjects[vari][2]);
+	
+	if(nu==1){
+		document.write('<img id="fO'+i+'" style="position:absolute; display:none" src="'+fallObjects[vari][0]+'">'); 
+	}
+}
+
+function fall(){
+
+	for(i=0;i<numObjs;i++){
+
+		var fallingObject=document.getElementById('fO'+i);
+		if((objects[i][1]>(winHeight-(objects[i][5]+objects[i][7])))||(objects[i][0]>(winWidth-(objects[i][2]+objects[i][8])))){
+			fallObject(i,objects[i][6],0);
+		}
+		objects[i][0]+=wind;objects[i][1]+=objects[i][5];objects[i][4]+=objects[i][3];
+		with(fallingObject.style){ 
+			top=objects[i][1]+winOffset+"px";
+			left=objects[i][0]+(objects[i][2]*Math.cos(objects[i][4]))+"px";
+		}
+	}
+	
+}
+
+var objects=new Array(),winOffset=0,winHeight,winWidth,togvis,moz=(document.getElementById&&!document.all)?1:0;
+
+winSize();
+
+window.onscroll=winOfy;
+window.onresize=winSize;
+
+	for (i=0;i<numObjs;i++){
+
+	fallObject(i,parseInt(Math.random()*fallObjects.length),1);
+}
+
+
+var t;
+var OnOrOff = 1;
+
 function showEggs(){
-    document.getElementById("canvas").style.display = "block";
+	for (i=0;i<numObjs;i++){
+
+	var fallingObject=document.getElementById('fO'+i);
+	fallingObject.style.display = "block"
+}
+
+     t = setInterval("fall()",30);
+
+     OnOrOff--;
+}
+
+function stopEggs(){
+		for (i=0;i<numObjs;i++){
+
+	var fallingObject=document.getElementById('fO'+i);
+	fallingObject.style.display = "none"
+}
+
+	clearInterval(t);
+
+	OnOrOff++;
 
 }
+function eggs(){
+	if(OnOrOff == 1){
+		showEggs();
+	} else{
+		stopEggs();
+	}
+}
+
 //leader board page
 function leaderBoard(){
 	document.getElementById("leaderBoard").style.display = "block";
