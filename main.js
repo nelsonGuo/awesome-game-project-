@@ -212,8 +212,6 @@ function stepMatching(id) {
 		}
 	}
 }
-
-
 //instruction
 function ins(){
 	document.getElementById("instruction").style.display = "block";
