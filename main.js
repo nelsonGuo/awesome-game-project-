@@ -133,7 +133,8 @@ function stepMatching(id) {
 		if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2"|| id == "grid-0-3" ) {
 			if (sequence[numClick] == map[id]) {
 				var c = document.getElementById(id);
-				c.style.filter = "brightness(50%)";//darken the color of square when stepping on 
+				c.style.opacity="0.5"; //darken the color of square when stepping on
+				c.style.webkitBackdropFilter="brightness(50%)";
 				pushRock();
 				idRecord = id;
 				numClick++;
@@ -160,7 +161,9 @@ function stepMatching(id) {
 			if (sequence[numClick] == map[id]) {
 				if(numClick + 1 < sequence.length) {		
 					var c = document.getElementById(id);
-					c.style.filter = "brightness(50%)";//darken the color of square when stepping on 	
+					c.style.opacity="0.5";//darken the color of square when stepping on
+					c.style.webkitBackdropFilter="brightness(50%)";
+
 					pushRock();
 					idRecord = id;
 					numClick++;
@@ -175,7 +178,7 @@ function stepMatching(id) {
 				else if (numClick + 1 == sequence.length) {
 					if (row+1 == Math.sqrt(gridCount)-1){
 						var c = document.getElementById(id);
-						c.style.filter = "brightness(50%)";//darken the color of square when stepping on 	
+						c.style.opacity="0.5";//darken the color of square when stepping on
 						pushRock();
 						idRecord = id;
 						numClick++;
@@ -226,6 +229,8 @@ function lifeDown(){
 	life--;
 	document.getElementById("life").innerHTML="Life:"+life;
 }
+
+
 //stone audio
 function pushRock(){
 	var p= document.getElementById("push-rock")
