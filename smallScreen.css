@@ -25,7 +25,7 @@ body {
 #startPage{
     padding: 30px;
     font-size: 70%;
-    background-image: url("background.jpg");
+    background-image: url("pictures/background.jpg");
     background-size: 100% 100%;
     text-align: center;
     color: #fff;
@@ -39,15 +39,15 @@ body {
     margin-bottom: 2.5em;
 }
 #instruction{
-    position: fixed;
     display: none;
-    background-color: green;
+    padding: 30px;
+    font-size: 70%;
+    background-image: url("pictures/background.jpg");
+    background-size: 100% 100%;
+    text-align: center;
     color: #fff;
-    margin:auto;
-    top:0;
-    left:0;
-    bottom: 0;
-    right:0;
+    border-radius: 20px;
+    width:80%;
 }
 /*
 #screen{
@@ -135,7 +135,7 @@ a {
 #game-header{
     width: 97%;
     display: none;
-    background-image: url('background.jpg');
+    background-image: url('pictures/background.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
     height: 394.02px;
@@ -167,27 +167,26 @@ a {
     text-shadow: 2px 3px 2px #000;
 }
 #leaderboard{
-    position: fixed;
     display: none;
-    background-image: url('background.jpg');
+    padding: 30px;
+    font-size: 70%;
+    background-image: url("pictures/background.jpg");
+    background-size: 100% 100%;
+    text-align: center;
     color: #fff;
-    margin:auto;
-    top:0;
-    left:0;
-    bottom: 0;
-    right:0;
-    height: 500px;
-    width: 350px;
+    border-radius: 20px;
+    width:80%;
 }
 #leaderboard table{
     text-align: center;
     width: 100%;
 }
 #iconLeader{
-    width: 20px;
-    height: 20px;
+    width: 70px;
+    height: 70px;
     float: left;
-    position: absolute;
-    left:20px;
-    bottom:80px;
+}
+#back{
+    width: 40%;
+    margin-top: 20%;
 }
