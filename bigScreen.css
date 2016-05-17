@@ -12,11 +12,11 @@ body {
      padding-top: 250px;
 }
 #canvas{
-        z-index: 999;
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0 auto;
-        display: none;
+    z-index: 999;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    display: none;
 }
 #gameSpace{
     margin:auto;
@@ -163,24 +163,29 @@ a {
     text-shadow: 2px 3px 2px #000;
 }
 #leaderBoard{
-    position: absolute;
     display: none;
-    background-image: url('pictures/background.jpg');
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("pictures/background.jpg");
+    text-align: center;
     color: #fff;
-    margin:auto;
-    top:0;
-    left:0;
-    bottom: 0;
-    right:0;
-    height: 100%;
-    width: 800px;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
 }
 #leaderBoard table{
     text-align: center;
     width: 100%;
 }
+#leaderBoard h1{
+    font-size: 3em;
+}
 #iconLeader{
     width: 70px;
     height: 70px;
     float: left;
+}
+#back{
+    width: 40%;
+    margin-top: 20%;
 }

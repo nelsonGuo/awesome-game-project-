@@ -216,6 +216,7 @@ function HomePage() {
     document.getElementById("instruction").style.display = "none";
     document.getElementById("leaderBoard").style.display = "none";
     document.getElementById("iconLeader").style.display = "block";
+    document.getElementById("startPage").style.display = "block";
 }
 
 //life bar
@@ -361,6 +362,5 @@ function eggs(){
 function leaderBoard(){
 	document.getElementById("leaderBoard").style.display = "block";
 	document.getElementById("iconLeader").style.display = "none";
-
-
+	document.getElementById("startPage").style.display = "none";
 }
