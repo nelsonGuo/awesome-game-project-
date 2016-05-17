@@ -150,12 +150,12 @@ function stepMatching(id) {
 			}
 			else {
 				alert("you lost");
-				wrongClick++;
+				lifeDown();
 			}
 		}
 		else {
 			alert("you lost");
-			wrongClick++;
+			lifeDown();
 		}
 	}
 	else {
