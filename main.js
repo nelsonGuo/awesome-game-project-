@@ -221,18 +221,7 @@ function HomePage() {
     document.getElementById("leaderBoard").style.display = "none";
     document.getElementById("iconLeader").style.display = "block";
 }
-//sequence timer
-function sequenceTimer(){
-	var i = 10;
-	var timer = setInterval(function(){
-		if(i== -1){
-			clearInterval(timer);
-		}else{
-			document.getElementById("timer").innerHTML = "Time: "+i;
-			--i;
-		}
-	},1000);
-}
+
 //life bar
 function lifeBar() {
 		document.getElementById("life").innerHTML = "Life:"+life;
