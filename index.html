@@ -32,6 +32,13 @@
 	</head>
 	<body>
 		<div id="gameSpace">
+			<div id="instruction">
+				<h2>Instruction</h2>
+				<p>Remember and Folow the sequence</p>
+				<p>Tap the grid to move from bottom to the top</p>
+				<p> *You cannot go down</p>
+				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+			</div>
 			<!--start page-->
 			<div id="startPage">
 				<h1 id ="header" onclick="eggs()">Escape Sequence</h1>
@@ -108,13 +115,7 @@
 					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 				</div>
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
-				<div id="instruction">
-					<h2>Instruction</h2>
-					<p>Remember and Folow the sequence</p>
-					<p>Tap the grid to move from bottom to the top</p>
-					<p> *You cannot go down</p>
-					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
-				</div>
+
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
 			</div>
