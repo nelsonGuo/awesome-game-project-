@@ -38,7 +38,6 @@ function stepMatching(id) {
                     var c = document.getElementById(id);
                     c.style.opacity="0.5";//darken the color of square when stepping on
                     c.style.webkitBackdropFilter="brightness(50%)";
-
                     pushRock();
                     idRecord = id;
                     numClick++;

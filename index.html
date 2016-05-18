@@ -17,9 +17,7 @@
 		<script type="text/javascript" src="JavaScript/GlobalVariables.js"></script>
 		<script type="text/javascript" src="JavaScript/Level34.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbols-1.js"></script>
-
 		<script type="text/javascript" src="JavaScript/easterEgg.js"></script>
-
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="JavaScript/popup.js"></script>
@@ -32,6 +30,78 @@
 	</head>
 	<body>
 		<div id="gameSpace">
+			<div id="leaderBoard">
+				<h1>Leaderboard</h1>
+				<table>
+					<tr>
+						<th>Rank</th>
+						<th>Name</th>
+						<th>Time</th>
+						<th>Level</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>aaa</th>
+						<th>30</th>
+						<th>6</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>4</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>5</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>6</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>7</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>8</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>9</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+					<tr>
+						<th>10</th>
+						<th>NULL</th>
+						<th>NULL</th>
+						<th>NULL</th>
+					</tr>
+				</table>
+				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+			</div>
 			<div id="instruction">
 				<h2>Instruction</h2>
 				<p>Remember and Folow the sequence</p>
@@ -42,78 +112,7 @@
 			<!--start page-->
 			<div id="startPage">
 				<h1 id ="header" onclick="eggs()">Escape Sequence</h1>
-				<div id="leaderBoard">
-					<h1>Leaderboard</h1>
-					<table>
-						<tr>
-							<th>Rank</th>
-							<th>Name</th>
-							<th>Time</th>
-							<th>Level</th>
-						</tr>
-						<tr>
-							<th>1</th>
-							<th>aaa</th>
-							<th>30</th>
-							<th>6</th>
-						</tr>
-						<tr>
-							<th>2</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>3</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>4</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>5</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>6</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>7</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>8</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>9</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>10</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-					</table>
-					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
-				</div>
+
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
 
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
