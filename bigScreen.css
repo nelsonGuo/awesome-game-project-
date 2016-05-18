@@ -98,6 +98,7 @@ a {
     text-decoration: none;
 }
 #grid-container{
+
     height: 630px;
     width: 630px;
     padding: 20px;
@@ -108,9 +109,22 @@ a {
     border-color: white;
     display: none;
 }
+
+#grid-container2{
+
+    height: 630px;
+    width: 630px;
+    padding: 20px;
+    margin-top:50px;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    border:4px solid transparent;
+    border-color: white;
+    display: none;
+
+}
 .map{
-    height: 200px;
-    width: 200px;
+
     border-radius: 12px;
     box-shadow: 5px 5px 30px black;
 
@@ -141,6 +155,7 @@ a {
     background-image: url('pictures/background.jpg');
     border-radius: 20px;
 }
+
 #top-bar{
   height: 100px;
 }
@@ -192,3 +207,4 @@ a {
     width: 40%;
     margin-top: 20%;
 }
+
