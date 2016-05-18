@@ -133,9 +133,18 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 					<div id="popup-content" >
 						<div id="popup-form">
 							<p>You Win this game!!!</p>
+<<<<<<< Updated upstream:index.html
+=======
+<<<<<<< HEAD:index.php
+							<form action="playerName.php" method="post">
+								<span>Please input your name</span></span>
+								<input name="playerName" type="text">
+=======
+>>>>>>> Stashed changes:index.php
 							<form action="welcome.php" method="post">
 								<label>Please input your name</label>
 								<input id="userName" type="text">
+>>>>>>> origin/master:index.html
 								<input id="send" type="submit" value="Submit">
 							</form>
 						</div>

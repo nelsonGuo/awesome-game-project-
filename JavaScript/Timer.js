@@ -1,3 +1,4 @@
+document.cookie="profile_viewer_uid=timeGame";
 
 function gameTimer() {
     var timer = setInterval(function(){
