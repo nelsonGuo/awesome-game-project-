@@ -1,7 +1,7 @@
 document.cookie="profile_viewer_uid=timeGame";
 
 function gameTimer() {
-    var timer = setInterval(function(){
+     timer = setInterval(function(){
         if(timeGame== -1){
             clearInterval(timer);
         }else{

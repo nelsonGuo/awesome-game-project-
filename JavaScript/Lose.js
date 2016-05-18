@@ -6,4 +6,5 @@ function lose () {
         if ( life==0 ||timeGame==-1) {
                 openPopup();
         }
+        
 }

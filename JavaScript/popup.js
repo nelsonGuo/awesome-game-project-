@@ -3,6 +3,7 @@ function openPopup(){
 	$("#modal-open-button").prop("disabled", true);
 	$("#popup-content").fadeIn();
 	$("#overlay-bg").fadeIn();
+	clearInterval(timer);
 	updatePopup();
 }
 function closePopup(){
