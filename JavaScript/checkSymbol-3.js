@@ -438,8 +438,7 @@ function checkSymbol3() {
             }
 
         }
-
-
+        
 
     }
 

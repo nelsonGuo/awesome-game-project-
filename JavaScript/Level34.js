@@ -15,7 +15,5 @@ function Level34(){
             gridCount++;
         }
     }
-
-
     
 }
