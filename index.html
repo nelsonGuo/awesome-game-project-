@@ -46,6 +46,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 	</head>
 	<body>
 		<div id="gameSpace">
+			<!--Leaderboarder-->
 			<div id="leaderBoard">
 				<h1>Leaderboard</h1>
 				<table>
@@ -55,31 +56,27 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 						<th>Time</th>
 						<th>Level</th>
 					</tr>
-					
 						<?php
 							 $rank =0;
 							while($rows=mysql_fetch_array($result)){ 
 							           $rank ++;                              // Start looping table row
 						?>
-
 							<tr>
 							<td ><?php echo $rank ?></td>
 							<td ><?php echo $rows['playerName']; ?></td>
 							<td ><?php echo $rows['playTime']; ?></td>
 							<td ><?php echo $rows['level']; ?></td>
 							</tr>
-
 							<?php
 							// Exit looping and close connection
 							}
-
 							mysql_close();
 							?>
 					  <tr>
-					
 				</table>
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 			</div>
+			<!--instructions-->
 			<div id="instruction">
 				<h1>Instruction</h1>
 				<div id="ins1">
@@ -102,9 +99,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 			<!--start page-->
 			<div id="startPage">
 				<h1 id ="header" onclick="eggs()">Escape Sequence</h1>
-
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
-
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
 			</div>
@@ -117,6 +112,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 				<img id="symbol4" class = "symbol" src="pictures/4.jpg"  />
 			</div>
 			<div id="game-header">
+				<!--life & timer-->
 				<div id="top-bar">
 					<h2 id="life"></h2>
 					<h2 id="timer"></h2>
@@ -156,6 +152,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 				<canvas class = "map" id="grid-0-1" onclick="stepMatching('grid-0-1')" width="200" height="200"></canvas>
 				<canvas class = "map" id="grid-0-0" onclick="stepMatching('grid-0-0')" width="200" height="200"></canvas>
 				</div>
+				<!--grid for next level-->
 				<div id="grid-container2">
 
 					<canvas class = "map" id="2grid-3-3" onclick="stepMatching('2grid-3-3')" width="150" height="150"></canvas>
