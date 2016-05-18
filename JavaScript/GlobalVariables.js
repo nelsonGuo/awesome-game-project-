@@ -10,6 +10,6 @@ var sequence = new Array();
 var voidSymbol =new Array();
 var numClick = 0;
 var life = 3;
-
+var timeGame = 30;
 var gridCount = 0;
 

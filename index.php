@@ -1,3 +1,16 @@
+<?php
+	require_once('config.php');
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
+	mysql_select_db(DB_DATABASE)or die("cannot select DB");
+	$tbl_name="playerInfo"; // Table name
+
+
+$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 30 ';
+	// ORDER BY id DESC is order result by descending
+	$result=mysql_query($sql);
+?>
 <!DOCTYPE html>
 	<html>
 	<head lang="en">
@@ -17,12 +30,12 @@
 		<script type="text/javascript" src="JavaScript/GlobalVariables.js"></script>
 		<script type="text/javascript" src="JavaScript/Level34.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbols-1.js"></script>
-		<script type="text/javascript" src="JavaScript/checkSymbol-3.js"></script>
-
 		<script type="text/javascript" src="JavaScript/easterEgg.js"></script>
-
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
+		<script type="text/javascript" src="JavaScript/button.js"></script>
+		<script type="text/javascript" src="JavaScript/lose.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
 		<script src="JavaScript/popup.js"></script>
 		<audio autoplay id='music'>
 			<source src='audio/music.mp3' type='audio/mp3'>
@@ -33,90 +46,60 @@
 	</head>
 	<body>
 		<div id="gameSpace">
-			<div id="instruction">
-				<h2>Instruction</h2>
-				<p>Remember and Folow the sequence</p>
-				<p>Tap the grid to move from bottom to the top</p>
-				<p> *You cannot go down</p>
+			<!--Leaderboarder-->
+			<div id="leaderBoard">
+				<h1>Leaderboard</h1>
+				<table>
+					<tr>
+						<th>Rank</th>
+						<th>Name</th>
+						<th>Time</th>
+						<th>Level</th>
+					</tr>
+						<?php
+							 $rank =0;
+							while($rows=mysql_fetch_array($result)){ 
+							           $rank ++;                              // Start looping table row
+						?>
+							<tr>
+							<td ><?php echo $rank ?></td>
+							<td ><?php echo $rows['playerName']; ?></td>
+							<td ><?php echo $rows['playTime']; ?></td>
+							<td ><?php echo $rows['level']; ?></td>
+							</tr>
+							<?php
+							// Exit looping and close connection
+							}
+							mysql_close();
+							?>
+					  <tr>
+				</table>
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+			</div>
+			<!--instructions-->
+			<div id="instruction">
+				<h1>Instruction</h1>
+				<div id="ins1">
+					<p>Remember and Follow the sequence</p>
+					<img src="pictures/ins1.png" alt="instruction1" height="500">
+					<input type="image" src="pictures/next.png" class="nextPage" onclick="ins2()" height="100" width="100">
+				</div>
+				<div id="ins2">
+					<p>Tap the grid to move from bottom to the top<br>
+				 	Remember that you can only go left, right and up</p>
+					<img src="pictures/ins2.png" alt="instruction1" height="450">
+					<input type="image" src="pictures/next.png" class="nextPage" onclick="ins3()" height="100" width="100">
+				</div>
+				<div id="ins3">
+					<p>Take care of your time and life</p>
+					<img src="pictures/ins3.png" alt="instruction1" height="450">
+					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+				</div>
 			</div>
 			<!--start page-->
 			<div id="startPage">
 				<h1 id ="header" onclick="eggs()">Escape Sequence</h1>
-				<div id="leaderBoard">
-					<h1>Leaderboard</h1>
-					<table>
-						<tr>
-							<th>Rank</th>
-							<th>Name</th>
-							<th>Time</th>
-							<th>Level</th>
-						</tr>
-						<tr>
-							<th>1</th>
-							<th>aaa</th>
-							<th>30</th>
-							<th>6</th>
-						</tr>
-						<tr>
-							<th>2</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>3</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>4</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>5</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>6</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>7</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>8</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>9</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-						<tr>
-							<th>10</th>
-							<th>NULL</th>
-							<th>NULL</th>
-							<th>NULL</th>
-						</tr>
-					</table>
-					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
-				</div>
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
-
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
 			</div>
@@ -129,6 +112,7 @@
 				<img id="symbol4" class = "symbol" src="pictures/4.jpg"  />
 			</div>
 			<div id="game-header">
+				<!--life & timer-->
 				<div id="top-bar">
 					<h2 id="life"></h2>
 					<h2 id="timer"></h2>
@@ -146,12 +130,21 @@
 				<!--game map section-->
 				<div id="grid-container">
 					<!-- Popup content -->
-					<div id="popup-content">
-						<div>
+					<div id="popup-content" >
+						<div id="popup-form">
 							<p>You Win this game!!!</p>
-							<form action="welcome.php" method="post">
+<<<<<<< Updated upstream:index.html
+=======
+<<<<<<< HEAD:index.php
+							<form action="playerName.php" method="post">
 								<span>Please input your name</span></span>
+								<input name="playerName" type="text">
+=======
+>>>>>>> Stashed changes:index.php
+							<form action="welcome.php" method="post">
+								<label>Please input your name</label>
 								<input id="userName" type="text">
+>>>>>>> origin/master:index.html
 								<input id="send" type="submit" value="Submit">
 							</form>
 						</div>
@@ -168,6 +161,7 @@
 				<canvas class = "map" id="grid-0-1" onclick="stepMatching('grid-0-1')" width="200" height="200"></canvas>
 				<canvas class = "map" id="grid-0-0" onclick="stepMatching('grid-0-0')" width="200" height="200"></canvas>
 				</div>
+				<!--grid for next level-->
 				<div id="grid-container2">
 
 					<canvas class = "map" id="2grid-3-3" onclick="stepMatching('2grid-3-3')" width="150" height="150"></canvas>

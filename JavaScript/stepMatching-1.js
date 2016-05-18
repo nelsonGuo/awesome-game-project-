@@ -22,12 +22,14 @@ function stepMatching(id) {
             else {
                 alert("you lost");
                 lifeDown();
+                lose();
                 wrongStep();
             }
         }
         else {
             alert("you lost");
             lifeDown();
+            lose();
             wrongStep();
         }
     }
@@ -38,7 +40,6 @@ function stepMatching(id) {
                     var c = document.getElementById(id);
                     c.style.opacity="0.5";//darken the color of square when stepping on
                     c.style.webkitBackdropFilter="brightness(50%)";
-
                     pushRock();
                     idRecord = id;
                     numClick++;
@@ -65,29 +66,32 @@ function stepMatching(id) {
                         columnLeft = column - 1;
                         columnRight = column + 1;
                         alert("you won!!!");
-                        openPopup();
                         Level34();
                     } else {
                         alert("you lost");
                         lifeDown();
+                        lose();
                         wrongStep();
                     }
 
                 } else {
                     alert("you lost");
                     lifeDown();
+                    lose();
                     wrongStep();
                 }
             }
             else {
                 alert("you lost");
                 lifeDown();
+                lose();
                 wrongStep();
             }
         }
         else {
             alert("you lost");
             lifeDown();
+            lose();
             wrongStep();
         }
     }

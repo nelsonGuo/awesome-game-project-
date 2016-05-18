@@ -55,7 +55,7 @@ body {
     display: none;
     background-color:green;
     width: 600px;
-    height: 700px;;
+    height: 700px;
 }
 #startPage .btn {
     margin-top: 2em;
@@ -144,8 +144,6 @@ a {
 }
 .symbol {
     display : none;
-    width:300px;
-    height:300px;
     margin:auto;
 }
 
@@ -207,4 +205,29 @@ a {
     width: 40%;
     margin-top: 20%;
 }
-
+.nextPage{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+     
+}
+.nextPage:hover{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: blur(5px);
+}
+#ins1 .nextPage{
+    margin-right: -40%;
+    margin-left: 20%;
+}
+#ins2 .nextPage{
+    margin-right: -20%;
+}
+#ins3 #back{
+    margin-top: 20px;
+}

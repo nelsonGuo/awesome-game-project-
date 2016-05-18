@@ -8,13 +8,11 @@ function addImage(i,j) {
     ctx.drawImage(img,5,5);
     sequence[i] = j;
 }
-
-
 //add image to map
 function addImageToMap2(i,j,k) {
     var S = document.getElementById("2grid-"+i+"-"+j);
     var ctx = S.getContext("2d");
     var img = document.getElementById("symbol" + k);
-    ctx.drawImage(img,5,5);
+    ctx.drawImage(img,0,0);
     map["2grid-"+i+"-"+j] = k;
 }

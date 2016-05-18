@@ -1,18 +1,16 @@
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
+document.cookie="profile_viewer_uid=timeGame";
+
 function gameTimer() {
-    var i = 30;
     var timer = setInterval(function(){
-        if(i== -1){
+        if(timeGame== -1){
             clearInterval(timer);
         }else{
-            document.getElementById("timer").innerHTML = "Time: "+i;
-            --i;
+            document.getElementById("timer").innerHTML = "Time: "+timeGame;
+            --timeGame;
+            lose();
         }
     },1000);
 }
-
 //sequence timer
 function sequenceTimer(){
     var i = 10;
