@@ -66,7 +66,7 @@ function stepMatching(id) {
                         columnRight = column + 1;
                         alert("you won!!!");
                         openPopup();
-                        increaseGrids();
+                        Level34;
                     } else {
                         alert("you lost");
                         lifeDown();

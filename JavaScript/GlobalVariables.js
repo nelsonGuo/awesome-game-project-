@@ -7,6 +7,7 @@ var columnLeft;
 var columnRight;
 var map = new Array();
 var sequence = new Array();
+var voidSymbol =new Array();
 var numClick = 0;
 var life = 3;
 
