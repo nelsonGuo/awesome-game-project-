@@ -25,11 +25,13 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 		<script type="text/javascript" src="JavaScript/addImage-2.js"></script>
 		<script type="text/javascript" src="JavaScript/increaseGrids.js"></script>
 		<script type="text/javascript" src="JavaScript/stepMatching-1.js"></script>
+
 		<script type="text/javascript" src="JavaScript/RestartGame-WrongStep.js"></script>
 		<script type="text/javascript" src="JavaScript/Timer.js"></script>
 		<script type="text/javascript" src="JavaScript/GlobalVariables.js"></script>
 		<script type="text/javascript" src="JavaScript/Level34.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbols-1.js"></script>
+		<script type="text/javascript" src="JavaScript/checkSymbol-3.js"></script>
 		<script type="text/javascript" src="JavaScript/easterEgg.js"></script>
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
 		<script type="text/javascript" src="JavaScript/button.js"></script>
