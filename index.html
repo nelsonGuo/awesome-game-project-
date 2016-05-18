@@ -134,10 +134,13 @@
 					<div id="popup-content">
 						<div>
 							<p>You Win this game!!!</p>
+							<form action="welcome.php" method="post">
+								<span>Please input your name</span></span>
+								<input id="userName" type="text">
+								<input id="send" type="submit" value="Submit">
+							</form>
 						</div>
-						<div>
 							<input id="modal-close-button" type="button" value="Close Popup" />
-						</div>
 					</div>
 					<div id="overlay-bg"></div>
 				<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')" width="200" height="200"></canvas>

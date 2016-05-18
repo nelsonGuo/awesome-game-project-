@@ -10,6 +10,7 @@
 	padding:0 10px 10px 10px;
 	position:fixed;
 	width:80%;
+	height:10%;
 	z-index:1002;	/* Any value above all content */
 }
 /*Popup close button positioning */
