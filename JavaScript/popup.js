@@ -1,9 +1,4 @@
-$(document).ready(function(){
-	console.log("JQUERY IS READY!");
-	$(window).resize(function(){
-		updatePopup();
-	});
-});
+
 function openPopup(){
 	$("#modal-open-button").prop("disabled", true);
 	$("#popup-content").fadeIn();

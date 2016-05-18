@@ -1,8 +1,6 @@
 /**
  * Created by Victor Zhao on 2016/5/17 0017.
  */
-
-
 //easter eggs
 
 var fallObjects=new Array();
@@ -10,7 +8,6 @@ var fallObjects=new Array();
 function newObject(url,height,width){
     fallObjects[fallObjects.length]=new Array(url,height,width);
 }
-
 
 var numObjs=20, waft=0, fallSpeed=15, wind=0;
 newObject("pictures/egg1.png",38,50);
