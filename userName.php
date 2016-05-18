@@ -26,43 +26,46 @@
 		return mysql_real_escape_string($str);
 	}
 	
-	//Sanitize the POST values
-	//$name = clean($_POST['name']);
-	//$eamil = clean($_POST['email']);
-	//$password = clean($_POST['signUpPassword']);
+	//Sanitize the POST values	
+	$playerName = mysql_real_escape_string($_POST['playerName']);    
 	
-	$name = mysql_real_escape_string($_POST['name']);
-	
-	$name = trim($name);
+	$playerName = trim($playerName);
 
-	// email exist or not
-	$query = "SELECT * FROM playerInfo WHERE name='$name'";
+	// name exist or not
+	$query = "SELECT * FROM playerInfo WHERE playerName='$playerName'";
 	$result = mysql_query($query);
 	
 	
 	if($result){
 	if(mysql_num_rows($result) == 0){// if name not found then insert
 		
-		if(mysql_query("INSERT INTO playerInfo(name, score, passwd) VALUES('$name','$email','$password')"))
+		if(mysql_query("INSERT INTO playerInfo(playerName, playTime, level) VALUES('$playerName','$email','$password')"))
 		{    
-			header("location: thanks.html");
+			header("location: index.html");
 			
 			exit();
 		}
 		else
 		{
 			?>
-			<script>alert('error while registering you...');</script>
+			<script>alert('error while submitting ...');</script>
 			<?php
 		}		
 	}
 	else{
-			?>
-			<script>alert('Sorry Email ID already taken ...');
-			window.location="signUp.html";
-			</script>
-			<?php
+
+			if(mysql_query("UPDATE playerInfo SET playerName='$playerName', playTime='$playTime', level='$level' WHERE playerName='$playerName'"))
+		{    
+			header("location: index.html");
 			
+			exit();
+		}
+		else
+		{
+			?>
+			<script>alert('error while submitting ...');</script>
+			<?php
+		}		
 			
 	}
    }else{
