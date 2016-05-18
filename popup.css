@@ -1,0 +1,31 @@
+/*Popup content container */
+#popup-content{
+	background-color:#000;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;	
+	color:#FFF;
+	display:none;
+	max-width:500px;
+	padding:0 10px 10px 10px;
+	position:fixed;
+	width:80%;
+	z-index:1002;	/* Any value above all content */
+}
+/*Popup close button positioning */
+#popup-content > div + div{text-align:right;} /* div:last-child Not compatible with IE 7 IE 8  http://caniuse.com/#search=last-child */
+#overlay-bg{
+	background-color:#000;
+	/*background-color:rgba(0,0,0,0.6); */ /* Not compatible with IE 7 IE 8 */
+	height:100%;
+	display:none;
+	left:0;
+	margin:auto;
+	opacity:0.6; /* Not compatible with IE 7. Limited IE 8:  http://caniuse.com/#search=opacity */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+	filter: alpha(opacity=50); /* IE 7 */	
+	position:fixed; 
+	top:0;
+ 	width:100%;
+ 	z-index:1001;
+  }

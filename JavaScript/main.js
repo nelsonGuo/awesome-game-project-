@@ -192,6 +192,7 @@ function stepMatching(id) {
 						columnLeft = column - 1;
 						columnRight = column + 1;
 						alert("you won!!!");
+						openPopup();
 					} else {
 						alert("you lost");
 						lifeDown();
