@@ -6,6 +6,7 @@ function lifeBar() {
     document.getElementById("life").innerHTML = "Life:"+life;
 }
 function lifeDown(){
-    life--;
+    --life;
     document.getElementById("life").innerHTML="Life:"+life;
+
 }

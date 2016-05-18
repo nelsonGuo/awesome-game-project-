@@ -22,12 +22,14 @@ function stepMatching(id) {
             else {
                 alert("you lost");
                 lifeDown();
+                lose();
                 wrongStep();
             }
         }
         else {
             alert("you lost");
             lifeDown();
+            lose();
             wrongStep();
         }
     }
@@ -64,29 +66,32 @@ function stepMatching(id) {
                         columnLeft = column - 1;
                         columnRight = column + 1;
                         alert("you won!!!");
-                        openPopup();
                         Level34();
                     } else {
                         alert("you lost");
                         lifeDown();
+                        lose();
                         wrongStep();
                     }
 
                 } else {
                     alert("you lost");
                     lifeDown();
+                    lose();
                     wrongStep();
                 }
             }
             else {
                 alert("you lost");
                 lifeDown();
+                lose();
                 wrongStep();
             }
         }
         else {
             alert("you lost");
             lifeDown();
+            lose();
             wrongStep();
         }
     }

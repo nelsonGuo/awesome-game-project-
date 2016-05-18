@@ -6,6 +6,7 @@ function gameTimer() {
     var timer = setInterval(function(){
         if(i== -1){
             clearInterval(timer);
+            lose();
         }else{
             document.getElementById("timer").innerHTML = "Time: "+i;
             --i;
