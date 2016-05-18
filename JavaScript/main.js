@@ -1,5 +1,3 @@
-
-
 //initialization
 function start() {
 	setTimeout(function () {
@@ -35,42 +33,13 @@ function generateSymbol(){
 		}
 		
 }
-
-
-
 // get a random symbol for the map
 function getValue(num){
 	var temp = Math.floor((Math.random() * num));
 	return temp;
    }
-
-
-
-
-//instruction
-function ins(){
-	document.getElementById("instruction").style.display = "block";
-	document.getElementById("startPage").style.display = "none";
-}
-function HomePage() {
-    document.getElementById("instruction").style.display = "none";
-    document.getElementById("leaderBoard").style.display = "none";
-    document.getElementById("iconLeader").style.display = "block";
-    document.getElementById("startPage").style.display = "block";
-}
-
-
-
 //stone audio
 function pushRock(){
 	var p= document.getElementById("push-rock")
 	p.play();
-}
-
-
-//leader board page
-function leaderBoard(){
-	document.getElementById("leaderBoard").style.display = "block";
-	document.getElementById("iconLeader").style.display = "none";
-	document.getElementById("startPage").style.display = "none";
 }

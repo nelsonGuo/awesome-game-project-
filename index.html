@@ -32,7 +32,9 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 		<script type="text/javascript" src="JavaScript/checkSymbols-1.js"></script>
 		<script type="text/javascript" src="JavaScript/easterEgg.js"></script>
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
+		<script type="text/javascript" src="JavaScript/button.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
 		<script src="JavaScript/popup.js"></script>
 		<audio autoplay id='music'>
 			<source src='audio/music.mp3' type='audio/mp3'>
@@ -78,11 +80,23 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 			</div>
 			<div id="instruction">
-				<h2>Instruction</h2>
-				<p>Remember and Folow the sequence</p>
-				<p>Tap the grid to move from bottom to the top</p>
-				<p> *You cannot go down</p>
-				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+				<h1>Instruction</h1>
+				<div id="ins1">
+					<p>Remember and Follow the sequence</p>
+					<img src="pictures/ins1.png" alt="instruction1" height="500">
+					<input type="image" src="pictures/next.png" class="nextPage" onclick="ins2()" height="100" width="100">
+				</div>
+				<div id="ins2">
+					<p>Tap the grid to move from bottom to the top<br>
+				 	Remember that you can only go left, right and up</p>
+					<img src="pictures/ins2.png" alt="instruction1" height="450">
+					<input type="image" src="pictures/next.png" class="nextPage" onclick="ins3()" height="100" width="100">
+				</div>
+				<div id="ins3">
+					<p>Take care of your time and life</p>
+					<img src="pictures/ins3.png" alt="instruction1" height="450">
+					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+				</div>
 			</div>
 			<!--start page-->
 			<div id="startPage">
