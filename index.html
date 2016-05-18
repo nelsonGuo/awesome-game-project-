@@ -1,3 +1,16 @@
+<?php
+	require_once('config.php');
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
+	mysql_select_db(DB_DATABASE)or die("cannot select DB");
+	$tbl_name="playerInfo"; // Table name
+
+
+$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 30 ';
+	// ORDER BY id DESC is order result by descending
+	$result=mysql_query($sql);
+?>
 <!DOCTYPE html>
 	<html>
 	<head lang="en">
@@ -39,66 +52,28 @@
 						<th>Time</th>
 						<th>Level</th>
 					</tr>
-					<tr>
-						<th>1</th>
-						<th>aaa</th>
-						<th>30</th>
-						<th>6</th>
-					</tr>
-					<tr>
-						<th>2</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>3</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>4</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>5</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>6</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>7</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>8</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>9</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
-					<tr>
-						<th>10</th>
-						<th>NULL</th>
-						<th>NULL</th>
-						<th>NULL</th>
-					</tr>
+					
+						<?php
+							 $rank =0;
+							while($rows=mysql_fetch_array($result)){ 
+							           $rank ++;                              // Start looping table row
+						?>
+
+							<tr>
+							<td ><?php echo $rank ?></td>
+							<td ><?php echo $rows['playerName']; ?></td>
+							<td ><?php echo $rows['playTime']; ?></td>
+							<td ><?php echo $rows['level']; ?></td>
+							</tr>
+
+							<?php
+							// Exit looping and close connection
+							}
+
+							mysql_close();
+							?>
+					  <tr>
+					
 				</table>
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 			</div>
