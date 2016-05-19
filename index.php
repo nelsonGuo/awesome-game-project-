@@ -35,6 +35,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
 		<script type="text/javascript" src="JavaScript/button.js"></script>
 		<script type="text/javascript" src="JavaScript/lose.js"></script>
+		<script type="text/javascript" src="JavaScript/levelUp.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 		<script src="JavaScript/popup.js"></script>
@@ -119,7 +120,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					<h2 id="timer"></h2>
 				</div>
 				<div id="level1">
-					<h1>Level 1</h1>
+					<h1 id="levelUp">Level 1</h1>
 				</div>
 				<!--sequence section-->
 				<div id="sequence1">
