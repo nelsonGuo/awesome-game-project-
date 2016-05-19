@@ -23,3 +23,7 @@ function sequenceTimer(){
         }
     },1000);
 }
+
+function getTime(){
+    document.getElementById("value").value = timeGame;
+}

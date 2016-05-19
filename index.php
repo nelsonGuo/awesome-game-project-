@@ -7,9 +7,10 @@
 	$tbl_name="playerInfo"; // Table name
 
 
-$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 30 ';
+$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 0, 30 ';
 	// ORDER BY id DESC is order result by descending
 	$result=mysql_query($sql);
+ 
 ?>
 <!DOCTYPE html>
 	<html>
@@ -137,9 +138,10 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` DESC LIMIT 0, 
 							<form action="playerName.php" method="post">
 								<span>Please input your name</span></span>
 								<input name="playerName" type="text">
+								<input id="value" type="hidden" name="value" value="0">
 
 
-								<input id="send" type="submit" value="Submit">
+								<input id="send" type="submit" value="Submit" onclick="getTime()">
 							</form>
 						</div>
 							<input id="modal-close-button" type="button" value="Close Popup" />

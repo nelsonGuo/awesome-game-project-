@@ -31,11 +31,14 @@
 	
 	$playerName = trim($playerName);
 
+    $playTime = mysql_real_escape_string($_POST['value']);    
+	
+	$playTime = trim($playTime);
+     
 	// name exist or not
 	$query = "SELECT * FROM playerInfo WHERE playerName='$playerName'";
 	$result = mysql_query($query);
 	
-	$playTime = $_COOKIE['profile_viewer_uid'];
 	$level = 1;
 	
 	if($result){
