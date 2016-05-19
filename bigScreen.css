@@ -247,6 +247,17 @@ a {
     margin-top: 20px;
 }
 
+#sequence2 {
+    display: none;
+    width:200px;
+    margin:0 auto;
+    padding: 20px;
+    opacity: 1;
+    background-color: black;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
+}
+
 #sequence3 {
     display: none;
     width:170px;
