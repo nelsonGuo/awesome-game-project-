@@ -31,17 +31,22 @@
 	
 	$playerName = trim($playerName);
 
+    $playTime = mysql_real_escape_string($_POST['value']);    
+	
+	$playTime = trim($playTime);
+     
 	// name exist or not
 	$query = "SELECT * FROM playerInfo WHERE playerName='$playerName'";
 	$result = mysql_query($query);
 	
+	$level = 1;
 	
 	if($result){
 	if(mysql_num_rows($result) == 0){// if name not found then insert
 		
-		if(mysql_query("INSERT INTO playerInfo(playerName, playTime, level) VALUES('$playerName','$email','$password')"))
+		if(mysql_query("INSERT INTO playerInfo(playerName, playTime, level) VALUES('$playerName','$playTime','$level')"))
 		{    
-			header("location: index.html");
+			header("location: index.php");
 			
 			exit();
 		}
@@ -56,7 +61,7 @@
 
 			if(mysql_query("UPDATE playerInfo SET playerName='$playerName', playTime='$playTime', level='$level' WHERE playerName='$playerName'"))
 		{    
-			header("location: index.html");
+			header("location: index.php");
 			
 			exit();
 		}
