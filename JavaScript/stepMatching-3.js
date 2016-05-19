@@ -1,9 +1,9 @@
 /**
  * Created by 宋与珩 on 2016-05-17.
  */
-function stepMatching(id) {
+function stepMatching3(id) {
     if(numClick == 0) {
-        if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2"|| id == "grid-0-3" ) {
+        if (id == "2grid-0-0" || id == "2grid-0-1" || id == "2grid-0-2"|| id == "2grid-0-3" ) {
             if (sequence[numClick] == map[id]) {
                 var c = document.getElementById(id);
                 c.style.opacity="0.5"; //darken the color of square when stepping on
@@ -11,8 +11,8 @@ function stepMatching(id) {
                 pushRock();
                 idRecord = id;
                 numClick++;
-                row = idRecord.substring(5,6);
-                column = idRecord.substring(7,8);
+                row = idRecord.substring(6,7);
+                column = idRecord.substring(8,9);
                 row = parseInt(row);
                 column = parseInt(column);
                 rowUp = row + 1;
@@ -34,7 +34,7 @@ function stepMatching(id) {
         }
     }
     else {
-        if(id == "grid-"+row+"-"+columnLeft || id == "grid-"+row+"-"+columnRight || id == "grid-"+rowUp+"-"+column) {
+        if(id == "2grid-"+row+"-"+columnLeft || id == "2grid-"+row+"-"+columnRight || id == "2grid-"+rowUp+"-"+column) {
             if (sequence[numClick] == map[id]) {
                 if(numClick + 1 < sequence.length) {
                     var s = document.getElementById(id);
@@ -43,8 +43,8 @@ function stepMatching(id) {
                     pushRock();
                     idRecord = id;
                     numClick++;
-                    row = idRecord.substring(5, 6);
-                    column = idRecord.substring(7, 8);
+                    row = idRecord.substring(6,7);
+                    column = idRecord.substring(8,9);
                     row = parseInt(row);
                     column = parseInt(column);
                     rowUp = row + 1;
@@ -52,14 +52,14 @@ function stepMatching(id) {
                     columnRight = column + 1;
                 }
                 else if (numClick + 1 == sequence.length) {
-                    if (row+1 == 2){
+                    if (row+1 == 3){
                         var z = document.getElementById(id);
                         z.style.opacity="0.5";//darken the color of square when stepping on
                         pushRock();
                         idRecord = id;
                         numClick++;
-                        row = idRecord.substring(5, 6);
-                        column = idRecord.substring(7, 8);
+                        row = idRecord.substring(6,7);
+                        column = idRecord.substring(8,9);
                         row = parseInt(row);
                         column = parseInt(column);
                         rowUp = row + 1;
@@ -95,4 +95,6 @@ function stepMatching(id) {
             wrongStep();
         }
     }
-}
+}/**
+ * Created by 宋与珩 on 2016-05-19.
+ */

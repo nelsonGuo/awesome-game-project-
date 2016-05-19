@@ -231,3 +231,14 @@ a {
 #ins3 #back{
     margin-top: 20px;
 }
+
+#sequence3 {
+    display: none;
+    width:170px;
+    margin:0 auto;
+    padding: 20px;
+    opacity: 1;
+    background-color: black;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
+}

@@ -1,7 +1,7 @@
 /**
- * Created by 宋与珩 on 2016-05-17.
+ * Created by 宋与珩 on 2016-05-19.
  */
-function addImage2(i,j) {
+function addImage3(i,j) {
     var S = document.getElementById("3position" + i);
     var ctx = S.getContext("2d");
     var img = document.getElementById("symbol" + j);

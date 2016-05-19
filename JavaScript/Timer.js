@@ -7,7 +7,7 @@ function gameTimer() {
         }else{
             document.getElementById("timer").innerHTML = "Time: "+timeGame;
             --timeGame;
-            lose();
+            //lose();
         }
     },1000);
 }
