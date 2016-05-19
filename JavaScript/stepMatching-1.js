@@ -66,8 +66,8 @@ function stepMatching(id) {
                         columnLeft = column - 1;
                         columnRight = column + 1;
                         alert("you won!!!");
-                        lvlUp();
-                        //Level34();
+                        //lvlUp();
+                        Level34();
                     } else {
                         alert("you lost");
                         lifeDown();
