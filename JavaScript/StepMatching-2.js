@@ -69,7 +69,7 @@ function stepMatching2(id) {
                         rowUp = row + 1;
                         columnLeft = column - 1;
                         columnRight = column + 1;
-                        alert("you won!!!");
+                        //alert("you won!!!");
                         lvl++;
                         if(lvl == 3) {
                             Level3();

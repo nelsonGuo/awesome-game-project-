@@ -1,9 +1,10 @@
 document.cookie="profile_viewer_uid=timeGame";
 
 function gameTimer() {
+    countTimer++;
     var i=30;
      var timer = setInterval(function(){
-        if(i== -1){
+        if(i== -1||countTimer<lvl){
             clearInterval(timer);
         }else{
             document.getElementById("timer").innerHTML = "Time: "+i;

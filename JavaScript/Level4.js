@@ -6,21 +6,21 @@
  */
 function Level4(){
 
-    timeGame=30;
+    
     map = voidSymbol;
     sequence = voidSymbol;
 
     numClick = 0;
     Restart2();
-
+    document.getElementById("lvlUp").innerHTML="Level"+lvl;
     document.getElementById("grid-container2").style.display = "none";
 
-    setTimeout(function () {
+
         document.getElementById("level1").style.display = "block";
         document.getElementById("sequence2").style.display = "block";
         document.getElementById("game-header").style.display = "block";
         document.getElementById("top-bar").style.display = "block";
-    }, 1000);
+
     sequenceTimer();
 
 

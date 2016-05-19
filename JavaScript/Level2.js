@@ -15,7 +15,7 @@ function Level2(){
     document.getElementById("grid-container").style.display = "none";
 
 
-
+        document.getElementById("lvlUp").innerHTML="Level"+lvl;
         document.getElementById("level1").style.display = "block";
         document.getElementById("sequence1").style.display = "block";
         document.getElementById("game-header").style.display = "block";
@@ -32,9 +32,8 @@ function Level2(){
         document.getElementById("game-header").style.display = "block";
         document.getElementById("top-bar").style.display = "block";
         lifeBar();
-        timeGame=30;
         gameTimer();
-    }, 11000);
+    }, 10000);
 
     generateSymbol();
     checkSymbol();
