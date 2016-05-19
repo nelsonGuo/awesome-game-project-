@@ -7,7 +7,7 @@
 	$tbl_name="playerInfo"; // Table name
 
 
-$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 0, 30 ';
+$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;';
 	// ORDER BY id DESC is order result by descending
 	$result=mysql_query($sql);
  
