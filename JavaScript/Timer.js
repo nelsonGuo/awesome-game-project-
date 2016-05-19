@@ -1,12 +1,13 @@
 document.cookie="profile_viewer_uid=timeGame";
 
 function gameTimer() {
-     timer = setInterval(function(){
-        if(timeGame== -1){
+    var i=30;
+     var timer = setInterval(function(){
+        if(i== -1){
             clearInterval(timer);
         }else{
-            document.getElementById("timer").innerHTML = "Time: "+timeGame;
-            --timeGame;
+            document.getElementById("timer").innerHTML = "Time: "+i;
+            --i;
             //lose();
         }
     },1000);

@@ -2,7 +2,7 @@
 //generate random symbols for the map
 function generateSymbol2(){
 		for(var i = 0;i < 5;i++){
-			addImage(i,getValue(5));
+			addImage2(i,getValue(5));
 		}
 		//generate random symbols for the map
 		for(var i = 3; i>=0;i--) {

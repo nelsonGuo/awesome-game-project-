@@ -2,10 +2,10 @@
  * Created by 宋与珩 on 2016-05-17.
  */
 function addImage2(i,j) {
-    var S = document.getElementById("3position" + i);
+    var S = document.getElementById("2position" + i);
     var ctx = S.getContext("2d");
     var img = document.getElementById("symbol" + j);
-    ctx.drawImage(img,5,5);
+    ctx.drawImage(img,5,5,180,180);
     sequence[i] = j;
 }
 //add image to map

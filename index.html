@@ -32,7 +32,10 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/RestartGame-WrongStep.js"></script>
 		<script type="text/javascript" src="JavaScript/Timer.js"></script>
 		<script type="text/javascript" src="JavaScript/GlobalVariables.js"></script>
-		<script type="text/javascript" src="JavaScript/Level34.js"></script>
+		<script type="text/javascript" src="JavaScript/Level2.js"></script>
+		<script type="text/javascript" src="JavaScript/Level56.js"></script>
+		<script type="text/javascript" src="JavaScript/Level3.js"></script>
+		<script type="text/javascript" src="JavaScript/Level4.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbols-1.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbol-2.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbol-3.js"></script>
@@ -138,11 +141,11 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				</div>
 
 				<div id="sequence2">
-					<canvas id="2position0" class="seqgrid" width="175" height="175"></canvas>
-					<canvas id="2position1" class="seqgrid" width="175" height="175"></canvas>
-					<canvas id="2position2" class="seqgrid" width="175" height="175"></canvas>
-					<canvas id="2position3" class="seqgrid" width="175" height="175"></canvas>
-					<canvas id="2position4" class="seqgrid" width="175" height="175"></canvas>
+					<canvas id="2position0" class="seqgrid" width="180" height="180"></canvas>
+					<canvas id="2position1" class="seqgrid" width="180" height="180"></canvas>
+					<canvas id="2position2" class="seqgrid" width="180" height="180"></canvas>
+					<canvas id="2position3" class="seqgrid" width="180" height="180"></canvas>
+					<canvas id="2position4" class="seqgrid" width="180" height="180"></canvas>
 
 				</div>
 
@@ -190,25 +193,25 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<!--grid for next level-->
 				<div id="grid-container2">
 
-					<canvas class = "map" id="2grid-3-3" onclick="stepMatching3('2grid-3-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-3-2" onclick="stepMatching3('2grid-3-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-3-1" onclick="stepMatching3('2grid-3-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-3-0" onclick="stepMatching3('2grid-3-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-3" onclick="stepMatching2('2grid-3-3')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-2" onclick="stepMatching2('2grid-3-2')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-1" onclick="stepMatching2('2grid-3-1')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-0" onclick="stepMatching2('2grid-3-0')" width="150" height="150"></canvas>
 
-					<canvas class = "map" id="2grid-2-3" onclick="stepMatching3('2grid-2-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-2-2" onclick="stepMatching3('2grid-2-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-2-1" onclick="stepMatching3('2grid-2-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-2-0" onclick="stepMatching3('2grid-2-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-3" onclick="stepMatching2('2grid-2-3')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-2" onclick="stepMatching2('2grid-2-2')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-1" onclick="stepMatching2('2grid-2-1')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-0" onclick="stepMatching2('2grid-2-0')" width="150" height="150"></canvas>
 
-					<canvas class = "map" id="2grid-1-3" onclick="stepMatching3('2grid-1-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-1-2" onclick="stepMatching3('2grid-1-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-1-1" onclick="stepMatching3('2grid-1-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-1-0" onclick="stepMatching3('2grid-1-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-3" onclick="stepMatching2('2grid-1-3')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-2" onclick="stepMatching2('2grid-1-2')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-1" onclick="stepMatching2('2grid-1-1')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-0" onclick="stepMatching2('2grid-1-0')" width="150" height="150"></canvas>
 
-					<canvas class = "map" id="2grid-0-3" onclick="stepMatching3('2grid-0-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-0-2" onclick="stepMatching3('2grid-0-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-0-1" onclick="stepMatching3('2grid-0-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-0-0" onclick="stepMatching3('2grid-0-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-3" onclick="stepMatching2('2grid-0-3')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-2" onclick="stepMatching2('2grid-0-2')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-1" onclick="stepMatching2('2grid-0-1')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-0" onclick="stepMatching2('2grid-0-0')" width="150" height="150"></canvas>
 				</div>
 			</div>
 		</div>

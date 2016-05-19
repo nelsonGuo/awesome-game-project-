@@ -23,14 +23,14 @@ function stepMatching(id) {
                 alert("you lost");
                 lifeDown();
                 lose();
-                wrongStep();
+                Restart1();
             }
         }
         else {
             alert("you lost");
             lifeDown();
             lose();
-            wrongStep();
+            Restart1();
         }
     }
     else {
@@ -52,47 +52,55 @@ function stepMatching(id) {
                     columnRight = column + 1;
                 }
                 else if (numClick + 1 == sequence.length) {
-                    if (row+1 == 2){
+                    idRecord = id;
+                    row = idRecord.substring(5, 6);
+                    row = parseInt(row);
+                    if (row == 2){
                         var z = document.getElementById(id);
                         z.style.opacity="0.5";//darken the color of square when stepping on
                         pushRock();
-                        idRecord = id;
                         numClick++;
-                        row = idRecord.substring(5, 6);
                         column = idRecord.substring(7, 8);
-                        row = parseInt(row);
                         column = parseInt(column);
                         rowUp = row + 1;
                         columnLeft = column - 1;
                         columnRight = column + 1;
                         alert("you won!!!");
-                        Level34();
+                        lvl++;
+                        if(lvl == 2) {
+                            Level2();
+                        } else if (lvl == 3) {
+                            Level3();
+                        } else {
+                            Level4();
+                        }
+
                     } else {
                         alert("you lost");
                         lifeDown();
                         lose();
-                        wrongStep();
+                        Restart1();
                     }
 
                 } else {
                     alert("you lost");
                     lifeDown();
                     lose();
-                    wrongStep();
+                    Restart1();
                 }
             }
             else {
                 alert("you lost");
                 lifeDown();
                 lose();
-                wrongStep();
+                Restart1();
             }
         }
         else {
             alert("you lost");
             lifeDown();
             lose();
-            wrongStep();
+            Restart1();
         }
     }
 }

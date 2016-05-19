@@ -7,7 +7,7 @@ function generateSymbol(){
 		for(var i = 2; i>=0;i--) {
 			for(var j = 2; j>=0;j--){
 			addImageToMap(i,j,getValue(5));
-				gridCount++;
+				
 			}
 		}
 		
