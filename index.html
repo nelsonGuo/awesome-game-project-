@@ -46,6 +46,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/generateSymbol-1.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-2.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-3.js"></script>
+		<script type="text/javascript" src="JavaScript/shakeAudio.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 		<script src="JavaScript/popup.js"></script>
@@ -54,6 +55,9 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		</audio>
 		<audio id='push-rock'>
 			<source src='audio/push.mp3' type='audio/mp3'>
+		</audio>
+		<audio id='shake-rock'>
+		    <source src='audio/shake.mp3' type='audio/mp3'>
 		</audio>
 	</head>
 	<body>
@@ -180,38 +184,38 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<!--game map section-->
 				<div id="grid-container">
 
-				<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-2-1" onclick="stepMatching('grid-2-1')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-2-0" onclick="stepMatching('grid-2-0')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-1-2" onclick="stepMatching('grid-1-2')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-1-1" onclick="stepMatching('grid-1-1')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-1-0" onclick="stepMatching('grid-1-0')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-0-2" onclick="stepMatching('grid-0-2')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-0-1" onclick="stepMatching('grid-0-1')" width="200" height="200"></canvas>
-				<canvas class = "map" id="grid-0-0" onclick="stepMatching('grid-0-0')" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-2-1" onclick="stepMatching('grid-2-1')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-2-0" onclick="stepMatching('grid-2-0')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-1-2" onclick="stepMatching('grid-1-2')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-1-1" onclick="stepMatching('grid-1-1')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-1-0" onclick="stepMatching('grid-1-0')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-0-2" onclick="stepMatching('grid-0-2')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-0-1" onclick="stepMatching('grid-0-1')" onmouseover="shakeRock();" width="200" height="200"></canvas>
+				<canvas class = "map" id="grid-0-0" onclick="stepMatching('grid-0-0')" onmouseover="shakeRock();" width="200" height="200"></canvas>
 				</div>
 				<!--grid for next level-->
 				<div id="grid-container2">
 
-					<canvas class = "map" id="2grid-3-3" onclick="stepMatching2('2grid-3-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-3-2" onclick="stepMatching2('2grid-3-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-3-1" onclick="stepMatching2('2grid-3-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-3-0" onclick="stepMatching2('2grid-3-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-3" onclick="stepMatching3('2grid-3-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-2" onclick="stepMatching3('2grid-3-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-1" onclick="stepMatching3('2grid-3-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-3-0" onclick="stepMatching3('2grid-3-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 
-					<canvas class = "map" id="2grid-2-3" onclick="stepMatching2('2grid-2-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-2-2" onclick="stepMatching2('2grid-2-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-2-1" onclick="stepMatching2('2grid-2-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-2-0" onclick="stepMatching2('2grid-2-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-3" onclick="stepMatching3('2grid-2-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-2" onclick="stepMatching3('2grid-2-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-1" onclick="stepMatching3('2grid-2-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-2-0" onclick="stepMatching3('2grid-2-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 
-					<canvas class = "map" id="2grid-1-3" onclick="stepMatching2('2grid-1-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-1-2" onclick="stepMatching2('2grid-1-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-1-1" onclick="stepMatching2('2grid-1-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-1-0" onclick="stepMatching2('2grid-1-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-3" onclick="stepMatching3('2grid-1-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-2" onclick="stepMatching3('2grid-1-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-1" onclick="stepMatching3('2grid-1-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-1-0" onclick="stepMatching3('2grid-1-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 
-					<canvas class = "map" id="2grid-0-3" onclick="stepMatching2('2grid-0-3')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-0-2" onclick="stepMatching2('2grid-0-2')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-0-1" onclick="stepMatching2('2grid-0-1')" width="150" height="150"></canvas>
-					<canvas class = "map" id="2grid-0-0" onclick="stepMatching2('2grid-0-0')" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-3" onclick="stepMatching3('2grid-0-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-2" onclick="stepMatching3('2grid-0-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-1" onclick="stepMatching3('2grid-0-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
+					<canvas class = "map" id="2grid-0-0" onclick="stepMatching3('2grid-0-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 				</div>
 			</div>
 		</div>
