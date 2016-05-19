@@ -5,7 +5,7 @@ function addImage3(i,j) {
     var S = document.getElementById("3position" + i);
     var ctx = S.getContext("2d");
     var img = document.getElementById("symbol" + j);
-    ctx.drawImage(img,5,5);
+    ctx.drawImage(img,5,5,150,150);
     sequence[i] = j;
 }
 //add image to map
