@@ -160,7 +160,6 @@ a {
     display: none;
     width:20%;
     margin:auto;
-    background-color: black;
 }
 
 #sequence2 {
@@ -168,21 +167,18 @@ a {
     display: none;
     width:20%;
     margin:0 auto;
-    
-    background-color: black;
 }
 
 #sequence3 {
     display: none;
     width:20%;
     margin:0 auto;
-    
-    background-color: black;
 }
 
 .seqgrid{
     height:50%;
     width:50%;
+    background-color: black;
 }
 .symbol {
     display : none;
