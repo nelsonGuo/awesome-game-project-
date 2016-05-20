@@ -27,7 +27,7 @@ function Level2(){
         document.getElementById("sequence1").style.display = "block";
         document.getElementById("game-header").style.display = "block";
         document.getElementById("top-bar").style.display = "block";
-        sequenceTimer();
+        sequenceTimer2();
 
     },2000);
 
@@ -45,7 +45,7 @@ function Level2(){
         document.getElementById("top-bar").style.display = "block";
         lifeBar();
         gameTimer();
-    }, 13000);
+    }, 8000);
 
     generateSymbol();
     checkSymbol();

@@ -26,6 +26,17 @@ function sequenceTimer(){
         }
     },1000);
 }
+function sequenceTimer2(){
+    var i = 5;
+    var timer = setInterval(function(){
+        if(i== -1){
+            clearInterval(timer);
+        }else{
+            document.getElementById("timer").innerHTML = "Time: "+i;
+            --i;
+        }
+    },1000);
+}
 //time for rank
 function rankTime() {
        clock = setInterval(function(){

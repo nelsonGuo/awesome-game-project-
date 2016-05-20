@@ -169,9 +169,9 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<div id="popup-content" >
 					<div id="popup-form">
 						<form action="playerName.php" method="post">
-							<span>Please input your name</span></span>
+							<span id="inputName">Please input your name</span></span>
 							<input name="playerName" type="text">
-							<input id="value" type="hidden" name="value" value="0">
+							<input id="value" type="hidden" name="value" value="0"><br>
                        		<input id="levelValue" type="hidden" name="levelValue" value="0">
 							<input id="send" type="submit" value="Submit" onclick="passValue()">
 						</form>

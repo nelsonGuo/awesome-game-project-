@@ -1,9 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-19.
- */
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
+
 function Level56(){
     
 
@@ -26,7 +21,7 @@ function Level56(){
         document.getElementById("sequence3").style.display = "block";
         document.getElementById("game-header").style.display = "block";
         document.getElementById("top-bar").style.display = "block";
-        sequenceTimer();
+        sequenceTimer2();
 
     },2000);
 
@@ -39,7 +34,7 @@ function Level56(){
         document.getElementById("top-bar").style.display = "block";
         lifeBar();
         gameTimer();
-    }, 11000);
+    }, 8000);
     generateSymbol3();
     checkSymbol3();
 
