@@ -15,3 +15,4 @@ var gridCount = 0;
 var lvl=1;
 var countTimer=0;
 var timerRank=0;
+var clock;

@@ -1,10 +1,10 @@
-document.cookie="profile_viewer_uid=timeGame";
+document.cookie="profile_viewer_uid=timerRank";
 
 function gameTimer() {
     countTimer++;
     var i=30;
      var timer = setInterval(function(){
-        if(i== -1||countTimer<lvl){
+        if(i== -1||countTimer < lvl){
             clearInterval(timer);
         }else{
             document.getElementById("timer").innerHTML = "Time: "+i;
@@ -25,7 +25,12 @@ function sequenceTimer(){
         }
     },1000);
 }
-
+//time for rank
+function rankTime() {
+       clock = setInterval(function(){
+       timerRank++;
+    },1000);
+}
 function getTime(){
-    document.getElementById("value").value = timeGame;
+    document.getElementById("value").value = timerRank;
 }

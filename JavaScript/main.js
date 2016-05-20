@@ -1,5 +1,6 @@
 //initialization
 function start() {
+	rankTime();
 	setTimeout(function () {
 		document.getElementById("startPage").style.display = "none";
 		document.getElementById("sequence1").style.display = "block";
@@ -27,6 +28,6 @@ function getValue(num){
    }
 //stone audio
 function pushRock(){
-	var p= document.getElementById("push-rock")
+	var p= document.getElementById("push-rock");
 	p.play();
 }
