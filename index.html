@@ -174,9 +174,8 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 							<span>Please input your name</span></span>
 							<input name="playerName" type="text">
 							<input id="value" type="hidden" name="value" value="0">
-
-
-							<input id="send" type="submit" value="Submit" onclick="getTime()">
+                       		<input id="levelValue" type="hidden" name="levelValue" value="0">
+							<input id="send" type="submit" value="Submit" onclick="getValue()">
 						</form>
 					</div>
 					<input id="modal-close-button" type="button" value="Close Popup" />

@@ -34,12 +34,16 @@
     $playTime = mysql_real_escape_string($_POST['value']);    
 	
 	$playTime = trim($playTime);
+
+	$level = mysql_real_escape_string($_POST['levelValue']);    
+	
+	$level = trim($level);
+
      
 	// name exist or not
 	$query = "SELECT * FROM playerInfo WHERE playerName='$playerName'";
 	$result = mysql_query($query);
 	
-	$level = 1;
 	
 	if($result){
 	if(mysql_num_rows($result) == 0){// if name not found then insert

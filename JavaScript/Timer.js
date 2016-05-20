@@ -32,6 +32,10 @@ function rankTime() {
        timerRank++;
     },1000);
 }
-function getTime(){
+
+function getValue(){
     document.getElementById("value").value = timerRank;
+    document.getElementById("levelValue").value = lvl;
+
 }
+
