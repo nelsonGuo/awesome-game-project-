@@ -11,11 +11,11 @@ body {
      padding-top: 250px;
 }
 #canvas{
-        z-index: 999;
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0 auto;
-        display: none;
+    z-index: 999;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    display: none;
 }
 #gameSpace{
     margin:auto;
@@ -23,33 +23,38 @@ body {
     max-height:600px;
 }
 #startPage{
-    padding: 30px;
-    font-size: 70%;
-    background-image: url("pictures/background.jpg");
-    background-size: 100% 100%;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("../pictures/background.jpg");
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    width:280px;
-    height:380px;
+    height:681.5px;
+    width:579px;
 }
 #startPage h1 {
     padding-top:30px;
     font-size: 4em;
     margin: .67em 0;
     margin-bottom: 2.5em;
+    text-shadow: 2px 3px 2px #000;
 }
 #instruction{
-    display: none;
-    padding: 30px;
-    font-size: 70%;
-    background-image: url("pictures/background.jpg");
-    background-size: 100% 100%;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("../pictures/background.jpg");
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    width:280px;
-    height:380px;
+    height:681.5px;
+    width:579px;
+    display: none;
+}
+#screen{
+    display: none;
+    background-color:green;
+    width: 600px;
+    height: 700px;
 }
 #startPage .btn {
     margin-top: 2em;
@@ -63,7 +68,7 @@ body {
 }
 .btn-lg {
     padding: 10px 16px;
-    font-size: 120%;
+    font-size: 20px;
     line-height: 1.33;
     border-radius: 6px;
 }
@@ -78,7 +83,7 @@ body {
     border: 2px solid transparent;
     white-space: nowrap;
     padding: 5px 12px;
-    font-size: 120%;
+    font-size: 30px;
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -92,8 +97,8 @@ a {
     text-decoration: none;
 }
 #grid-container{
-    width: 86%;
-    height: 67%;
+    height: 630px;
+    width: 630px;
     padding: 20px;
     margin-top:50px;
     margin: auto;
@@ -103,8 +108,8 @@ a {
     display: none;
 }
 #grid-container2{
-    width: 86%;
-    height: 67%;
+    height: 630px;
+    width: 630px;
     padding: 20px;
     margin-top:50px;
     margin: auto;
@@ -114,20 +119,16 @@ a {
     display: none;
 }
 .map{
-    width: 30%;
     border-radius: 12px;
     box-shadow: 5px 5px 30px black;
-    background-color:black;
-    height: 30%;
+    background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
 }
 .map2{
-    width: 23%;
     border-radius: 12px;
     box-shadow: 5px 5px 30px black;
-    background-color:black;
-    height: 23%;
+    background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
 }
@@ -153,45 +154,43 @@ a {
 }
 #sequence1{
     display: none;
-    width:20%;
-    margin:auto;
+    width:205px;
+    margin:0 auto;
+    padding: 20px;
+    opacity: 1;
+    background-color: black;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
 }
 #sequence2 {
-
     display: none;
-    width:20%;
+    width:190px;
     margin:0 auto;
+    padding: 20px;
+    opacity: 1;
+    background-color: black;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
 }
 #sequence3 {
     display: none;
-    width:20%;
+    width:170px;
     margin:0 auto;
-}
-.seqgrid{
-    height:50%;
-    width:50%;
+    padding: 20px;
+    opacity: 1;
     background-color: black;
-    -webkit-animation: anim2 ease-in-out 2s;
-    animation-duration: 2s;
-}
-@-webkit-keyframes anim2{
-    from { -webkit-transform: scale(1.0) rotate(0deg) }
-    50%  { -webkit-transform: scale(0.8) rotate(180deg)}
-    to   { -webkit-transform: scale(1.0) rotate(380deg)}
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
 }
 .symbol {
     display : none;
-    width:200px;
-    height:200px;
     margin:auto;
 }
 #game-header{
-    width: 98.7%;
+    width: 679px;
     display: none;
-    background-image: url('pictures/background.jpg');
-    background-size: 100% 100%;
+    background-image: url('../pictures/background.jpg');
     border-radius: 20px;
-    height: 440px;
 }
 #top-bar{
   height: 100px;
@@ -209,34 +208,35 @@ a {
 #level{
     padding-left: 10px;
     padding-top: 5px;
-
+    float:right;
     color:white;
 }
 #level1 h1{
     text-align:center;
     color: white;
     text-shadow: 2px 3px 2px #000;
-   
 }
 #leaderBoard{
     display: none;
-    padding: 30px;
-    font-size: 70%;
-    background-image: url("pictures/background.jpg");
-    background-size: 100% 100%;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("../pictures/background.jpg");
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    width:280px;
-    height:380px;
+    height:681.5px;
+    width:579px;
 }
 #leaderBoard table{
     text-align: center;
     width: 100%;
 }
+#leaderBoard h1{
+    font-size: 3em;
+}
 #iconLeader{
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     float: left;
 }
 #back{
@@ -244,11 +244,12 @@ a {
     margin-top: 20%;
 }
 .nextPage{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+     
 }
 .nextPage:hover{
     -webkit-transform: rotate(360deg);
@@ -259,37 +260,34 @@ a {
     -webkit-filter: blur(5px);
 }
 #ins1 .nextPage{
-    margin-right: -30%;
+    margin-right: -40%;
     margin-left: 20%;
 }
 #ins2 .nextPage{
     margin-right: -20%;
 }
 #ins3 #back{
-    margin-top: 5px;
-}
-.nextPage{
-    width:30px;
-    height: 30px;
-}
-#ins1 img{
-    height: 300px;
-}
-#ins2 img{
-    height: 200px;
-}
-#ins3 img{
-    height: 200px;
+    margin-top: 20px;
 }
 #showLevel{
     display:none;
+    font-size:5em;
     color: white;
     text-shadow: 2px 3px 2px #000;
     text-align: center;
-    color: #fff;
     border-radius: 20px;
-     width:280px;
-    height:380px;
-    margin-top: 100px;
-    margin-left: 20px;
+    height:482px;
+    width:579px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.seqgrid {
+-webkit-animation: anim2 ease-in-out 2s; 
+animation-duration: 2s;
+}
+@-webkit-keyframes anim2
+{
+   from { -webkit-transform: scale(1.0) rotate(0deg) }
+   50%  { -webkit-transform: scale(0.8) rotate(180deg)}
+   to   { -webkit-transform: scale(1.0) rotate(380deg)}
 }

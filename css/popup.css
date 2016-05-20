@@ -1,7 +1,7 @@
 /*Popup content container */
 #popup-content{
 	background-color:black;
-	background-image: url("pictures/background.jpg");
+	background-image: url("../pictures/background.jpg");
 	-webkit-border-radius:15px;
 	-moz-border-radius:15px;
 	border-radius:15px;

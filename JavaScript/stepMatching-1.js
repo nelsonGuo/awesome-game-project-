@@ -1,6 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
+//step matching for 3*3
 function stepMatching(id) {
     if(numClick == 0) {
         if (id == "grid-0-0" || id == "grid-0-1" || id == "grid-0-2"|| id == "grid-0-3" ) {
