@@ -41,7 +41,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/easterEgg.js"></script>
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
 		<script type="text/javascript" src="JavaScript/button.js"></script>
-		<script type="text/javascript" src="JavaScript/lose.js"></script>
+		<script type="text/javascript" src="JavaScript/Lose.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-1.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-2.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-3.js"></script>
@@ -168,8 +168,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<!-- Popup content -->
 				<div id="popup-content" >
 					<div id="popup-form">
-						<p>You Win this game!!!</p>
-
 						<form action="playerName.php" method="post">
 							<span>Please input your name</span></span>
 							<input name="playerName" type="text">
@@ -178,7 +176,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 							<input id="send" type="submit" value="Submit" onclick="passValue()">
 						</form>
 					</div>
-					<input id="modal-close-button" type="button" value="Close Popup" />
 				</div>
 				<div id="overlay-bg"></div>
 

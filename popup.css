@@ -1,9 +1,10 @@
 /*Popup content container */
 #popup-content{
-	background-color:yellow;
+	background-color:black;
 	-webkit-border-radius:15px;
 	-moz-border-radius:15px;
 	border-radius:15px;
+	text-align: center;
 	color:#FFF;
 	display:none;
 	max-width:500px;
@@ -11,11 +12,12 @@
 	position:fixed;
 	width:80%;
 	height:40%;
-	z-index:1002;	/* Any value above all content */
+	z-index:9002;	/* Any value above all content */
 }
 #popup-form{
-	width:40%;
-
+	width:50%;
+	margin:0 auto;
+	margin-top:50px;
 }
 /*Popup close button positioning */
 #popup-content > div + div{text-align:right;} /* div:last-child Not compatible with IE 7 IE 8  http://caniuse.com/#search=last-child */
@@ -32,5 +34,5 @@
 	position:fixed;
 	top:0;
  	width:100%;
- 	z-index:1001;
+ 	z-index:9001;
   }
