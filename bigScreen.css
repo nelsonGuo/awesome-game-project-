@@ -203,14 +203,12 @@ a {
     display : none;
     margin:auto;
 }
-
 #game-header{
     width: 679px;
     display: none;
     background-image: url('pictures/background.jpg');
     border-radius: 20px;
 }
-
 #top-bar{
   height: 100px;
 }
