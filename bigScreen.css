@@ -3,7 +3,6 @@ body {
     padding: 0;
     background-color:#fc0;
 }
-
 #showEggs{
      float:left;
      width:5%;
@@ -109,9 +108,7 @@ a {
     border-color: white;
     display: none;
 }
-
 #grid-container2{
-
     height: 630px;
     width: 630px;
     padding: 20px;
@@ -121,53 +118,41 @@ a {
     border:4px solid transparent;
     border-color: white;
     display: none;
-
 }
 .map{
-
     border-radius: 12px;
     box-shadow: 5px 5px 30px black;
-
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
-
 }
-
 .map2{
     border-radius: 12px;
     box-shadow: 5px 5px 30px black;
-
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
 }
-
 .map:hover,.map2:hover{
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
 }
-
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 #sequence1{
     display: none;
     width:205px;
@@ -179,7 +164,6 @@ a {
     filter: brightness(80%);
 }
 #sequence2 {
-
     display: none;
     width:190px;
     margin:0 auto;
@@ -286,7 +270,6 @@ a {
 #ins3 #back{
     margin-top: 20px;
 }
-
 #showLevel{
     display:none;
     font-size:5em;
@@ -299,14 +282,11 @@ a {
     margin-top: 200px;
     margin-left: 50px;
 }
-
 .seqgrid {
 -webkit-animation: anim2 ease-in-out 2s; 
 animation-duration: 2s;
 }
-
 @-webkit-keyframes anim2
-
 {
    from { -webkit-transform: scale(1.0) rotate(0deg) }
    50%  { -webkit-transform: scale(0.8) rotate(180deg)}

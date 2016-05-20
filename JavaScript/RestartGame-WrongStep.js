@@ -1,7 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
-//restart this level if play go to the wrong step.
+//restart for 3*3 level
 function Restart1() {
     for (var i = 2; i >= 0; i--) {
         for (var j = 2; j >= 0; j--) {
@@ -11,7 +8,7 @@ function Restart1() {
         }
     }
 }
-
+//restart for 4*4 level
 function Restart2() {
     for (var i = 3; i >= 0; i--) {
         for (var j = 3; j >= 0; j--) {

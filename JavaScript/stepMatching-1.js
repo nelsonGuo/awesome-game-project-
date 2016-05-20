@@ -76,7 +76,7 @@ function stepMatching(id) {
                         }
 
                     } else {
-                        alert("you lost");
+                        alert("you lost");//for test will delete in the future
                         lifeDown();
                         lose();
                         Restart1();

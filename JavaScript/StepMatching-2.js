@@ -1,6 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
+//step matching
 function stepMatching2(id) {
     if(numClick == 0) {
         if (id == "2grid-0-0" || id == "2grid-0-1" || id == "2grid-0-2"|| id == "2grid-0-3" ) {
@@ -78,14 +76,12 @@ function stepMatching2(id) {
                         } else {
                             Level56();
                         }
-
                     } else {
-                        alert("you lost");
+                        alert("you lost");//for test will delete in the future
                         lifeDown();
                         lose();
                         Restart2();
                     }
-
                 } else {
                     alert("you lost");
                     lifeDown();

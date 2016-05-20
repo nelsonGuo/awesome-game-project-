@@ -1,6 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-19.
- */
+//generate random symbols for the sequence size 6
 function generateSymbol3(){
     for(var i = 0;i < 6;i++){
         addImage3(i,getValue(5));

@@ -1,4 +1,4 @@
-//generate random symbols for the map
+//generate random symbols for sequence size 4
 function generateSymbol(){
 		for(var i = 0;i <4;i++){
 			addImage(i,getValue(5));

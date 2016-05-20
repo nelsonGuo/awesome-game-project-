@@ -33,7 +33,6 @@ body {
     width:280px;
     height:380px;
 }
-
 #startPage h1 {
     padding-top:30px;
     font-size: 4em;
@@ -138,20 +137,16 @@ a {
     backface-visibility: hidden;
     perspective: 1000px;
 }
-
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
@@ -161,20 +156,17 @@ a {
     width:20%;
     margin:auto;
 }
-
 #sequence2 {
 
     display: none;
     width:20%;
     margin:0 auto;
 }
-
 #sequence3 {
     display: none;
     width:20%;
     margin:0 auto;
 }
-
 .seqgrid{
     height:50%;
     width:50%;
@@ -182,7 +174,6 @@ a {
     -webkit-animation: anim2 ease-in-out 2s;
     animation-duration: 2s;
 }
-
 @-webkit-keyframes anim2{
     from { -webkit-transform: scale(1.0) rotate(0deg) }
     50%  { -webkit-transform: scale(0.8) rotate(180deg)}
@@ -194,7 +185,6 @@ a {
     height:200px;
     margin:auto;
 }
-
 #game-header{
     width: 98.7%;
     display: none;
@@ -203,7 +193,6 @@ a {
     border-radius: 20px;
     height: 440px;
 }
-
 #top-bar{
   height: 100px;
 }
@@ -217,7 +206,6 @@ a {
     color:white;
     text-shadow: 2px 3px 2px #000;
 }
-
 #level{
     padding-left: 10px;
     padding-top: 5px;
@@ -255,14 +243,12 @@ a {
     width: 40%;
     margin-top: 20%;
 }
-
 .nextPage{
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-     
 }
 .nextPage:hover{
     -webkit-transform: rotate(360deg);
@@ -295,7 +281,6 @@ a {
 #ins3 img{
     height: 200px;
 }
-
 #showLevel{
     display:none;
     color: white;

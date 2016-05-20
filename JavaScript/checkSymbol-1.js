@@ -1,6 +1,3 @@
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
 //check symbols function
 function checkSymbol() {
     //step 1

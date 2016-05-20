@@ -1,6 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-19.
- */
+//add image to sequence3
 function addImage3(i,j) {
     var S = document.getElementById("3position" + i);
     var ctx = S.getContext("2d");

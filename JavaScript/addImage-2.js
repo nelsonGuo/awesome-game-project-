@@ -1,6 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-17.
- */
+//add image to sequence2
 function addImage2(i,j) {
     var S = document.getElementById("2position" + i);
     var ctx = S.getContext("2d");
@@ -8,7 +6,7 @@ function addImage2(i,j) {
     ctx.drawImage(img,5,5,180,180);
     sequence[i] = j;
 }
-//add image to map
+//add image to map2
 function addImageToMap2(i,j,k) {
     var S = document.getElementById("2grid-"+i+"-"+j);
     var ctx = S.getContext("2d");

@@ -1,4 +1,4 @@
-//check symbols function
+//check symbols function next level
 function checkSymbol2() {
     //step 1
     if(map["2grid-0-0"] != sequence[0] && map["2grid-0-1"] != sequence[0] && map["2grid-0-2"] != sequence[0] && map["2grid-0-3"] != sequence[0]){
@@ -29,7 +29,6 @@ function checkSymbol2() {
         addImageToMap2(2,2,sequence[3]);
         addImageToMap2(3,2,sequence[4]);
     }
-
     else if (map["2grid-0-0"] == sequence[0]){
         if (map["2grid-0-1"] != sequence[1] && map["2grid-1-0"] != sequence[1]) {
             var temp2 = Math.floor((Math.random() * 2));
@@ -56,7 +55,6 @@ function checkSymbol2() {
         addImageToMap2(2,1,sequence[3]);
         addImageToMap2(3,1,sequence[4]);
     }
-
     else if (map["2grid-0-2"] == sequence[0]){
         if (map["2grid-0-3"] != sequence[1] && map["2grid-1-2"] != sequence[1] && map["2grid-0-1"] != sequence[1]){
             var temp4 = Math.floor((Math.random() * 3));
@@ -106,7 +104,6 @@ function checkSymbol2() {
             }
         }
     }
-
     else if (map["2grid-0-1"] == sequence[0]) {
         if (map["2grid-0-2"] != sequence[1] && map["2grid-0-0"] != sequence[1] && map["2grid-1-1"] != sequence[1]) {
             var temp7 = Math.floor((Math.random() * 3));

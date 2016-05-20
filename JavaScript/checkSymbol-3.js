@@ -1,6 +1,4 @@
-/**
- * Created by 宋与珩 on 2016-05-18.
- */
+//check symbols function next level
 function checkSymbol3() {
     //step 1
     if(map["2grid-0-0"] != sequence[0] && map["2grid-0-1"] != sequence[0] && map["2grid-0-2"] != sequence[0]&& map["2grid-0-3"] != sequence[0]){
