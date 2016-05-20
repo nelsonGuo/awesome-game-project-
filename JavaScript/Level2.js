@@ -10,7 +10,7 @@ function Level2(){
     document.getElementById("level1").style.display = "none";
     setTimeout(function(){
         document.getElementById("showLevel").style.display ="none";
-        document.getElementById("lvlUp").innerHTML="Level"+lvl;
+        document.getElementById("lvlUp").innerHTML="Level "+lvl;
         document.getElementById("level1").style.display = "block";
         document.getElementById("sequence1").style.display = "block";
         document.getElementById("game-header").style.display = "block";

@@ -1,4 +1,4 @@
-//step matching
+//step matching for 4*4
 function stepMatching2(id) {
     if(numClick == 0) {
         if (id == "2grid-0-0" || id == "2grid-0-1" || id == "2grid-0-2"|| id == "2grid-0-3" ) {
@@ -58,11 +58,8 @@ function stepMatching2(id) {
                         var z = document.getElementById(id);
                         z.style.opacity="0.5";//darken the color of square when stepping on
                         pushRock();
-
                         numClick++;
-
                         column = idRecord.substring(8,9);
-
                         column = parseInt(column);
                         rowUp = row + 1;
                         columnLeft = column - 1;

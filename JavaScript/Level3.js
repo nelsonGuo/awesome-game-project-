@@ -4,7 +4,7 @@ function Level3(){
     sequence = voidSymbol;
     numClick = 0;
     Restart2();
-    document.getElementById("lvlUp").innerHTML="Level"+lvl;
+    document.getElementById("lvlUp").innerHTML="Level "+lvl;
     document.getElementById("grid-container").style.display = "none";
     document.getElementById("showLevel").style.display ="block";
     document.getElementById("showLevel").innerHTML="Level " + lvl;
