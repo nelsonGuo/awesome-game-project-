@@ -183,7 +183,7 @@ function checkSymbol3() {
                 }
             }
             if(map["2grid-1-1"] == sequence[2]){
-                if(map["2grid-2-1"] != sequence[3] && map["2grid-1-0"] != sequence[3]&&map["2grid-1-2"] != sequence[3]){
+                if(map["2grid-2-1"] != sequence[3] && map["2grid-1-0"] != sequence[3] && map["2grid-1-2"] != sequence[3]){
                     var temp12 = Math.floor((Math.random() * 3));
                     if(temp12 == 0) {
                         addImageToMap2(2,1,sequence[3]);
@@ -261,7 +261,7 @@ function checkSymbol3() {
                 }
             }
         }
-        if(map["2grid-0-1"] = sequence[1]){
+        if(map["2grid-0-1"] == sequence[1]){
             if(map["2grid-1-1"] != sequence[2] && map["2grid-0-2"] != sequence[2]){
                 var temp17 = Math.floor((Math.random() * 2));
                 if(temp17 == 0) {
@@ -418,7 +418,7 @@ function checkSymbol3() {
                         addImageToMap2(2,1,sequence[4]);
                         addImageToMap2(3,1,sequence[5]);
                     }else if(temp27 == 1) {
-                        addImageToMap2(2,2,sequence[4]);
+                        addImageToMap2(2,3,sequence[4]);
                         addImageToMap2(3,3,sequence[5]);
                     }
                 }
