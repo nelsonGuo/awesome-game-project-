@@ -1,16 +1,12 @@
 <?php
 	require_once('config.php');
-
 	// Connect to server and select database.
 	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
 	mysql_select_db(DB_DATABASE)or die("cannot select DB");
 	$tbl_name="playerInfo"; // Table name
-
-
 $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;';
 	// ORDER BY id DESC is order result by descending
 	$result=mysql_query($sql);
-
 ?>
 <!DOCTYPE html>
 	<html>
@@ -134,7 +130,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<div id="level1">
 					<h1 id="lvlUp">Level 1</h1>
 				</div>
-
 				<div id="switch">
 					<h1 id="showLevel">Level 1</h1>
 				</div>
@@ -145,17 +140,13 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					<canvas id="position2" class="seqgrid" width="200" height="200"></canvas>
 					<canvas id="position3" class="seqgrid" width="200" height="200"></canvas>
 				</div>
-
 				<div id="sequence2">
 					<canvas id="2position0" class="seqgrid" width="180" height="180"></canvas>
 					<canvas id="2position1" class="seqgrid" width="180" height="180"></canvas>
 					<canvas id="2position2" class="seqgrid" width="180" height="180"></canvas>
 					<canvas id="2position3" class="seqgrid" width="180" height="180"></canvas>
 					<canvas id="2position4" class="seqgrid" width="180" height="180"></canvas>
-
 				</div>
-
-
 				<div id="sequence3">
 					<canvas id="3position0" class="seqgrid" width="150" height="150"></canvas>
 					<canvas id="3position1" class="seqgrid" width="150" height="150"></canvas>
@@ -164,7 +155,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					<canvas id="3position4" class="seqgrid" width="150" height="150"></canvas>
 					<canvas id="3position5" class="seqgrid" width="150" height="150"></canvas>
 				</div>
-
 				<!-- Popup content -->
 				<div id="popup-content" >
 					<div id="popup-form">
@@ -179,7 +169,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					</div>
 				</div>
 				<div id="overlay-bg"></div>
-
 				<!--game map section-->
 				<div id="grid-container">
 				<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')" onmouseover="shakeRock();" width="200" height="200"></canvas>
@@ -194,22 +183,18 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				</div>
 				<!--grid for next level-->
 				<div id="grid-container2">
-
 					<canvas class = "map2" id="2grid-3-3" onclick="stepMatching2('2grid-3-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-3-2" onclick="stepMatching2('2grid-3-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-3-1" onclick="stepMatching2('2grid-3-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-3-0" onclick="stepMatching2('2grid-3-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
-
 					<canvas class = "map2" id="2grid-2-3" onclick="stepMatching2('2grid-2-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-2-2" onclick="stepMatching2('2grid-2-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-2-1" onclick="stepMatching2('2grid-2-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-2-0" onclick="stepMatching2('2grid-2-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
-
 					<canvas class = "map2" id="2grid-1-3" onclick="stepMatching2('2grid-1-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-1-2" onclick="stepMatching2('2grid-1-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-1-1" onclick="stepMatching2('2grid-1-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-1-0" onclick="stepMatching2('2grid-1-0')" onmouseover="shakeRock();" width="150" height="150"></canvas>
-
 					<canvas class = "map2" id="2grid-0-3" onclick="stepMatching2('2grid-0-3')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-0-2" onclick="stepMatching2('2grid-0-2')" onmouseover="shakeRock();" width="150" height="150"></canvas>
 					<canvas class = "map2" id="2grid-0-1" onclick="stepMatching2('2grid-0-1')" onmouseover="shakeRock();" width="150" height="150"></canvas>
@@ -218,5 +203,4 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 			</div>
 		</div>
 	</body>
-
 </html>
