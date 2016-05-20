@@ -30,7 +30,7 @@ function stepMatching2(id) {
             alert("you lost");
             lifeDown();
             lose();
-            wRestart2();
+            Restart2();
         }
     }
     else {
