@@ -12,11 +12,8 @@
 	padding:0 10px 10px 10px;
 	position:fixed;
 	width:80%;
-	height:40%;
+	height:50%;
 	z-index:9002;	/* Any value above all content */
-}
-#chest{
-	background-image: url("pictures/chest.png");
 }
 #popup-form{
 	width:100%;

@@ -169,8 +169,8 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<div id="popup-content" >
 					<div id="popup-form">
 						<form action="playerName.php" method="post">
-							<div id="chest"></div><br>
-							<span id="inputName">Please enter your name</span><br>
+							<div id="chest"><img src="pictures/chest.png" width="30%" height="30%"></div><br>
+							<label id="inputName">Please enter your name</label><br>
 							<input name="playerName" type="text">
 							<input id="value" type="hidden" name="value" value="0"><br>
                        		<input id="levelValue" type="hidden" name="levelValue" value="0">
@@ -182,7 +182,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 
 				<!--game map section-->
 				<div id="grid-container">
-
 				<canvas class = "map" id="grid-2-2" onclick="stepMatching('grid-2-2')" onmouseover="shakeRock();" width="200" height="200"></canvas>
 				<canvas class = "map" id="grid-2-1" onclick="stepMatching('grid-2-1')" onmouseover="shakeRock();" width="200" height="200"></canvas>
 				<canvas class = "map" id="grid-2-0" onclick="stepMatching('grid-2-0')" onmouseover="shakeRock();" width="200" height="200"></canvas>
