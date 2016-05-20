@@ -216,7 +216,7 @@ a {
     text-shadow: 2px 3px 2px #000;
     margin-top: -50px;
 }
-#leaderboard{
+#leaderBoard{
     display: none;
     padding: 30px;
     font-size: 70%;
@@ -228,7 +228,7 @@ a {
     width:280px;
     height:380px;
 }
-#leaderboard table{
+#leaderBoard table{
     text-align: center;
     width: 100%;
 }
