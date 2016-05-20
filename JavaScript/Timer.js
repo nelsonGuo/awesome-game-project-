@@ -13,6 +13,7 @@ function gameTimer() {
         }
     },1000);
 }
+
 //sequence timer
 function sequenceTimer(){
     var i = 10;
