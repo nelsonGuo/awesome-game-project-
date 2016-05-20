@@ -14,16 +14,28 @@ function Level2(){
 
     document.getElementById("grid-container").style.display = "none";
 
+    document.getElementById("showLevel").style.display ="block";
+    document.getElementById("showLevel").innerHTML="Level " + lvl;
 
+    
+    document.getElementById("level1").style.display = "none";
+
+    setTimeout(function(){
+        document.getElementById("showLevel").style.display ="none";
         document.getElementById("lvlUp").innerHTML="Level"+lvl;
         document.getElementById("level1").style.display = "block";
         document.getElementById("sequence1").style.display = "block";
         document.getElementById("game-header").style.display = "block";
         document.getElementById("top-bar").style.display = "block";
+        sequenceTimer();
+
+    },2000);
 
 
 
-    sequenceTimer();
+
+
+
 
     setTimeout(function () {
         document.getElementById("sequence1").style.display = "none";
@@ -33,7 +45,7 @@ function Level2(){
         document.getElementById("top-bar").style.display = "block";
         lifeBar();
         gameTimer();
-    }, 10000);
+    }, 13000);
 
     generateSymbol();
     checkSymbol();
