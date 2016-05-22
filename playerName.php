@@ -24,7 +24,7 @@
 			$str = stripslashes($str);
 		}
 		return mysql_real_escape_string($str);
-	}
+     	}
 	
 	//Sanitize the POST values	
 	$playerName = mysql_real_escape_string($_POST['playerName']);    
