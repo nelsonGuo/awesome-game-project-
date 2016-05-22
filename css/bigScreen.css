@@ -119,14 +119,14 @@ a {
     display: none;
 }
 .map{
-    border-radius: 12px;
+    border-radius: 25px;
     box-shadow: 5px 5px 30px black;
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
 }
 .map2{
-    border-radius: 12px;
+    border-radius: 25px;
     box-shadow: 5px 5px 30px black;
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
@@ -154,9 +154,8 @@ a {
 }
 #sequence1{
     display: none;
-    width:205px;
+    width:200px;
     margin:0 auto;
-    padding: 20px;
     opacity: 1;
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
@@ -164,9 +163,8 @@ a {
 }
 #sequence2 {
     display: none;
-    width:190px;
+    width:180px;
     margin:0 auto;
-    padding: 20px;
     opacity: 1;
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
@@ -174,9 +172,8 @@ a {
 }
 #sequence3 {
     display: none;
-    width:170px;
+    width:150px;
     margin:0 auto;
-    padding: 20px;
     opacity: 1;
     background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
@@ -282,6 +279,7 @@ a {
     margin-left: 50px;
 }
 .seqgrid {
+    border-radius: 25px;
 -webkit-animation: anim2 ease-in-out 2s; 
 animation-duration: 2s;
 }
