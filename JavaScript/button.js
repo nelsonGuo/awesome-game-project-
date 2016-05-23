@@ -31,6 +31,7 @@ function HomePage() {
     document.getElementById("ins1").style.display = "none";
     document.getElementById("ins2").style.display = "none";
     document.getElementById("ins3").style.display = "none";
+	document.getElementById("music1").style.display = "none";
 }
 //music volume
 function changeV(){

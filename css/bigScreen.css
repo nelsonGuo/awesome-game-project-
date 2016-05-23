@@ -308,6 +308,7 @@ animation-duration: 2s;
     border-radius: 20px;
     height:681.5px;
     width:579px;
+    text-shadow: 2px 3px 2px #000;
 }
 
 .lc{

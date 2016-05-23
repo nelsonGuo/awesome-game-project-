@@ -58,6 +58,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<h1>Setting</h1>
 				<label>Music</label><br>
 				<input type="range" name="points" min="0" max="10" id="music2" onchange ="changeV()">
+				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 				<audio autoplay loop id='music'>
 					<source src='audio/music.mp3' type='audio/mp3'>
 				</audio>
