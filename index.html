@@ -44,17 +44,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/shakeAudio.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="JavaScript/popup.js"></script>
-
-		<div id = "music1">
-			<input type="range" name="points" min="0" max="10" id="music2" onchange ="changeV()">
-
-			<audio autoplay id='music'>
-				<source src='audio/music.mp3' type='audio/mp3'>
-			</audio>
-		</div>
-
-
-
 		<audio id='push-rock'>
 			<source src='audio/push.mp3' type='audio/mp3'>
 		</audio>
@@ -64,6 +53,12 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 	</head>
 	<body>
 		<div id="gameSpace">
+			<div id = "music1">
+				<input type="range" name="points" min="0" max="10" id="music2" onchange ="changeV()">
+				<audio autoplay loop id='music'>
+					<source src='audio/music.mp3' type='audio/mp3'>
+				</audio>
+			</div>
 			<!--Leaderboarder-->
 			<div id="leaderBoard">
 				<h1>Leaderboard</h1>

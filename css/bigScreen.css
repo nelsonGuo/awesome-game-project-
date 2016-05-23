@@ -300,6 +300,14 @@ animation-duration: 2s;
 
 #music1{
     display: none;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("../pictures/background.jpg");
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
 }
 
 .lc{

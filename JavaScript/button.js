@@ -32,3 +32,14 @@ function HomePage() {
     document.getElementById("ins2").style.display = "none";
     document.getElementById("ins3").style.display = "none";
 }
+//music volume
+function changeV(){
+	var hh = document.getElementById("music2").value;
+	document.getElementById("music").volume=hh/10;
+}
+//music volume page
+function music(){
+	document.getElementById("music1").style.display = "block";
+	document.getElementById("startPage").style.display = "none";
+
+}
