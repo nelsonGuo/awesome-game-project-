@@ -193,20 +193,15 @@ a {
     border-radius: 20px;
 }
 #top-bar{
-
+    background-color: black;
     margin-top:0;
     height: 80px;
 }
 #timer{
     padding-top: 20px;
-    padding-left: 10px;
-    color:white;
-    text-shadow: 2px 3px 2px #000;
-}
-#life{
     padding-right: 10px;
-    float: right;
     color:white;
+    float: right;
     text-shadow: 2px 3px 2px #000;
 }
 #level{
@@ -299,5 +294,9 @@ animation-duration: 2s;
 }
 
 #music1{
+    display: none;
+}
+
+.lc{
     display: none;
 }

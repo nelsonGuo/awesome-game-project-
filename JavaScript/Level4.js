@@ -23,7 +23,6 @@ function Level4(){
         document.getElementById("grid-container2").style.display = "block";
         document.getElementById("game-header").style.display = "block";
         document.getElementById("top-bar").style.display = "block";
-        lifeBar();
         gameTimer();
     }, 8000);
     generateSymbol2();
