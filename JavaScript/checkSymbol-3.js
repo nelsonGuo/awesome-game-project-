@@ -41,7 +41,7 @@ function checkSymbol3() {
                 }
             }
         }
-        if(map["2grid-0-2"] = sequence[1]){
+        if(map["2grid-0-2"] == sequence[1]){
             if(map["2grid-1-2"] != sequence[2] && map["2grid-0-1"] != sequence[2]){
                 var temp3 = Math.floor((Math.random() * 2));
                 if(temp3 == 0) {
@@ -51,7 +51,7 @@ function checkSymbol3() {
                 }
                 
             }
-            if(map["2grid-1-2"] = sequence[2]){
+            if(map["2grid-1-2"] == sequence[2]){
                 if(map["2grid-1-3"] != sequence[3] && map["2grid-1-1"] != sequence[3]&& map["2grid-2-2"] != sequence[3]){
                     var temp4 = getValue(3);
                     if(temp4== 0){
@@ -269,7 +269,7 @@ function checkSymbol3() {
                 }
 
             }
-            if(map["2grid-1-1"] = sequence[2]){
+            if(map["2grid-1-1"] == sequence[2]){
                 if(map["2grid-1-0"] != sequence[3] && map["2grid-1-2"] != sequence[3]&& map["2grid-2-1"] != sequence[3]){
                     var temp18 = getValue(3);
                     if(temp18== 0){
