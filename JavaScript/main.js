@@ -19,7 +19,7 @@ function start() {
 		document.getElementById("level1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
 		document.getElementById("top-bar").style.display = "block";
-			lifeBar();
+			lifeShape();
 			gameTimer();
 	}, 13000);
 	generateSymbol();

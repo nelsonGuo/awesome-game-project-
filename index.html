@@ -120,13 +120,13 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<img id="symbol2" class = "symbol" src="pictures/2.jpg"  />
 				<img id="symbol3" class = "symbol" src="pictures/3.jpg"  />
 				<img id="symbol4" class = "symbol" src="pictures/4.jpg"  />
+				<img id="lifeCross" class = "lc" src="pictures/life1.png" />
 			</div>
 			<div id="game-header">
 				<!--life & timer-->
 				<div id="top-bar">
-					<h2 id="life"></h2>
+					<canvas id="lifeTotem" height="60" width="136"></canvas>
 					<h2 id="timer"></h2>
-
 				</div>
 				<div id="level1">
 					<h1 id="lvlUp">Level 1</h1>
