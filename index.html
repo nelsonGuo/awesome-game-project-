@@ -46,7 +46,9 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script src="JavaScript/popup.js"></script>
 
 		<div id = "music1">
-			<audio autoplay id='music' controls>
+			<input type="range" name="points" min="0" max="10" id="music2" onchange ="changeV()">
+
+			<audio autoplay id='music'>
 				<source src='audio/music.mp3' type='audio/mp3'>
 			</audio>
 		</div>

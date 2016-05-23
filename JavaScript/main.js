@@ -31,6 +31,11 @@ function getValue(num){
 	return temp;
    }
 
+function changeV(){
+	var hh = document.getElementById("music2").value;
+	document.getElementById("music").volume=hh/10;
+}
+
 function music(){
 	document.getElementById("music1").style.display = "block";
 }
