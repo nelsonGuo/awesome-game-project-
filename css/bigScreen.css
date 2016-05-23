@@ -159,9 +159,10 @@ a {
     width:165px;
     margin:0 auto;
     opacity: 1;
-    background-color: black;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
+    background:rgba(0,0,0,0.5);
+
 }
 #sequence2 {
     display: none;
@@ -193,9 +194,13 @@ a {
     border-radius: 20px;
 }
 #top-bar{
-    background-color: black;
+    background:rgba(0,0,0,0.7);
     margin-top:0;
     height: 80px;
+    display: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
 }
 #timer{
     padding-top: 20px;
