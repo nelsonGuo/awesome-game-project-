@@ -155,9 +155,8 @@ a {
   }
 }
 #sequence1{
-    height: 700px;
     display: none;
-    width:200px;
+    width:165px;
     margin:0 auto;
     opacity: 1;
     background-color: black;
@@ -165,9 +164,8 @@ a {
     filter: brightness(80%);
 }
 #sequence2 {
-    height: 650px;
     display: none;
-    width:180px;
+    width:140px;
     margin:0 auto;
     opacity: 1;
     background-color: black;
@@ -175,9 +173,8 @@ a {
     filter: brightness(80%);
 }
 #sequence3 {
-    height: 650px;
     display: none;
-    width:150px;
+    width:115px;
     margin:0 auto;
     opacity: 1;
     background-color: black;

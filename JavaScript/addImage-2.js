@@ -3,7 +3,7 @@ function addImage2(i,j) {
     var S = document.getElementById("2position" + i);
     var ctx = S.getContext("2d");
     var img = document.getElementById("symbol" + j);
-    ctx.drawImage(img, 0,0,180,180);
+    ctx.drawImage(img, 0,0,140,140);
     sequence[i] = j;
 }
 //add image to map2
