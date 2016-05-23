@@ -44,9 +44,15 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/shakeAudio.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="JavaScript/popup.js"></script>
-		<audio autoplay id='music'>
-			<source src='audio/music.mp3' type='audio/mp3'>
-		</audio>
+
+		<div id = "music1">
+			<audio autoplay id='music' controls>
+				<source src='audio/music.mp3' type='audio/mp3'>
+			</audio>
+		</div>
+
+
+
 		<audio id='push-rock'>
 			<source src='audio/push.mp3' type='audio/mp3'>
 		</audio>
@@ -112,6 +118,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
+				<input type="image" src="pictures/music.png" class="nextPage" onclick="music()" height="100" width="100">
 			</div>
 			<!--insert images-->
 			<div>

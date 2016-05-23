@@ -30,3 +30,7 @@ function getValue(num){
 	var temp = Math.floor((Math.random() * num));
 	return temp;
    }
+
+function music(){
+	document.getElementById("music1").style.display = "block";
+}

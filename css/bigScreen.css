@@ -297,3 +297,7 @@ animation-duration: 2s;
    50%  { -webkit-transform: scale(0.8) rotate(180deg)}
    to   { -webkit-transform: scale(1.0) rotate(380deg)}
 }
+
+#music1{
+    display: none;
+}
