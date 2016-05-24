@@ -38,6 +38,11 @@ function changeV(){
 	var hh = document.getElementById("music2").value;
 	document.getElementById("music").volume=hh/10;
 }
+function changeV1(){
+	var hh = document.getElementById("music3").value;
+	document.getElementById("push-rock").volume=hh/10;
+	document.getElementById("shake-rock").volume=hh/10;
+}
 //music volume page
 function music(){
 	document.getElementById("music1").style.display = "block";
