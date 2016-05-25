@@ -44,6 +44,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/shakeAudio.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="JavaScript/popup.js"></script>
+		<script type="text/javascript" src="JavaScript/achievements.js"></script>
 	</head>
 	<body>
 		<div id="gameSpace">
@@ -117,7 +118,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 			</div>
 			<!--start page-->
 			<div id="startPage">
-				<h1 id ="header" onclick="eggs()">Escape Sequence</h1>
+				<h1 id ="header" onclick="eggs(),finder()">Escape Sequence</h1>
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>

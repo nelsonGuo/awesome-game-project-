@@ -16,3 +16,10 @@ var lvl=1;
 var countTimer=0;
 var timerRank=0;
 var clock;
+
+
+var FC = false;
+var SC = false;
+var LvlC = false;
+var LifeC = false;
+var TC = false;
