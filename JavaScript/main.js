@@ -31,3 +31,16 @@ function getValue(num){
 	return temp;
    }
 
+
+function achievement(){
+	document.getElementById("achievement").style.display = "block";
+	document.getElementById("iconLeader").style.display = "none";
+	document.getElementById("startPage").style.display = "none";
+}
+function achieve(){
+	document.getElementById("ach").style.display = "block";
+	setTimeout(function(){
+		document.getElementById("ach").style.display = "none";
+	},1000);
+
+}

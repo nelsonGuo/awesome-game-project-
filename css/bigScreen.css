@@ -337,3 +337,27 @@ input[type="range"]::-webkit-slider-thumb {
 label{
     font-size: 30px;
 }
+#ach{
+    display: none;
+    position:absolute;
+    margin-top:-500px;
+    background-color: black;
+
+}
+
+#achievement{
+    display: none;
+    padding: 50px;
+    font-size: 30px;
+    background-image: url("../pictures/background.jpg");
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
+}
+#achievementIcon{
+    width: 70px;
+    height: 70px;
+    float: right;
+}

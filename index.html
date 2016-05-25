@@ -116,10 +116,50 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 				</div>
 			</div>
+
+			<!--achievement page-->
+			<div id="achievement">
+				<h1>Achievement</h1>
+				<table>
+					<tr>
+						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td>Find easter egg</td>
+					</tr>
+					
+					<tr>
+						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td>Find easter egg</td>
+					</tr>
+
+					<tr>
+						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td>Find easter egg</td>
+					</tr>
+
+					<tr>
+						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td>Find easter egg</td>
+					</tr>
+
+					<tr>
+						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td>Find easter egg</td>
+					</tr>
+				</table>
+				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
+
+
+				<div id="ach">
+					<p>Achievement Get!</p>
+				</div>
+				<a class="btn btn-primary btn-lg" id="achieve" onclick="achieve()">Achieve</a>	
+
+			</div>
 			<!--start page-->
 			<div id="startPage">
 				<h1 id ="header" onclick="eggs(),finder()">Escape Sequence</h1>
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
+				<input type="image" src="pictures/achievement.png" id="achievementIcon" onclick="achievement()">
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
 				<input type="image" src="pictures/music.png" class="nextPage" onclick="music()" height="100" width="100">
