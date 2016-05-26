@@ -112,9 +112,9 @@ function achievement(){
     loadachievement();
 }
 function achieve(){
-    document.getElementById("ach").style.display = "block";
-    setTimeout(function(){
-        document.getElementById("ach").style.display = "none";
-    },3000);
+    $(document).ready(function(){
+        document.getElementById("ach").style.display = "block";
+        $("#ach").fadeOut(2000);
+    });
 
 }
