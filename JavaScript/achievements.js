@@ -4,11 +4,11 @@ if(FC == false) {
     FC = true;
     document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"finder\".";
     achieve();
-    
-    
 }
     eggs();
 }
+
+
 
 function loadachievement() {
 
@@ -92,7 +92,6 @@ function achieve(){
     document.getElementById("ach").style.display = "block";
     setTimeout(function(){
         document.getElementById("ach").style.display = "none";
-    },10000);
-
+    },3000);
 
 }
