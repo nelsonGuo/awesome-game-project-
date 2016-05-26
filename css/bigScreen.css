@@ -338,12 +338,16 @@ label{
     font-size: 30px;
 }
 #ach{
+    margin:auto;
     display: none;
     position:absolute;
-    margin-top:-500px;
-    background-color: black;
-
+    left:40%;
+    text-align: center;
+    height:20px;
+    color:red;
+    font-size:2em;
 }
+
 
 #achievement{
     display: none;

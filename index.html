@@ -21,7 +21,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/addImage-1.js"></script>
 		<script type="text/javascript" src="JavaScript/addImage-2.js"></script>
 		<script type="text/javascript" src="JavaScript/addImage-3.js"></script>
-		<script type="text/javascript" src="JavaScript/increaseGrids.js"></script>
 		<script type="text/javascript" src="JavaScript/stepMatching-1.js"></script>
 		<script type="text/javascript" src="JavaScript/stepMatching-2.js"></script>
 		<script type="text/javascript" src="JavaScript/RestartGame-WrongStep.js"></script>
@@ -117,47 +116,49 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				</div>
 			</div>
 
+			<div id="ach">
+				<p>Achievement Get!</p>
+			</div>
+
 			<!--achievement page-->
 			<div id="achievement">
 				<h1>Achievement</h1>
 				<table>
 					<tr>
-						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td> <canvas id="ach1" width="50" height="50"></canvas></td>
 						<td>Find easter egg</td>
 					</tr>
 					
 					<tr>
-						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td><canvas id="ach2" width="50" height="50"></canvas></td>
 						<td>Find easter egg</td>
 					</tr>
 
 					<tr>
-						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td><canvas id="ach3" width="50" height="50"></canvas></td>
 						<td>Find easter egg</td>
 					</tr>
 
 					<tr>
-						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td><canvas id="ach4" width="50" height="50"></canvas></td>
 						<td>Find easter egg</td>
 					</tr>
 
 					<tr>
-						<td><img src="pictures/lock.png" alt="lock" height="50"/></td>
+						<td><canvas id="ach5" width="50" height="50"></canvas></td>
 						<td>Find easter egg</td>
 					</tr>
 				</table>
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 
 
-				<div id="ach">
-					<p>Achievement Get!</p>
-				</div>
+
 				<a class="btn btn-primary btn-lg" id="achieve" onclick="achieve()">Achieve</a>	
 
 			</div>
 			<!--start page-->
 			<div id="startPage">
-				<h1 id ="header" onclick="eggs(),finder()">Escape Sequence</h1>
+				<h1 id ="header" onclick="finder()">Escape Sequence</h1>
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
 				<input type="image" src="pictures/achievement.png" id="achievementIcon" onclick="achievement()">
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
@@ -172,6 +173,8 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<img id="symbol3" class = "symbol" src="pictures/3.jpg"  />
 				<img id="symbol4" class = "symbol" src="pictures/4.jpg"  />
 				<img id="lifeCross" class = "lc" src="pictures/life1.png" />
+				<img src="pictures/lock.png" id="locker" alt="lock" height="50"/>
+				<img src="pictures/unlock.png" id="unlock" alt="unlock" height="50"/>
 			</div>
 			<div id="game-header">
 				<!--life & timer-->

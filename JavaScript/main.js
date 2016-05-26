@@ -25,6 +25,10 @@ function start() {
 	generateSymbol();
 	checkSymbol();
 }
+
+
+
+
 // get a random symbol for the map
 function getValue(num){
 	var temp = Math.floor((Math.random() * num));
@@ -32,15 +36,3 @@ function getValue(num){
    }
 
 
-function achievement(){
-	document.getElementById("achievement").style.display = "block";
-	document.getElementById("iconLeader").style.display = "none";
-	document.getElementById("startPage").style.display = "none";
-}
-function achieve(){
-	document.getElementById("ach").style.display = "block";
-	setTimeout(function(){
-		document.getElementById("ach").style.display = "none";
-	},1000);
-
-}
