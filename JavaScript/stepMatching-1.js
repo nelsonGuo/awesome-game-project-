@@ -18,14 +18,12 @@ function stepMatching(id) {
                 columnRight = column + 1;
             }
             else {
-                alert("you lost");
                 lifeDown();
                 lose();
                 Restart1();
             }
         }
         else {
-            alert("you lost");
             lifeDown();
             lose();
             Restart1();
@@ -76,28 +74,24 @@ function stepMatching(id) {
                         }
 
                     } else {
-                        alert("you lost");//for test will delete in the future
                         lifeDown();
                         lose();
                         Restart1();
                     }
 
                 } else {
-                    alert("you lost");
                     lifeDown();
                     lose();
                     Restart1();
                 }
             }
             else {
-                alert("you lost");
                 lifeDown();
                 lose();
                 Restart1();
             }
         }
         else {
-            alert("you lost");
             lifeDown();
             lose();
             Restart1();

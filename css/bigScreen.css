@@ -383,3 +383,7 @@ label{
 #unlock{
     display: none;
 }
+#lifeTotem{
+    padding-top: 20px;
+    padding-left: 10px;
+}

@@ -46,7 +46,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script src="JavaScript/popup.js"></script>
 		<script type="text/javascript" src="JavaScript/achievements.js"></script>
 	</head>
-	<body onload="showObjects()">
+	<body>
 		<div id="gameSpace">
 			<!--music setting-->
 			<div id = "music1">
@@ -151,9 +151,6 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					</tr>
 				</table>
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
-
-
-
 				<a class="btn btn-primary btn-lg" id="achieve" onclick="achieve()">Achieve</a>	
 
 			</div>
