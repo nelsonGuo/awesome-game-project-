@@ -2,7 +2,6 @@
 function finder() {
 if(FC == false) {
     FC = true;
-    document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"finder\".";
     achieve();
 }
     eggs();
@@ -10,7 +9,6 @@ if(FC == false) {
 function starter(){
     if(SC == false) {
         SC = true;
-        document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"Starter\".";
         achieve();
     }
 }
@@ -18,7 +16,6 @@ function starter(){
 function highLvl(){
     if(LvlC == false) {
         SC = true;
-        document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"Starter\".";
         achieve();
     }
 }
@@ -26,12 +23,9 @@ function highLvl(){
 function lifeKeeper(){
     if(LifeC == false) {
         SC = true;
-        document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"Staunch\".";
         achieve();
     }
 }
-
-
 
 function loadachievement() {
 
@@ -112,9 +106,6 @@ function achievement(){
     loadachievement();
 }
 function achieve(){
-    $(document).ready(function(){
-        document.getElementById("ach").style.display = "block";
-        $("#ach").fadeOut(2000);
-    });
-
+        $("#ach").fadeIn(1000);
+        setTimeout($("#ach").fadeOut(1000),4000);
 }
