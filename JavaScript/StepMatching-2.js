@@ -71,6 +71,17 @@ function stepMatching2(id) {
                         }else if(lvl == 4){
                             Level4();
                         } else {
+                            if(lvl == 15) {
+                                highLvl();
+                            }
+
+                            if(lvl == 8 && life == 3) {
+                                lifeKeeper();
+                            }
+                            
+                            if(lvl == 10 && lifeKeeper < 200){
+                                lifeKeeper ();
+                            }
                             Level56();
                         }
                     } else {

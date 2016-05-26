@@ -66,7 +66,9 @@ function stepMatching(id) {
                         //alert("you won!!!");
                         lvl++;
                         if(lvl == 2) {
+                            starter();
                             Level2();
+
                         } else if (lvl == 3) {
                             Level3();
                         } else {

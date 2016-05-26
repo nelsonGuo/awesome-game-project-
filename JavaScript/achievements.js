@@ -7,6 +7,29 @@ if(FC == false) {
 }
     eggs();
 }
+function starter(){
+    if(SC == false) {
+        SC = true;
+        document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"Starter\".";
+        achieve();
+    }
+}
+
+function highLvl(){
+    if(LvlC == false) {
+        SC = true;
+        document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"Starter\".";
+        achieve();
+    }
+}
+
+function lifeKeeper(){
+    if(LifeC == false) {
+        SC = true;
+        document.getElementById("ach").innerHTML = "Congratulation! You have unlocked \"Staunch\".";
+        achieve();
+    }
+}
 
 
 
