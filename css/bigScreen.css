@@ -31,7 +31,7 @@ body {
     border-radius: 20px;
     height:775px;
     width:579px;
-    box-shadow: 6px 6px 7px 5px black;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #startPage h1 {
     padding-top:30px;
@@ -50,7 +50,7 @@ body {
     height:681.5px;
     width:579px;
     display: none;
-    box-shadow: 6px 6px 7px 5px black;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #screen{
     display: none;
@@ -194,7 +194,7 @@ a {
     display: none;
     background-image: url('../pictures/background.jpg');
     border-radius: 20px;
-    box-shadow: 6px 6px 7px 5px black;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #top-bar{
     background:rgba(0,0,0,0.7);
@@ -364,4 +364,12 @@ label{
     width: 70px;
     height: 70px;
     float: right;
+}
+#innerAchieve{
+    display: none;
+    width:400px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    z-index: 9999;
 }

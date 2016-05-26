@@ -41,11 +41,12 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/generateSymbol-2.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-3.js"></script>
 		<script type="text/javascript" src="JavaScript/shakeAudio.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="JavaScript/popup.js"></script>
 		<script type="text/javascript" src="JavaScript/achievements.js"></script>
 	</head>
-	<body>
+	<body onload="showObjects()">
 		<div id="gameSpace">
 			<!--music setting-->
 			<div id = "music1">
@@ -179,6 +180,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 			<div id="game-header">
 				<!--life & timer-->
 				<div id="top-bar">
+					<div id="innerAchieve" ><h1>nihao</h1></div>
 					<canvas id="lifeTotem" height="60" width="136"></canvas>
 					<h2 id="timer"></h2>
 				</div>
