@@ -21,7 +21,7 @@ function Restart2() {
         }
 }
 
-
+//First, add a red border when the play walk to the wrong step, then after 2seconds, clear that border
 function  clearBorder(id) {
     var z = document.getElementById(id);
     z.style.border = "5px red solid";//darken the color of square when stepping on
