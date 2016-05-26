@@ -373,3 +373,11 @@ label{
     position: relative;
     z-index: 9999;
 }
+
+#locker{
+    display : none;
+}
+
+#unlock{
+    display: none;
+}
