@@ -33,39 +33,39 @@ function loadachievement() {
         var S = document.getElementById("ach1");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
     }else{
         var S = document.getElementById("ach1");
         var ctx = S.getContext("2d");
-        ctx.clearRect(0,0,50,50);
+        ctx.clearRect(0,0,80,80);
         var img = document.getElementById("unlock");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
     }
 
     if(SC == false) {
         var S = document.getElementById("ach2");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
 
     }else{
         var S = document.getElementById("ach2");
         var ctx = S.getContext("2d");
         var img = document.getElementById("unlock");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
     }
 
     if(LvlC == false ){
         var S = document.getElementById("ach3");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
 
     }else{
         var S = document.getElementById("ach3");
         var ctx = S.getContext("2d");
         var img = document.getElementById("unlock");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
 
     }
 
@@ -73,26 +73,26 @@ function loadachievement() {
         var S = document.getElementById("ach4");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
 
     }else{
         var S = document.getElementById("ach4");
         var ctx = S.getContext("2d");
         var img = document.getElementById("unlock");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
     }
 
     if(TC == false) {
         var S = document.getElementById("ach5");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
-        ctx.drawImage(img,0,0,50,50);
+        ctx.drawImage(img,0,0,80,80);
 
     }else {
         var S = document.getElementById("ach5");
         var ctx = S.getContext("2d");
         var img = document.getElementById("unlock");
-        ctx.drawImage(img, 0, 0, 50, 50);
+        ctx.drawImage(img, 0, 0, 80, 80);
     }
 
 }
