@@ -17,18 +17,22 @@ function stepMatching2(id) {
                 columnLeft = column - 1;
                 columnRight = column + 1;
             }
-            else {                         z = document.getElementById(id);
-                z.style.border="1px red solid";//darken the color of square when stepping on
+            else {
+                clearBorder(id);
                 lifeDown();
                 lose();
-                Restart2();
+                setTimeout(function () {
+                    Restart1()
+                }, 2000);
             }
         }
-        else {                         z = document.getElementById(id);
-            z.style.border="1px red solid";//darken the color of square when stepping on
+        else {
+            clearBorder(id);
             lifeDown();
             lose();
-            Restart2();
+            setTimeout(function () {
+                Restart1()
+            }, 2000);
         }
     }
     else {
@@ -85,34 +89,38 @@ function stepMatching2(id) {
                             Level56();
                         }
                     } else {
-                         z = document.getElementById(id);
-                        z.style.border="1px red solid";//darken the color of square when stepping on
+                        clearBorder(id);
                         lifeDown();
                         lose();
-                        Restart2();
+                        setTimeout(function () {
+                            Restart1()
+                        }, 2000);
                     }
                 } else {
-                    z = document.getElementById(id);
-                    z.style.border="1px red solid";//darken the color of square when stepping on
+                    clearBorder(id);
                     lifeDown();
                     lose();
-                    Restart2();
-            }
+                    setTimeout(function () {
+                        Restart1()
+                    }, 2000);
+                }
             }
             else {
-                z = document.getElementById(id);
-                z.style.border="1px red solid";//darken the color of square when stepping on
+                clearBorder(id);
                 lifeDown();
                 lose();
-                Restart2();
+                setTimeout(function () {
+                    Restart1()
+                }, 2000);
             }
         }
         else {
-            z = document.getElementById(id);
-            z.style.border="1px red solid";//darken the color of square when stepping on
+            clearBorder(id);
             lifeDown();
             lose();
-            Restart2();
+            setTimeout(function () {
+                Restart1()
+            }, 2000);
         }
     }
 }
