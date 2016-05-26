@@ -5,12 +5,17 @@ function gameTimer() {
     countTimer++;
     var i=30;
      var timer = setInterval(function(){
-        if(i== -1||countTimer < lvl){
+        if(i== -1){
             clearInterval(timer);
-        }else{
+            timeGame = 0;
+            lose();
+        }else if(countTimer < lvl) {
+            clearInterval(timer);
+
+         } else{
             document.getElementById("timer").innerHTML = "Time: "+i;
             --i;
-            //lose();
+            lose();
         }
     },1000);
 }

@@ -97,7 +97,7 @@ function stepMatching2(id) {
                     lifeDown();
                     lose();
                     Restart2();
-                }
+            }
             }
             else {
                 z = document.getElementById(id);
