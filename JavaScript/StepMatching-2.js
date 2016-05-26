@@ -22,7 +22,7 @@ function stepMatching2(id) {
                 lifeDown();
                 lose();
                 setTimeout(function () {
-                    Restart1()
+                    Restart2()
                 }, 2000);
             }
         }
@@ -31,7 +31,7 @@ function stepMatching2(id) {
             lifeDown();
             lose();
             setTimeout(function () {
-                Restart1()
+                Restart2()
             }, 2000);
         }
     }
@@ -93,7 +93,7 @@ function stepMatching2(id) {
                         lifeDown();
                         lose();
                         setTimeout(function () {
-                            Restart1()
+                            Restart2()
                         }, 2000);
                     }
                 } else {
@@ -101,7 +101,7 @@ function stepMatching2(id) {
                     lifeDown();
                     lose();
                     setTimeout(function () {
-                        Restart1()
+                        Restart2()
                     }, 2000);
                 }
             }
@@ -110,7 +110,7 @@ function stepMatching2(id) {
                 lifeDown();
                 lose();
                 setTimeout(function () {
-                    Restart1()
+                    Restart2()
                 }, 2000);
             }
         }
@@ -119,7 +119,7 @@ function stepMatching2(id) {
             lifeDown();
             lose();
             setTimeout(function () {
-                Restart1()
+                Restart2()
             }, 2000);
         }
     }
