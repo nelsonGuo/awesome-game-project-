@@ -17,13 +17,15 @@ function stepMatching2(id) {
                 columnLeft = column - 1;
                 columnRight = column + 1;
             }
-            else {
+            else {                         z = document.getElementById(id);
+                z.style.border="1px red solid";//darken the color of square when stepping on
                 lifeDown();
                 lose();
                 Restart2();
             }
         }
-        else {
+        else {                         z = document.getElementById(id);
+            z.style.border="1px red solid";//darken the color of square when stepping on
             lifeDown();
             lose();
             Restart2();
@@ -83,23 +85,31 @@ function stepMatching2(id) {
                             Level56();
                         }
                     } else {
+                         z = document.getElementById(id);
+                        z.style.border="1px red solid";//darken the color of square when stepping on
                         lifeDown();
                         lose();
                         Restart2();
                     }
                 } else {
+                    z = document.getElementById(id);
+                    z.style.border="1px red solid";//darken the color of square when stepping on
                     lifeDown();
                     lose();
                     Restart2();
                 }
             }
             else {
+                z = document.getElementById(id);
+                z.style.border="1px red solid";//darken the color of square when stepping on
                 lifeDown();
                 lose();
                 Restart2();
             }
         }
         else {
+            z = document.getElementById(id);
+            z.style.border="1px red solid";//darken the color of square when stepping on
             lifeDown();
             lose();
             Restart2();
