@@ -341,7 +341,7 @@ label{
     left:40%;
     text-align: center;
     height:20px;
-    color:red;
+    color:white;
     font-size:2em;
 }
 
@@ -367,14 +367,6 @@ label{
     text-align: center;
     width: 100%;
 }
-#innerAchieve{
-    display: none;
-    width:400px;
-    height: 200px;
-    background-color: red;
-    position: relative;
-    z-index: 9999;
-}
 
 #locker{
     display : none;
@@ -382,8 +374,4 @@ label{
 
 #unlock{
     display: none;
-}
-#lifeTotem{
-    padding-top: 20px;
-    padding-left: 10px;
 }
