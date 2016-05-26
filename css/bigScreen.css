@@ -47,16 +47,10 @@ body {
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:681.5px;
+    height:775px;
     width:579px;
     display: none;
     box-shadow: 6px 7px 8px 9px black;
-}
-#screen{
-    display: none;
-    background-color:green;
-    width: 600px;
-    height: 700px;
 }
 #startPage .btn {
     margin-top: 2em;
@@ -232,8 +226,9 @@ a {
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:681.5px;
+    height:775px;
     width:579px;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #leaderBoard table{
     text-align: center;
@@ -309,9 +304,10 @@ animation-duration: 2s;
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:681.5px;
-    width:579px;
     text-shadow: 2px 3px 2px #000;
+    height:775px;
+    width:579px;
+    box-shadow: 6px 7px 8px 9px black;
 }
 
 .lc{
@@ -357,13 +353,18 @@ label{
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:681.5px;
+    height:775px;
     width:579px;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #achievementIcon{
     width: 70px;
     height: 70px;
     float: right;
+}
+#achievement table{
+    text-align: center;
+    width: 100%;
 }
 #innerAchieve{
     display: none;
