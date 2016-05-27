@@ -63,6 +63,7 @@ body {
     line-height: 1.33;
     border-radius: 6px;
 }
+
 .btn {
     display: block;
     margin: auto;
@@ -238,10 +239,17 @@ a {
     margin-left: 100px;
     margin-top: 30px;
 }
+#back1{
+    width: 40%;
+    margin-top: 5%;
+}
+
 #back{
     width: 40%;
     margin-top: 20%;
 }
+
+
 .nextPage{
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -393,4 +401,18 @@ label{
     margin-top: 30px;
     margin-right: 100px;
     float: right;
+}
+
+#showResult{
+    color: #fbff36;
+    margin:8px 6px;
+}
+
+#inputName {
+    margin:0;
+    font-size: 0.7em;
+}
+#nameInput{
+    width:200px;
+    height: 28px;
 }
