@@ -4,13 +4,6 @@ body {
     background-image: url("../pictures/weblayout3.jpg");
     background-size: 100%;
 }
-#showEggs{
-     float:left;
-     width:5%;
-     height:100%;
-     background-color: #fc0;
-     padding-top: 250px;
-}
 #canvas{
     z-index: 999;
     padding-left: 0;
@@ -30,7 +23,7 @@ body {
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:775px;
+    height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
 }
@@ -48,7 +41,7 @@ body {
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:775px;
+    height:735px;
     width:579px;
     display: none;
     box-shadow: 6px 7px 8px 9px black;
@@ -185,7 +178,7 @@ a {
 }
 #game-header{
     width: 679px;
-    height:870px;
+    height:835px;
     display: none;
     background-image: url('../pictures/background.jpg');
     border-radius: 20px;
@@ -227,7 +220,7 @@ a {
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:775px;
+    height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
 }
@@ -287,8 +280,8 @@ a {
 }
 .seqgrid {
     border-radius: 25px;
--webkit-animation: anim2 ease-in-out 2s; 
-animation-duration: 2s;
+    -webkit-animation: anim2 ease-in-out 2s; 
+    animation-duration: 2s;
 }
 @-webkit-keyframes anim2
 {
@@ -309,6 +302,11 @@ animation-duration: 2s;
     height:775px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
+}
+#musicIcon{
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
 }
 
 .lc{
@@ -354,7 +352,7 @@ label{
     text-align: center;
     color: #fff;
     border-radius: 20px;
-    height:775px;
+    height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
 }
