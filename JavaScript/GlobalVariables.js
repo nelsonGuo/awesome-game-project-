@@ -17,8 +17,8 @@ var timerRank=0;
 var clock;
 var quite=false;
 
-var FC = 0;
-var SC = 0;
-var LvlC = 0;
-var LifeC = 0;
-var TC = 0;
+var FC = false;
+var SC = false;
+var LvlC = false;
+var LifeC = false;
+var TC = false;

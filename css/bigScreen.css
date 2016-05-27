@@ -193,9 +193,8 @@ a {
     border-top-left-radius: 20px;
 }
 #timer{
-    position:absolute;
-    top: 10px;
-    right: 31%;
+    padding-top: 10px;
+    padding-right: 10px;
     color:white;
     float: right;
     text-shadow: 2px 3px 2px #000;

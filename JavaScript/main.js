@@ -1,7 +1,6 @@
 //initialization when game start
 function start() {
 	rankTime();
-	document.getElementById("lifeTotem").style.display = "none";
 	document.getElementById("startPage").style.display = "none";
 	document.getElementById("showLevel").style.display ="block";
 	document.getElementById("showLevel").innerHTML="Level " + lvl;
@@ -9,7 +8,6 @@ function start() {
 	document.getElementById("level1").style.display = "none";
 	setTimeout(function(){
 		sequenceTimer();
-		document.getElementById("lifeTotem").style.display = "none";
 		document.getElementById("timer").style.display = "block";
 		document.getElementById("lvlUp").innerHTML="Level "+lvl;
 		document.getElementById("level1").style.display = "block";
@@ -18,7 +16,6 @@ function start() {
 	document.getElementById("top-bar").style.display = "block";
 	},2000);
 		setTimeout(function () {
-		document.getElementById("lifeTotem").style.display = "block";
 		document.getElementById("sequence1").style.display = "none";
 		document.getElementById("level1").style.display = "none";
 		document.getElementById("grid-container").style.display = "block";
@@ -30,7 +27,9 @@ function start() {
 			var ctx = S.getContext("2d");
 			var img = document.getElementById("quitImg");
 			ctx.drawImage(img,0,0,60,60);
-			
+
+
+
 	}, 13000);
 	generateSymbol();
 	checkSymbol();

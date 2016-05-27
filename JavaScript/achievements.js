@@ -1,52 +1,40 @@
 
-
 function finder() {
 if(FC == false) {
     FC = true;
-    document.cookie="FC"+"="+FC+";";
-    $.getScript("achievements.php");
     achieve();
 }
     eggs();
 }
 function starter(){
-    if(SC == 0) {
-        SC = 1;
-        document.cookie="SC"+"="+SC+";"
-        $.getScript("achievements.php");
+    if(SC == false) {
+        SC = true;
         achieve();
     }
 }
+
 function highLvl(){
-    if(LvlC == 0) {
-        LvlC = 1;
-        document.cookie="LvlC"+"="+LvlC+";"
-        $.getScript("achievements.php");
+    if(LvlC == false) {
+        LvlC = true;
         achieve();
     }
 }
 
 function lifeKeeper(){
-    if(LifeC == 0) {
-        LifeC = 1;
-        document.cookie="LifeC"+"="+LifeC+";"
-        $.getScript("achievements.php");
+    if(LifeC == false) {
+        LifeC = true;
         achieve();
     }
 }
-function timeKeeper(){
-    if(TC == 0) {
-        TC = 1;
-        document.cookie="TC"+"="+TC+";"
-        $.getScript("achievements.php");
+function timeKeeper() {
+    if (TC == false) {
+        TC = true;
         achieve();
     }
 }
-
-
 function loadachievement() {
 
-    if(FC == 0) {
+    if(FC == false) {
         var S = document.getElementById("ach1");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -59,7 +47,7 @@ function loadachievement() {
         ctx.drawImage(img,0,0,80,80);
     }
 
-    if(SC == 0) {
+    if(SC == false) {
         var S = document.getElementById("ach2");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -73,7 +61,7 @@ function loadachievement() {
         ctx.drawImage(img,0,0,80,80);
     }
 
-    if(LvlC == 0 ){
+    if(LvlC == false ){
         var S = document.getElementById("ach3");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -88,7 +76,7 @@ function loadachievement() {
 
     }
 
-    if(LifeC == 0) {
+    if(LifeC == false) {
         var S = document.getElementById("ach4");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -102,7 +90,7 @@ function loadachievement() {
         ctx.drawImage(img,0,0,80,80);
     }
 
-    if(TC == 0) {
+    if(TC == false) {
         var S = document.getElementById("ach5");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");

@@ -7,13 +7,7 @@ function quiting() {
 function lose () {
         if ( life==0 ||timeGame<=0 || timeGame == 0 || quite == true) {
                 clearInterval(clock);
-                document.cookie="timerRank"+"="+timerRank+";";
-
-                document.cookie="level"+"="+lvl+";";
-
-                $.getScript("playerName.php");
                 openPopup();
-
         }
         
 }
