@@ -235,7 +235,6 @@ a {
     width: 70px;
     height: 70px;
     float: left;
-    margin-left: 100px;
     margin-top: 30px;
 }
 #back1{
@@ -315,7 +314,6 @@ a {
     width: 70px;
     height: 70px;
     margin-top: 30px;
-    float: left;
 }
 .lc{
     display: none;
@@ -395,13 +393,7 @@ label{
     left:50%;
     top:20px;
 }
-#keyIcon{
-    width: 70px;
-    height: 70px;
-    margin-top: 30px;
-    margin-right: 100px;
-    float: right;
-}
+
 
 #showResult{
     color: #fbff36;
