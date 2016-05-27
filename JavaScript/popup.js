@@ -4,6 +4,9 @@ function openPopup(){
 	$("#popup-content").fadeIn();
 	$("#overlay-bg").fadeIn();
 	clearInterval(timer);
+	
+	var c = document.getElementById("showResult").innerHTML = "Level: " + lvl + "     Time: " + timerRank;
+	
 	resizePopup();
 }
 //pop-up window close (use for next week)
@@ -19,6 +22,8 @@ function resizePopup(){
 	var left = ($(window).width() - $popupContent.outerWidth()) / 2; //horizontal
 	$popupContent.css({'top' : top, 'left' : left});
 }
+
+
 function showObjects() {
 	$("#innerAchieve").slideDown(3000);
 	$("#innerAchieve").fadeOut(1000);

@@ -34,6 +34,29 @@ function HomePage() {
 	document.getElementById("music1").style.display = "none";
 	document.getElementById("achievement").style.display = "none";
 }
+
+function HomePage2() {
+
+	life = 3;
+	timeGame = 30;
+	gridCount = 0;
+	lvl=1;
+	countTimer=0;
+	timerRank =0;
+	map = new Array();
+	sequence = new Array();
+	numClick = 0;
+	clock = 0;
+
+	Restart1();
+
+	document.getElementById("game-header").style.display = "none";
+	document.getElementById("grid-container").style.display = "none";
+	document.getElementById("grid-container2").style.display = "none";
+	document.getElementById("iconLeader").style.display = "block";
+	document.getElementById("startPage").style.display = "block";
+	closePopup();
+}
 //music volume
 function changeV(){
 	var hh = document.getElementById("music2").value;

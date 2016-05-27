@@ -1,7 +1,7 @@
 //level 5,6 flow
 function Level56(){
-    map = voidSymbol;
-    sequence = voidSymbol;
+    map = new Array();
+    sequence = new Array();
     numClick = 0;
     Restart2();
     document.getElementById("lvlUp").innerHTML="Level "+lvl;

@@ -210,13 +210,13 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<!-- Popup content -->
 				<div id="popup-content" >
 					<div id="popup-form">
+						<div id="chest"><img src="pictures/chest.png" width="30%" height="30%"></div>
+						<p id = "showResult"> information</p>
+						<a class="btn btn-primary btn-lg" id="back" onclick="HomePage2()">Home</a>
 						<form action="playerName.php" method="post">
-							<div id="chest"><img src="pictures/chest.png" width="30%" height="30%"></div><br>
-							<label id="inputName">Please enter your name</label><br>
-							<input name="playerName" type="text">
+
 							<input id="value" type="hidden" name="value" value="0"><br>
-                       		<input id="levelValue" type="hidden" name="levelValue" value="0">
-							<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Home</a>
+							<input id="levelValue" type="hidden" name="levelValue" value="0">
 						</form>
 					</div>
 				</div>

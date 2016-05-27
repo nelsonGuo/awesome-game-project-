@@ -15,18 +15,23 @@ function starter(){
 
 function highLvl(){
     if(LvlC == false) {
-        SC = true;
+        LvlC = true;
         achieve();
     }
 }
 
 function lifeKeeper(){
     if(LifeC == false) {
-        SC = true;
+        LifeC = true;
         achieve();
     }
 }
-
+function timeKeeper() {
+    if (TC == false) {
+        TC = true;
+        achieve();
+    }
+}
 function loadachievement() {
 
     if(FC == false) {
@@ -51,6 +56,7 @@ function loadachievement() {
     }else{
         var S = document.getElementById("ach2");
         var ctx = S.getContext("2d");
+        ctx.clearRect(0,0,80,80);
         var img = document.getElementById("unlock");
         ctx.drawImage(img,0,0,80,80);
     }
@@ -64,6 +70,7 @@ function loadachievement() {
     }else{
         var S = document.getElementById("ach3");
         var ctx = S.getContext("2d");
+        ctx.clearRect(0,0,80,80);
         var img = document.getElementById("unlock");
         ctx.drawImage(img,0,0,80,80);
 
@@ -78,6 +85,7 @@ function loadachievement() {
     }else{
         var S = document.getElementById("ach4");
         var ctx = S.getContext("2d");
+        ctx.clearRect(0,0,80,80);
         var img = document.getElementById("unlock");
         ctx.drawImage(img,0,0,80,80);
     }
@@ -91,6 +99,7 @@ function loadachievement() {
     }else {
         var S = document.getElementById("ach5");
         var ctx = S.getContext("2d");
+        ctx.clearRect(0,0,80,80);
         var img = document.getElementById("unlock");
         ctx.drawImage(img, 0, 0, 80, 80);
     }
@@ -99,12 +108,13 @@ function loadachievement() {
 
 
 function achievement(){
-
     document.getElementById("achievement").style.display = "block";
     document.getElementById("iconLeader").style.display = "none";
     document.getElementById("startPage").style.display = "none";
     loadachievement();
 }
+
+
 function achieve(){
         $("#ach").fadeIn(1000);
         setTimeout($("#ach").fadeOut(1000),4000);

@@ -1,7 +1,7 @@
 //level 4 flow
 function Level4(){
-    map = voidSymbol;
-    sequence = voidSymbol;
+    map = new Array();
+    sequence = new Array();
     numClick = 0;
     Restart2();
     document.getElementById("lvlUp").innerHTML="Level "+lvl;

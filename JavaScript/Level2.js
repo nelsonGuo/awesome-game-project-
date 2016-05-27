@@ -1,7 +1,7 @@
 //level 2 flow
 function Level2(){
-    map = voidSymbol;
-    sequence = voidSymbol;
+    map = new Array();
+    sequence = new Array();
     numClick = 0;
     Restart1();
     document.getElementById("grid-container").style.display = "none";

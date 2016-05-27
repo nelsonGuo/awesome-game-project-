@@ -83,8 +83,8 @@ function stepMatching2(id) {
                                 lifeKeeper();
                             }
                             
-                            if(lvl == 10 && lifeKeeper < 200){
-                                lifeKeeper ();
+                            if(lvl == 10 && timerRank < 200){
+                                timeKeeper();
                             }
                             Level56();
                         }
@@ -123,5 +123,5 @@ function stepMatching2(id) {
             }, 2000);
         }
     }
-    
+
 }
