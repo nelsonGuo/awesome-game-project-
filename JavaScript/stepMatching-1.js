@@ -17,22 +17,20 @@ function stepMatching(id) {
                 columnLeft = column - 1;
                 columnRight = column + 1;
             }
-            else {
-                clearBorder(id);
+            else {            z = document.getElementById(id);
+                z.style.border="1px red solid";//darken the color of square when stepping on
                 lifeDown();
                 lose();
-                setTimeout(function () {
-                    Restart1()
-                }, 2000);
+                Restart1();
+                xiaoshi();
             }
         }
-        else {
-            clearBorder(id);
+        else {        z = document.getElementById(id);
+            z.style.border="1px red solid";//darken the color of square when stepping on
             lifeDown();
             lose();
-            setTimeout(function () {
-                Restart1()
-            }, 2000);
+            Restart1();
+            xiaoshi();
         }
     }
     else {
@@ -79,41 +77,42 @@ function stepMatching(id) {
                             Level4();
                         }
 
-                    } else {
-                        clearBorder(id);
+                    } else {            z = document.getElementById(id);
+                        z.style.border="1px red solid";//darken the color of square when stepping on
                         lifeDown();
                         lose();
-                        setTimeout(function () {
-                            Restart1()
-                        }, 2000);
+                        Restart1();
+                        xiaoshi();
                     }
 
-                } else {
-                    clearBorder(id);
+                } else {            z = document.getElementById(id);
+                    z.style.border="1px red solid";//darken the color of square when stepping on
                     lifeDown();
                     lose();
-                    setTimeout(function () {
-                        Restart1()
-                    }, 2000);
+                    Restart1();
+                    xiaoshi();
                 }
             }
-            else {
-                clearBorder(id);
+            else {            z = document.getElementById(id);
+                z.style.border="1px red solid";//darken the color of square when stepping on'
+                setTimeout()
                 lifeDown();
                 lose();
-                setTimeout(function () {
-                    Restart1()
-                }, 2000);
+                Restart1();
+                xiaoshi();
             }
         }
-        else {
-            clearBorder(id);
+        else {            z = document.getElementById(id);
+            z.style.border="1px red solid";//darken the color of square when stepping on
             lifeDown();
             lose();
-            setTimeout(function () {
-                Restart1()
-            }, 2000);
-
+            Restart1();
+            xiaoshi();
         }
     }
+}
+function xiaoshi() {
+    z = document.getElementById(id);
+    z.style.border="none";//darken the color of square when stepping on'
+
 }
