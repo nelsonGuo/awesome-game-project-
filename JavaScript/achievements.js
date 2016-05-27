@@ -1,7 +1,13 @@
+document.cookie="FC"+"="+FC+";"
+document.cookie="SC"+"="+SC+";"
+document.cookie="LvlC"+"="+LvlC+";"
+document.cookie="LifeC"+"="+LifeC+";"
+document.cookie="TC"+"="+TC+";"
 
 function finder() {
 if(FC == false) {
     FC = true;
+    $_COOKIE['FC'] =FC;
     achieve();
 }
     eggs();
@@ -9,6 +15,7 @@ if(FC == false) {
 function starter(){
     if(SC == false) {
         SC = true;
+    $_COOKIE['SC'] =SC;
         achieve();
     }
 }
@@ -16,6 +23,7 @@ function starter(){
 function highLvl(){
     if(LvlC == false) {
         LvlC = true;
+        $_COOKIE['LvlC'] =LvlC;
         achieve();
     }
 }
@@ -23,12 +31,14 @@ function highLvl(){
 function lifeKeeper(){
     if(LifeC == false) {
         LifeC = true;
+        $_COOKIE['LifeC'] =LifeC;
         achieve();
     }
 }
 function timeKeeper() {
     if (TC == false) {
         TC = true;
+        $_COOKIE['TC'] =TC;
         achieve();
     }
 }
