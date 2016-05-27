@@ -235,6 +235,7 @@ a {
     width: 70px;
     height: 70px;
     float: left;
+    margin-top: 30px;
 }
 #back{
     width: 40%;
@@ -358,6 +359,7 @@ label{
     width: 70px;
     height: 70px;
     float: right;
+    margin-top: 30px;
 }
 #achievement table{
     text-align: center;
