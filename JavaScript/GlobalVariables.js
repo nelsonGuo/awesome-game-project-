@@ -16,7 +16,7 @@ var lvl=1;
 var countTimer=0;
 var timerRank=0;
 var clock;
-
+var quite=false;
 
 var FC = false;
 var SC = false;

@@ -21,6 +21,14 @@ function start() {
 		document.getElementById("top-bar").style.display = "block";
 			lifeShape();
 			gameTimer();
+			document.getElementById("quit").style.display = "block";
+			var S = document.getElementById("quit");
+			var ctx = S.getContext("2d");
+			var img = document.getElementById("quitImg");
+			ctx.drawImage(img,0,0,60,60);
+
+
+
 	}, 13000);
 	generateSymbol();
 	checkSymbol();

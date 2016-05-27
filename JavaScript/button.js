@@ -47,9 +47,10 @@ function HomePage2() {
 	sequence = new Array();
 	numClick = 0;
 	clock = 0;
+	quite = false;
 
 	Restart1();
-
+	document.getElementById("quit").style.display = "none";
 	document.getElementById("game-header").style.display = "none";
 	document.getElementById("grid-container").style.display = "none";
 	document.getElementById("grid-container2").style.display = "none";

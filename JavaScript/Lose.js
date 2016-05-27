@@ -1,6 +1,12 @@
 //life or timer to 0 it will popup a input board for the leaderboard.
+function quiting() {
+        quite = true;
+        lose();
+}
+
+
 function lose () {
-        if ( life==0 ||timeGame<=0 || timeGame == 0) {
+        if ( life==0 ||timeGame<=0 || timeGame == 0 || quite == true) {
                 clearInterval(clock);
                 openPopup();
         }

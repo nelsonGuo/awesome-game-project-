@@ -193,7 +193,7 @@ a {
     border-top-left-radius: 20px;
 }
 #timer{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 10px;
     color:white;
     float: right;
@@ -339,6 +339,7 @@ label{
     height:20px;
     color:white;
     font-size:2em;
+    z-index: 1200;
 }
 #achievement{
     display: none;
@@ -372,4 +373,13 @@ label{
 }
 .iconAchievements{
     background-color: black;
+}
+#quitImg{
+    display: none;
+}
+#quit{
+    display:none;
+    position: absolute;
+    left:50%;
+    top:20px;
 }

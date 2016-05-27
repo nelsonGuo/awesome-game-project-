@@ -28,3 +28,6 @@ function showObjects() {
 	$("#innerAchieve").slideDown(3000);
 	$("#innerAchieve").fadeOut(1000);
 }
+function quit(){
+	openPopup();
+}
