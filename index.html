@@ -24,19 +24,19 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/stepMatching-1.js"></script>
 		<script type="text/javascript" src="JavaScript/stepMatching-2.js"></script>
 		<script type="text/javascript" src="JavaScript/restartGame-wrongStep.js"></script>
-		<script type="text/javascript" src="JavaScript/Timer.js"></script>
+		<script type="text/javascript" src="JavaScript/timer.js"></script>
 		<script type="text/javascript" src="JavaScript/globalVariables.js"></script>
-		<script type="text/javascript" src="JavaScript/Level2.js"></script>
-		<script type="text/javascript" src="JavaScript/Level56.js"></script>
-		<script type="text/javascript" src="JavaScript/Level3.js"></script>
-		<script type="text/javascript" src="JavaScript/Level4.js"></script>
+		<script type="text/javascript" src="JavaScript/level2.js"></script>
+		<script type="text/javascript" src="JavaScript/level56.js"></script>
+		<script type="text/javascript" src="JavaScript/level3.js"></script>
+		<script type="text/javascript" src="JavaScript/level4.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbol-1.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbol-2.js"></script>
 		<script type="text/javascript" src="JavaScript/checkSymbol-3.js"></script>
 		<script type="text/javascript" src="JavaScript/easterEgg.js"></script>
 		<script type="text/javascript" src="JavaScript/lifeBar.js"></script>
 		<script type="text/javascript" src="JavaScript/button.js"></script>
-		<script type="text/javascript" src="JavaScript/Lose.js"></script>
+		<script type="text/javascript" src="JavaScript/lose.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-1.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-2.js"></script>
 		<script type="text/javascript" src="JavaScript/generateSymbol-3.js"></script>
@@ -160,7 +160,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<input type="image" src="pictures/achievement.png" id="achievementIcon" onclick="achievement()">
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
-				<input type="image" src="pictures/music.png" class="nextPage" onclick="music()" height="100" width="100">
+				<input type="image" src="pictures/music.png" class="nextPage" id="musicIcon" onclick="music()" height="100" width="100">
 			</div>
 			<!--insert images-->
 			<div>
@@ -170,8 +170,8 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 				<img id="symbol3" class = "symbol" src="pictures/3.jpg"  />
 				<img id="symbol4" class = "symbol" src="pictures/4.jpg"  />
 				<img id="lifeCross" class = "lc" src="pictures/life1.png" />
-				<img src="pictures/lock.png" id="locker" alt="lock" height="50"/>
-				<img src="pictures/blueegg.png" id="unlock" alt="unlock" height="50"/>
+				<img src="pictures/lock.png" id="locker" alt="lock"/>
+				<img src="pictures/blueegg.png" id="unlock" alt="unlock"/>
 			</div>
 			<div id="game-header">
 				<!--life & timer-->
