@@ -4,7 +4,7 @@
 	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
 	mysql_select_db(DB_DATABASE)or die("cannot select DB");
 	$tbl_name="playerInfo"; // Table name
-$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;';
+	$sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;';
 	// ORDER BY id DESC is order result by descending
 	$result=mysql_query($sql);
 ?>
@@ -47,6 +47,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 		<script type="text/javascript" src="JavaScript/achievements.js"></script>
 	</head>
 	<body>
+
 		<div id="gameSpace">
 			<!--music setting-->
 			<div id = "music1">
@@ -77,7 +78,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 						<th>Level</th>
 					</tr>
 						<?php
-							 $rank =0;
+							$rank =0;
 							while($rows=mysql_fetch_array($result)){ 
 							           $rank ++;                              // Start looping table row
 						?>
@@ -116,7 +117,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 					<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 				</div>
 			</div>
-
+			<!--achievement bar-->
 			<div id="ach">
 				<img src="pictures/medal.png"/><span>Unlock A New Achievement!</span>
 			</div>
@@ -150,8 +151,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 						<td>???</td>
 					</tr>
 				</table>
-				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>	
-
+				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 			</div>
 			<!--start page-->
 			<div id="startPage">
@@ -220,6 +220,7 @@ $sql = 'select * FROM playerInfo ORDER BY `level` DESC,`playTime` ASC LIMIT 10;'
 						</form>
 					</div>
 				</div>
+				<!--mask black-->
 				<div id="overlay-bg"></div>
 				<!--game map section-->
 				<div id="grid-container">

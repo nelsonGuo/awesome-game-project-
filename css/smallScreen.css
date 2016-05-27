@@ -4,7 +4,6 @@ body {
     background-image: url("../pictures/weblayout3.jpg");
     background-size: 100%;
 }
-
 #canvas{
     z-index: 999;
     padding-left: 0;
@@ -36,7 +35,6 @@ body {
     margin-bottom: 1.8em;
     text-shadow: 2px 3px 2px #000;
 }
-
 #instruction{
     display: none;
     padding: 30px;
@@ -121,6 +119,8 @@ a {
     height: 30%;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
+    -webkit-animation: anim1 ease-in-out 2s;
+    animation-duration: 2s;
 }
 .map2{
     width: 23%;
@@ -130,6 +130,13 @@ a {
     height: 23%;
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
+    -webkit-animation: anim1 ease-in-out 2s;
+    animation-duration: 2s;
+}
+@-webkit-keyframes anim1{
+    from { -webkit-transform: scale(1.0) rotate(380deg) }
+    50%  { -webkit-transform: scale(0.8) rotate(180deg)}
+    to   { -webkit-transform: scale(1.0) rotate(0deg)}
 }
 .map:hover,.map2:hover{
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
@@ -161,7 +168,6 @@ a {
     background:rgba(0,0,0,0.5);
 }
 #sequence2 {
-
     display: none;
     width:15%;
     margin:0 auto;
@@ -237,7 +243,6 @@ a {
     text-align:center;
     color: white;
     text-shadow: 2px 3px 2px #000;
-   
 }
 #switch h1{
     font-size: 3em;
