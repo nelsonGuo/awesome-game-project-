@@ -189,7 +189,6 @@ a {
     background:rgba(0,0,0,0.7);
     margin-top:0;
     height: 80px;
-    display: hidden;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -364,7 +363,8 @@ label{
     height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    text-shadow: 2px 3px 2px #000;
 }
 #achievementIcon{
     width: 70px;

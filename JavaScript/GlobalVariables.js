@@ -21,4 +21,4 @@ var FC = 0;
 var SC = 0;
 var LvlC = 0;
 var LifeC = 0;
-var TC = 0;e;
+var TC = 0;

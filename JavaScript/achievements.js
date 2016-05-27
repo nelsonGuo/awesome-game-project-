@@ -45,7 +45,7 @@ function timeKeeper(){
 
 function loadachievement() {
 
-    if(fc == 0) {
+    if(FC == 0) {
         var S = document.getElementById("ach1");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -58,7 +58,7 @@ function loadachievement() {
         ctx.drawImage(img,0,0,80,80);
     }
 
-    if(sc == 0) {
+    if(SC == 0) {
         var S = document.getElementById("ach2");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -72,7 +72,7 @@ function loadachievement() {
         ctx.drawImage(img,0,0,80,80);
     }
 
-    if(lvlC == 0 ){
+    if(LvlC == 0 ){
         var S = document.getElementById("ach3");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -87,7 +87,7 @@ function loadachievement() {
 
     }
 
-    if(lifeC == 0) {
+    if(LifeC == 0) {
         var S = document.getElementById("ach4");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
@@ -101,7 +101,7 @@ function loadachievement() {
         ctx.drawImage(img,0,0,80,80);
     }
 
-    if(tc == 0) {
+    if(TC == 0) {
         var S = document.getElementById("ach5");
         var ctx = S.getContext("2d");
         var img = document.getElementById("locker");
