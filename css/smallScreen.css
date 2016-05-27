@@ -48,6 +48,7 @@ body {
     height:380px;
     box-shadow: 6px 7px 8px 9px black;
     margin-top: 0;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #startPage .btn {
     margin-top: 2em;
@@ -259,6 +260,7 @@ a {
     width:280px;
     height:380px;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #leaderBoard table{
     text-align: center;
@@ -339,6 +341,7 @@ a {
     width:280px;
     height:380px;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #music1 h1{
     font-size: 3em;
@@ -400,6 +403,7 @@ label{
     width:280px;
     height:380px;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #achievementIcon{
     width: 40px;

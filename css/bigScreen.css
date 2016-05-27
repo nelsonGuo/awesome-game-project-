@@ -45,6 +45,7 @@ body {
     width:579px;
     display: none;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #startPage .btn {
     margin-top: 2em;
@@ -152,23 +153,22 @@ a {
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
     background:rgba(0,0,0,0.5);
-
 }
 #sequence2 {
     display: none;
-    width:140px;
+    width:130px;
     margin:0 auto;
     opacity: 1;
-    background-color: black;
+    background:rgba(0,0,0,0.5);
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
 }
 #sequence3 {
     display: none;
-    width:115px;
+    width:105px;
     margin:0 auto;
     opacity: 1;
-    background-color: black;
+    background:rgba(0,0,0,0.5);
     -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
     filter: brightness(80%);
 }
@@ -191,7 +191,6 @@ a {
     display: hidden;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-
 }
 #timer{
     padding-top: 20px;
@@ -223,6 +222,7 @@ a {
     height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #leaderBoard table{
     text-align: center;
@@ -245,8 +245,7 @@ a {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    transition: all 1s ease;
-     
+    transition: all 1s ease;  
 }
 .nextPage:hover{
     -webkit-transform: rotate(360deg);
@@ -289,7 +288,6 @@ a {
    50%  { -webkit-transform: scale(0.8) rotate(180deg)}
    to   { -webkit-transform: scale(1.0) rotate(380deg)}
 }
-
 #music1{
     display: none;
     padding: 50px;
@@ -299,16 +297,16 @@ a {
     color: #fff;
     border-radius: 20px;
     text-shadow: 2px 3px 2px #000;
-    height:775px;
+    height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 #musicIcon{
     width: 70px;
     height: 70px;
     margin-top: 30px;
 }
-
 .lc{
     display: none;
 }
@@ -342,8 +340,6 @@ label{
     color:white;
     font-size:2em;
 }
-
-
 #achievement{
     display: none;
     padding: 50px;
@@ -355,6 +351,7 @@ label{
     height:735px;
     width:579px;
     box-shadow: 6px 7px 8px 9px black;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;   
 }
 #achievementIcon{
     width: 70px;
