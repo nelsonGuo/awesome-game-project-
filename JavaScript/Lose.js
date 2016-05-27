@@ -4,7 +4,6 @@ function quiting() {
         lose();
 }
 
-
 function lose () {
         if ( life==0 ||timeGame<=0 || timeGame == 0 || quite == true) {
                 clearInterval(clock);
