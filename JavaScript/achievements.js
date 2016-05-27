@@ -1,4 +1,5 @@
 
+
 function finder() {
 if(FC == false) {
     FC = true;
