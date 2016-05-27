@@ -77,3 +77,14 @@ function music(){
 	document.getElementById("startPage").style.display = "none";
 
 }
+function login(){
+	document.getElementById("login").style.display = "block";
+	document.getElementById("iconLeader").style.display = "none";
+	document.getElementById("startPage").style.display = "none";
+}
+
+function signUp(){
+	document.getElementById("login").style.display = "none";
+	document.getElementById("signUp").style.display = "block";
+
+}

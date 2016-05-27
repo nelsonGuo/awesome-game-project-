@@ -1,0 +1,109 @@
+#login{
+    display: none;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("../../../Desktop/new/pictures/background.jpg");
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
+}
+#login-container{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:calc(50vh - 200px);
+  left:calc(50vw - 200px);
+  overflow:hidden;
+  border-radius: 10px;
+  padding-left:40px;
+}
+
+#box{
+  position:absolute;
+  height:100%;
+  width:100%;
+  font-family:Helvetica;
+  color:#fff;
+  background:rgba(0,0,0,0.5);
+  padding:30px 0px;
+}
+#box h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:30px;
+}
+#box input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.2);
+  color:#fff;
+  border:0;
+}
+#box input:focus,#box input:active,#loginSend:focus,#loginSend:active{
+  outline:none;
+}
+#loginSend{
+  background:#357ebd;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}
+#loginSend:active{
+  background:#27ae60;
+}
+#box p{
+  font-size:14px;
+  text-align:center;
+}
+#box p span{
+  cursor:pointer;
+  color:#666;
+}
+
+/*signUp*/
+
+#signUp{
+    display: none;
+    padding: 50px;
+    font-size: 20px;
+    background-image: url("../../../Desktop/new/pictures/background.jpg");
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    height:681.5px;
+    width:579px;
+}
+#signUp-container{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:calc(50vh - 200px);
+  left:calc(50vw - 200px);
+  overflow:hidden;
+  border-radius: 10px;
+  padding-left:40px;
+}
+
+#signUpSend{
+  background:#357ebd;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}
+#signUpSend:active{
+  background:#27ae60;
+}

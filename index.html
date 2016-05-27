@@ -1,4 +1,6 @@
 <?php
+	//Start session
+	session_start();
 	require_once('config.php');
 	// Connect to server and select database.
 	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
@@ -13,11 +15,12 @@
 	<head lang="en">
     	<meta charset="UTF-8">
     	<title>Escape game</title>
-    	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="css/smallScreen.css" />
-    	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 600px)" href="css/bigScreen.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="css/smallScreen.css" />
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 600px)" href="css/bigScreen.css" />
 		<link rel="stylesheet" type="text/css" href="css/popup.css">
-    	<script type="text/javascript" src="JavaScript/main.js"></script>
+		<link rel="stylesheet" href="css/style.css" /> <!-- login -->
+		<script type="text/javascript" src="JavaScript/main.js"></script>
 		<script type="text/javascript" src="JavaScript/addImage-1.js"></script>
 		<script type="text/javascript" src="JavaScript/addImage-2.js"></script>
 		<script type="text/javascript" src="JavaScript/addImage-3.js"></script>
@@ -49,6 +52,33 @@
 	<body>
 
 		<div id="gameSpace">
+			<!-- login -->
+			<div id="login">
+				<div id="login-container">
+					<div id="box">
+						<form action="login.php" method="post">
+							<h1>Login</h1>
+							<input type="text" name="userName" placeholder="Username"/>
+							<input type="text" name="passWord" placeholder="Password"/>
+							<input id="loginSend" type="submit" value="Login">
+							<p>Not a member? <span onclick="signUp()">Sign Up</span></p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- signUp -->
+			<div id="signUp">
+				<div id="signUp-container">
+					<div id="box">
+						<form action="signUp.php" method="post">
+							<h1>SignUp</h1>
+							<input type="text" name="signName" placeholder="Username"/>
+							<input type="text" name="signPassWord" placeholder="Password"/>
+							<input id="signUpSend" type="submit" value="Sign Up">
+						</form>
+					</div>
+				</div>
+			</div>
 			<!--music setting-->
 			<div id = "music1">
 				<h1>Setting</h1>
@@ -77,23 +107,25 @@
 						<th>Time</th>
 						<th>Level</th>
 					</tr>
-						<?php
-							$rank =0;
-							while($rows=mysql_fetch_array($result)){ 
+					<?php
+						if(isset($_SESSION['user'])){
+							 $rank =0;
+							while($rows=mysql_fetch_array($result)){
 							           $rank ++;                              // Start looping table row
 						?>
-							<tr>
-							<td ><?php echo $rank ?></td>
-							<td ><?php echo $rows['playerName']; ?></td>
-							<td ><?php echo $rows['playTime']; ?></td>
-							<td ><?php echo $rows['level']; ?></td>
-							</tr>
-							<?php
+					<tr>
+						<td ><?php echo $rank ?></td>
+						<td ><?php echo $rows['playerName']; ?></td>
+						<td ><?php echo $rows['playTime']; ?></td>
+						<td ><?php echo $rows['level']; ?></td>
+					</tr>
+					<?php
 							// Exit looping and close connection
 							}
+						}
 							mysql_close();
-							?>
-					  <tr>
+						?>
+					<tr>
 				</table>
 				<a class="btn btn-primary btn-lg" id="back" onclick="HomePage()">Go Back</a>
 			</div>
@@ -155,13 +187,26 @@
 			</div>
 			<!--start page-->
 			<div id="startPage">
+				<div id="userLogin">
+					<?php
+                if(isset($_SESSION['user'])){
+				echo $_SESSION['user'];
+                //echo $_COOKIE['FC'];
+                //echo $_COOKIE['SC'];
+                //echo $_COOKIE['LvlC'];
+                //echo $_COOKIE['LifeC'];
+                //echo $_COOKIE['TC'];
+
+                }
+			    ?>
+				</div>
 				<h1 id ="header" onclick="finder()">SEQUENCE ESCAPE</h1>
 				<a class="btn btn-primary btn-lg" id="ins" onclick="ins()"> Instruction </a>
 				<a class="btn btn-primary btn-lg" id="start1" onclick="start()"> Start Game </a>
 				<input type="image" src="pictures/music.png" class="nextPage" id="musicIcon" onclick="music()" height="100" width="100">
 				<input type="image" src="pictures/leaderboardIcon.png" id="iconLeader" onclick="leaderBoard()" onmouseover="this.src='pictures/leaderboardIcon2.png'" onmouseout="this.src='pictures/leaderboardIcon.png'">
 				<input type="image" src="pictures/achievement.png" id="achievementIcon" onclick="achievement()">
-				<input type="image" src="pictures/key.png" id="keyIcon" onclick="">
+				<input type="image" src="pictures/key.png" id="keyIcon" onclick="login()">
 			</div>
 			<!--insert images-->
 			<div>
