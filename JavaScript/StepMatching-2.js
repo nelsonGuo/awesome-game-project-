@@ -22,7 +22,7 @@ function stepMatching2(id) {
                 lifeDown();
                 lose();
                 setTimeout(function () {
-                    Restart2()
+                    Restart2 ()
                 }, 2000);
             }
         }
