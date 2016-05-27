@@ -307,6 +307,7 @@ a {
     width: 70px;
     height: 70px;
     margin-top: 30px;
+    margin-left: 80px;
 }
 .lc{
     display: none;
@@ -384,4 +385,11 @@ label{
     position: absolute;
     left:50%;
     top:20px;
+}
+#keyIcon{
+    width: 39px;
+    height: 70px;
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
 }
