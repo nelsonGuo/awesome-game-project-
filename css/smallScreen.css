@@ -1,21 +1,16 @@
 body {
     margin-top: 30px;
     padding: 0;
-    background-color:#fc0;
+    background-image: url("../pictures/weblayout3.jpg");
+    background-size: 100%;
 }
-#showEggs{
-     float:left;
-     width:5%;
-     height:100%;
-     background-color: #fc0;
-     padding-top: 250px;
-}
+
 #canvas{
-        z-index: 999;
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0 auto;
-        display: none;
+    z-index: 999;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    display: none;
 }
 #gameSpace{
     margin:auto;
@@ -32,13 +27,16 @@ body {
     border-radius: 20px;
     width:280px;
     height:380px;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #startPage h1 {
     padding-top:30px;
     font-size: 4em;
     margin: .67em 0;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.8em;
+    text-shadow: 2px 3px 2px #000;
 }
+
 #instruction{
     display: none;
     padding: 30px;
@@ -50,6 +48,8 @@ body {
     border-radius: 20px;
     width:280px;
     height:380px;
+    box-shadow: 6px 7px 8px 9px black;
+    margin-top: 0;
 }
 #startPage .btn {
     margin-top: 2em;
@@ -153,23 +153,36 @@ a {
 }
 #sequence1{
     display: none;
-    width:20%;
+    width:15%;
     margin:auto;
+    opacity: 1;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
+    background:rgba(0,0,0,0.5);
 }
 #sequence2 {
 
     display: none;
-    width:20%;
+    width:15%;
     margin:0 auto;
+    opacity: 1;
+    background-color: black;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
 }
 #sequence3 {
     display: none;
-    width:20%;
+    width:15%;
     margin:0 auto;
+    opacity: 1;
+    background-color: black;
+    -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+    filter: brightness(80%);
 }
 .seqgrid{
-    height:50%;
-    width:50%;
+    border-radius: 20px;
+    height:100%;
+    width:100%;
     background-color: black;
     -webkit-animation: anim2 ease-in-out 2s;
     animation-duration: 2s;
@@ -192,13 +205,21 @@ a {
     background-size: 100% 100%;
     border-radius: 20px;
     height: 440px;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #top-bar{
-  height: 100px;
+  background:rgba(0,0,0,0.7);
+    margin-top:0;
+    height: 80px;
+    display: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 #timer{
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
     color:white;
+    float: right;
     text-shadow: 2px 3px 2px #000;
 }
 #life{
@@ -209,7 +230,7 @@ a {
 #level{
     padding-left: 10px;
     padding-top: 5px;
-
+    float:right;
     color:white;
 }
 #level1 h1{
@@ -217,6 +238,9 @@ a {
     color: white;
     text-shadow: 2px 3px 2px #000;
    
+}
+#switch h1{
+    font-size: 3em;
 }
 #leaderBoard{
     display: none;
@@ -229,10 +253,14 @@ a {
     border-radius: 20px;
     width:280px;
     height:380px;
+    box-shadow: 6px 7px 8px 9px black;
 }
 #leaderBoard table{
     text-align: center;
     width: 100%;
+}
+#leaderBoard h1{
+    font-size: 3em;
 }
 #iconLeader{
     width: 40px;
@@ -276,13 +304,14 @@ a {
     height: 300px;
 }
 #ins2 img{
-    height: 200px;
+    height: 250px;
 }
 #ins3 img{
-    height: 200px;
+    height: 250px;
 }
 #showLevel{
     display:none;
+    font-size:5em;
     color: white;
     text-shadow: 2px 3px 2px #000;
     text-align: center;
@@ -292,4 +321,102 @@ a {
     height:380px;
     margin-top: 100px;
     margin-left: 20px;
+}
+#music1{
+    display: none;
+    padding: 30px;
+    font-size: 70%;
+    background-image: url("../pictures/background.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    width:280px;
+    height:380px;
+    box-shadow: 6px 7px 8px 9px black;
+}
+#music1 h1{
+    font-size: 3em;
+}
+#musicIcon{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+#music1 label{
+    font-size: 2em;
+}
+#music1 a{
+    margin-top: 20px;
+}
+.lc{
+    display: none;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 200px;
+    height:5px;
+    margin-bottom:50px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: darkslategrey;
+    opacity: 0.9;
+    width: 10px;
+    height: 30px;
+}
+label{
+    font-size: 30px;
+}
+#ach{
+    margin:auto;
+    display: none;
+    position:absolute;
+    text-align: center;
+    height:20px;
+    color:white;
+    font-size:2em;
+}
+
+
+#achievement{
+    display: none;
+    padding: 30px;
+    font-size: 70%;
+    background-image: url("../pictures/background.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    width:280px;
+    height:380px;
+    box-shadow: 6px 7px 8px 9px black;
+}
+#achievementIcon{
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+#achievement table{
+    text-align: center;
+    width: 100%;
+}
+#achievement h1{
+    font-size: 3em;
+}
+
+#locker{
+    display : none;
+}
+
+#unlock{
+    display: none;
+}
+.iconAchievements{
+    background-color: black;
+    height: 30px;
 }
