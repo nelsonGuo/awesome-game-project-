@@ -3,7 +3,7 @@ var fallObjects=new Array();
 function newObject(url,height,width){
     fallObjects[fallObjects.length]=new Array(url,height,width);
 }
-var numObjs=20, waft=0, fallSpeed=15, wind=0;
+var numObjs=5, waft=0, fallSpeed=20, wind=0;
 newObject("pictures/egg1.png",38,50);
 newObject("pictures/egg2.png",38,50);
 newObject("pictures/egg3.png",38,50);
