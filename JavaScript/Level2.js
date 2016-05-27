@@ -8,7 +8,10 @@ function Level2(){
     document.getElementById("showLevel").style.display ="block";
     document.getElementById("showLevel").innerHTML="Level " + lvl;
     document.getElementById("level1").style.display = "none";
+    document.getElementById("timer").style.display = "none";
     setTimeout(function(){
+        document.getElementById("timer").style.display = "block";
+
         document.getElementById("showLevel").style.display ="none";
         document.getElementById("lvlUp").innerHTML="Level "+lvl;
         document.getElementById("level1").style.display = "block";
@@ -18,6 +21,7 @@ function Level2(){
         sequenceTimer2();
     },2000);
     setTimeout(function () {
+        
         document.getElementById("sequence1").style.display = "none";
         document.getElementById("level1").style.display = "none";
         document.getElementById("grid-container").style.display = "block";

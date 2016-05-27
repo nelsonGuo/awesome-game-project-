@@ -5,7 +5,7 @@ function openPopup(){
 	$("#overlay-bg").fadeIn();
 	clearInterval(timer);
 	
-	var c = document.getElementById("showResult").innerHTML = "Level: " + lvl + "     Time: " + timerRank;
+	var c = document.getElementById("showResult").innerHTML = "Level: " + lvl + "     Time: " + timerRank +" s";
 	
 	resizePopup();
 }

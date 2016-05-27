@@ -50,7 +50,12 @@ function HomePage2() {
 	quite = false;
 
 	Restart1();
+	passValue();
+	
+	$("form").submit();
 	document.getElementById("quit").style.display = "none";
+
+	document.getElementById("timer").style.display = "none";
 	document.getElementById("game-header").style.display = "none";
 	document.getElementById("grid-container").style.display = "none";
 	document.getElementById("grid-container2").style.display = "none";

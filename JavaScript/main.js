@@ -8,6 +8,7 @@ function start() {
 	document.getElementById("level1").style.display = "none";
 	setTimeout(function(){
 		sequenceTimer();
+		document.getElementById("timer").style.display = "block";
 		document.getElementById("lvlUp").innerHTML="Level "+lvl;
 		document.getElementById("level1").style.display = "block";
 	document.getElementById("showLevel").style.display ="none";

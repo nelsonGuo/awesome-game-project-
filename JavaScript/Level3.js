@@ -8,7 +8,10 @@ function Level3(){
     document.getElementById("grid-container").style.display = "none";
     document.getElementById("showLevel").style.display ="block";
     document.getElementById("showLevel").innerHTML="Level " + lvl;
+    document.getElementById("timer").style.display = "none";
     setTimeout(function(){
+        document.getElementById("timer").style.display = "block";
+
         document.getElementById("showLevel").style.display ="none";
         document.getElementById("lvlUp").innerHTML="Level "+lvl;
         document.getElementById("level1").style.display = "block";

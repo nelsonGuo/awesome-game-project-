@@ -7,6 +7,7 @@ function gameTimer() {
      var timer = setInterval(function(){
         if(i== -1){
             clearInterval(timer);
+            clearInterval(i);
             timeGame = 0;
             lose();
         }else if(countTimer < lvl) {
