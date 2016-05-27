@@ -235,6 +235,7 @@ a {
     width: 70px;
     height: 70px;
     float: left;
+    margin-left: 100px;
     margin-top: 30px;
 }
 #back{
@@ -307,7 +308,7 @@ a {
     width: 70px;
     height: 70px;
     margin-top: 30px;
-    margin-left: 80px;
+    float: left;
 }
 .lc{
     display: none;
@@ -390,6 +391,6 @@ label{
     width: 39px;
     height: 70px;
     margin-top: 30px;
-    margin-right: 50px;
+    margin-right: 100px;
     float: right;
 }
