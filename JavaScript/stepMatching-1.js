@@ -113,7 +113,6 @@ function stepMatching(id) {
             setTimeout(function () {
                 Restart1()
             }, 2000);
-
         }
     }
 }
