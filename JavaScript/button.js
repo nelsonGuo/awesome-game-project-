@@ -48,10 +48,8 @@ function HomePage2() {
 	numClick = 0;
 	clock = 0;
 	quite = false;
-
 	Restart1();
 	passValue();
-	
 	$("form").submit();
 	document.getElementById("quit").style.display = "none";
 
